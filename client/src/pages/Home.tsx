@@ -288,19 +288,40 @@ const Home: React.FC = () => {
             </div>
             
             <div className="lg:w-1/2 p-6">
-              <div className="bg-white h-80 rounded-lg shadow-md overflow-hidden">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d341.0503881311553!2d9.390674315913408!3d47.38327497973301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1e3c773bc6f9%3A0x7b2a1d8390126c67!2sKr%C3%A4tzernstrasse%2010%2C%209014%20St.%20Gallen!5e0!3m2!1sde!2sch!4v1715194337628!5m2!1sde!2sch" 
-                  width="100%" 
-                  height="100%" 
-                  frameBorder="0" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Standort Boutique Hotel Stocken"
-                  className="w-full h-full"
-                ></iframe>
+              <div className="bg-white h-80 rounded-lg shadow-md p-8 flex flex-col items-center justify-center">
+                <h3 className="text-2xl font-serif font-bold text-neutral-dark mb-4">Boutique Hotel Stocken</h3>
+                <div className="mb-8 text-center space-y-4">
+                  <p className="flex items-center justify-center">
+                    <FontAwesomeIcon icon="map-marker-alt" className="text-primary mr-2" />
+                    <span>Krätzernstraße 10, 9014 St. Gallen, Schweiz</span>
+                  </p>
+                  <p className="flex items-center justify-center">
+                    <FontAwesomeIcon icon="phone" className="text-primary mr-2" />
+                    <span>+41 79 300 01 61</span>
+                  </p>
+                  <p className="flex items-center justify-center">
+                    <FontAwesomeIcon icon="envelope" className="text-primary mr-2" />
+                    <span>reservation@hotelstocken.com</span>
+                  </p>
+                </div>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://maps.app.goo.gl/W6aGW5c3p47nAuGR8"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
+                  >
+                    <FontAwesomeIcon icon="map-marker-alt" className="mr-2" />
+                    Standort ansehen
+                  </a>
+                  <a 
+                    href="tel:+41793000161"
+                    className="bg-secondary hover:bg-secondary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
+                  >
+                    <FontAwesomeIcon icon="phone" className="mr-2" />
+                    Anrufen
+                  </a>
+                </div>
               </div>
             </div>
           </div>
