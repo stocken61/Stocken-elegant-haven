@@ -3,10 +3,6 @@ import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import heroImage from '@assets/hero_main.png';
-import roomMainImage from '@assets/room_main.webp';
-import bathroom from '@assets/bathroom.webp';
-import bed from '@assets/details_bed.webp';
-import table from '@assets/details_table.webp';
 
 const Home: React.FC = () => {
   // Entfernen wir die Abhängigkeit von externen Datenquellen
@@ -125,20 +121,20 @@ const Home: React.FC = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Room Category 1 */}
+            {/* Economy Zimmer */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src={roomMainImage} 
-                  alt="Klassisches Zimmer" 
+                  src="/assets/rooms/economy-room.png" 
+                  alt="Economy Zimmer" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Klassisches Zimmer</h3>
-                <p className="text-neutral-dark mb-4">Komfortabler Charme auf 23 m²</p>
+                <h3 className="text-xl font-bold mb-2">Economy Zimmer</h3>
+                <p className="text-neutral-dark mb-4">Komfortabel und praktisch auf 18 m²</p>
                 <Link 
-                  href="/rooms#klassisch" 
+                  href="/rooms#economy" 
                   className="text-primary hover:text-primary-dark font-medium transition-colors"
                 >
                   Details ansehen
@@ -146,18 +142,18 @@ const Home: React.FC = () => {
               </div>
             </div>
             
-            {/* Room Category 2 */}
+            {/* Deluxe Doppelzimmer */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src={bed} 
-                  alt="Deluxe Zimmer" 
+                  src="/assets/rooms/deluxe-room.png" 
+                  alt="Deluxe Doppelzimmer" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Deluxe Zimmer</h3>
-                <p className="text-neutral-dark mb-4">Stilvolle Eleganz auf 28 m²</p>
+                <h3 className="text-xl font-bold mb-2">Deluxe Doppelzimmer</h3>
+                <p className="text-neutral-dark mb-4">Stilvolle Eleganz auf 23 m²</p>
                 <Link 
                   href="/rooms#deluxe" 
                   className="text-primary hover:text-primary-dark font-medium transition-colors"
@@ -167,18 +163,18 @@ const Home: React.FC = () => {
               </div>
             </div>
             
-            {/* Room Category 3 */}
+            {/* Premium Suite */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src={bathroom} 
+                  src="/assets/rooms/premium-suite.png" 
                   alt="Premium Suite" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Premium Suite</h3>
-                <p className="text-neutral-dark mb-4">Luxuriöses Wohnerlebnis auf 44 m²</p>
+                <p className="text-neutral-dark mb-4">Geräumiges Wohnerlebnis mit Sitzecke</p>
                 <Link 
                   href="/rooms#premium" 
                   className="text-primary hover:text-primary-dark font-medium transition-colors"
