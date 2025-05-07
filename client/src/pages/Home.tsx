@@ -167,7 +167,7 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/rooms/premium-suite.png" 
+                  src="/assets/rooms/premium-family-suite-bed.png" 
                   alt="Premium Family Suite" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
