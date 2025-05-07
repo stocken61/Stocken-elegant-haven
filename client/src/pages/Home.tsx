@@ -127,7 +127,7 @@ const Home: React.FC = () => {
                 <img 
                   src="/assets/rooms/deluxe-room.png" 
                   alt="Deluxe Zimmer" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                  className="w-full h-full object-contain transition-transform hover:scale-100 duration-500"
                 />
               </div>
               <div className="p-6">
@@ -148,7 +148,7 @@ const Home: React.FC = () => {
                 <img 
                   src="/assets/rooms/premium-suite-bed.png" 
                   alt="Premium Suite" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                  className="w-full h-full object-contain transition-transform hover:scale-100 duration-500"
                 />
               </div>
               <div className="p-6">
@@ -167,9 +167,9 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/rooms/premium-family-suite-bed.png" 
+                  src="/assets/rooms/bett4.png" 
                   alt="Premium Family Suite" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                  className="w-full h-full object-contain transition-transform hover:scale-100 duration-500"
                 />
               </div>
               <div className="p-6">
