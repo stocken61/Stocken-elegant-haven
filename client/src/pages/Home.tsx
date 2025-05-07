@@ -11,16 +11,16 @@ const Home: React.FC = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="hero relative h-[60vh] min-h-[350px] max-h-[500px]" 
+        className="hero relative h-[70vh] min-h-[400px] max-h-[600px]" 
         style={{ 
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center top'
+          backgroundPosition: 'center 75%'
         }}
       >
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="hero-content text-center py-20 absolute inset-0 flex flex-col items-center justify-center">
+        <div className="hero-content text-center py-16 absolute inset-0 flex flex-col items-center justify-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
             Willkommen im Boutique Hotel Stocken
           </h1>
@@ -80,16 +80,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           
-          <div className="text-center mt-6">
-            <Button 
-              variant="default" 
-              className="bg-primary hover:bg-primary-light text-white px-8 py-3 text-lg font-medium rounded-md transform transition-transform hover:scale-105 shadow-md"
-            >
-              <span>Jetzt buchen</span>
-              <FontAwesomeIcon icon="arrow-right" className="ml-2" />
-            </Button>
-            <p className="text-sm text-neutral-dark mt-3">Die besten Preise garantiert bei direkter Buchung</p>
-          </div>
+          {/* Der "Jetzt buchen" Button wurde auf Wunsch entfernt */}
         </div>
       </section>
 
