@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import heroImage from '@assets/hero_main.png';
 import roomMainImage from '@assets/room_main.webp';
+import bathroom from '@assets/bathroom.webp';
+import bed from '@assets/details_bed.webp';
+import table from '@assets/details_table.webp';
 
 const Home: React.FC = () => {
   // Entfernen wir die Abhängigkeit von externen Datenquellen
@@ -127,15 +130,36 @@ const Home: React.FC = () => {
               <div className="h-64 overflow-hidden">
                 <img 
                   src={roomMainImage} 
-                  alt="Zimmer Kategorie 1" 
+                  alt="Klassisches Zimmer" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Kategorie 1</h3>
-                <p className="text-neutral-dark mb-4">Komfortable Zimmer mit 23 m²</p>
+                <h3 className="text-xl font-bold mb-2">Klassisches Zimmer</h3>
+                <p className="text-neutral-dark mb-4">Komfortabler Charme auf 23 m²</p>
                 <Link 
-                  href="/rooms#category1" 
+                  href="/rooms#klassisch" 
+                  className="text-primary hover:text-primary-dark font-medium transition-colors"
+                >
+                  Details ansehen
+                </Link>
+              </div>
+            </div>
+            
+            {/* Room Category 2 */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src={bed} 
+                  alt="Deluxe Zimmer" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Deluxe Zimmer</h3>
+                <p className="text-neutral-dark mb-4">Stilvolle Eleganz auf 28 m²</p>
+                <Link 
+                  href="/rooms#deluxe" 
                   className="text-primary hover:text-primary-dark font-medium transition-colors"
                 >
                   Details ansehen
@@ -147,37 +171,16 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src={roomMainImage} 
-                  alt="Zimmer Kategorie 3" 
+                  src={bathroom} 
+                  alt="Premium Suite" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Kategorie 3</h3>
-                <p className="text-neutral-dark mb-4">Geräumiges Zimmer mit 28 m²</p>
+                <h3 className="text-xl font-bold mb-2">Premium Suite</h3>
+                <p className="text-neutral-dark mb-4">Luxuriöses Wohnerlebnis auf 44 m²</p>
                 <Link 
-                  href="/rooms#category3" 
-                  className="text-primary hover:text-primary-dark font-medium transition-colors"
-                >
-                  Details ansehen
-                </Link>
-              </div>
-            </div>
-            
-            {/* Room Category 4 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-64 overflow-hidden">
-                <img 
-                  src={roomMainImage} 
-                  alt="Zimmer Kategorie 4" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Kategorie 4</h3>
-                <p className="text-neutral-dark mb-4">Luxuriöses Zimmer mit 44 m²</p>
-                <Link 
-                  href="/rooms#category4" 
+                  href="/rooms#premium" 
                   className="text-primary hover:text-primary-dark font-medium transition-colors"
                 >
                   Details ansehen
