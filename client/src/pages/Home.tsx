@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           <p className="text-xl text-white mb-6">
             Ihr modernes Boutique-Hotel im Herzen von St. Gallen
           </p>
-          <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 md:mt-16 lg:mt-20">
+          <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 mt-8">
             <Link href="/rooms">
               <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto">
                 Unsere Zimmer
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
             </Link>
             <Button 
               variant="secondary"
-              className="bg-white hover:bg-neutral-light text-primary hover:text-primary-dark py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto"
+              className="bg-[#8B5A2B] hover:bg-[#7A4A1D] text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto"
             >
               Jetzt buchen
             </Button>
