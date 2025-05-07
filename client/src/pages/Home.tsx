@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         style={{ 
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center 40%'
+          backgroundPosition: 'center 20%'
         }}
       >
         {/* Overlay for better text readability */}
