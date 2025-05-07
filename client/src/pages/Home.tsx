@@ -104,8 +104,8 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2 p-6">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Hotel Innenansicht - Elegantes Design" 
+                  src="/hotel_interior.png" 
+                  alt="Hotel Innenansicht - Elegante Flure" 
                   className="w-full h-auto object-cover"
                 />
               </div>
