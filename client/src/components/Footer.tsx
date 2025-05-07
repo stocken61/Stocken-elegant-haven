@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import StockenLogo from '@/assets/stockenLogo';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import logoGreen from '@assets/logo_transparent_highres_green.png';
+import StockenLogo from '../components/StockenLogo';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +14,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="h-16 mb-6">
-              <img src={logoGreen} alt="Stocken Hotel Logo" className="h-14 brightness-0 invert" />
+              <StockenLogo className="h-14" inverted />
             </div>
             <p className="mb-4">
               Seit 1784 verkörpern wir die Tradition der Schweizer Gastfreundschaft mit modernem Luxus.

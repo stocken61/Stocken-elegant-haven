@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import StockenLogo from '@/assets/stockenLogo';
 import { Button } from '@/components/ui/button';
-import logoGreen from '@assets/logo_transparent_highres_green.png';
+import StockenLogo from '../components/StockenLogo';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +41,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img src={logoGreen} alt="Stocken Hotel Logo" className="h-14" />
+          <StockenLogo className="h-14" />
         </Link>
         
         {/* Desktop Navigation */}
