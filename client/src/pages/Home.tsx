@@ -80,12 +80,26 @@ const Home: React.FC = () => {
             </div>
           </div>
           
-          {/* Der "Jetzt buchen" Button wurde auf Wunsch entfernt */}
+          {/* Der "Jetzt buchen" Button wurde nach unten versetzt */}
         </div>
       </section>
 
       {/* About Section */}
-      <section className="about-preview py-16 mt-8">
+      {/* Jetzt buchen Button Sektion */}
+      <section className="booking-cta py-10 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <Button 
+            variant="default" 
+            className="bg-primary hover:bg-primary-light text-white px-8 py-3 text-lg font-medium rounded-md transform transition-transform hover:scale-105 shadow-md"
+          >
+            <span>Jetzt buchen</span>
+            <FontAwesomeIcon icon="arrow-right" className="ml-2" />
+          </Button>
+          <p className="text-sm text-neutral-dark mt-3">Die besten Preise garantiert bei direkter Buchung</p>
+        </div>
+      </section>
+      
+      <section className="about-preview py-16">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 p-6">
