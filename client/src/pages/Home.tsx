@@ -131,7 +131,7 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Deluxe Zimmer</h3>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">Deluxe Zimmer</h3>
                 <p className="text-neutral-dark mb-4">Stilvolle Eleganz auf 23 m²</p>
                 <Link 
                   href="/rooms#deluxe" 
@@ -152,7 +152,7 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Premium Suite</h3>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Suite</h3>
                 <p className="text-neutral-dark mb-4">Geräumiges Wohnerlebnis mit Sitzecke</p>
                 <Link 
                   href="/rooms#premium-suite" 
@@ -173,7 +173,7 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Premium Family Suite</h3>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Family Suite</h3>
                 <p className="text-neutral-dark mb-4">Großzügiger Raum für die ganze Familie</p>
                 <Link 
                   href="/rooms#premium-family" 
@@ -207,7 +207,7 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="utensils" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Restaurant</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">Restaurant</h3>
               <p className="text-neutral-dark">
                 Genießen Sie kulinarische Köstlichkeiten in unserem Restaurant.
               </p>
@@ -217,7 +217,7 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="coffee" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Exklusives Frühstück</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">Exklusives Frühstück</h3>
               <p className="text-neutral-dark">
                 Genießen Sie ein individuelles À la carte Frühstück.
               </p>
@@ -227,7 +227,7 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="wifi" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Kostenloses WLAN</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">Kostenloses WLAN</h3>
               <p className="text-neutral-dark">
                 Bleiben Sie mit unserem Highspeed-WLAN verbunden.
               </p>
