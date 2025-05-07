@@ -43,36 +43,52 @@ const Home: React.FC = () => {
         </div>
       </section>
       
-      {/* Booking Widget Placeholder */}
-      <section className="booking-widget py-0 -mt-1 bg-neutral-light">
+      {/* Hotel Benefits Section */}
+      <section className="hotel-benefits -mt-1 bg-neutral-light py-6">
         <div className="container mx-auto px-4">
-          <div id="mews-booking-widget" className="bg-white p-6 rounded-lg shadow-md my-4">
-            {/* Platzhalter für Mews PMS System - wird später durch tatsächliches Buchungssystem ersetzt */}
-            <p className="text-center text-neutral-dark font-bold">Buchen Sie direkt bei uns für die besten Preise</p>
-            <p className="text-center text-xs text-neutral-dark mb-2">(Hier wird später das Mews PMS Buchungssystem integriert)</p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
-              <div className="p-3 border rounded">
-                <label className="block text-sm mb-1">Anreise</label>
-                <input type="date" className="w-full p-2 border rounded" />
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+            <div className="p-4">
+              <div className="text-primary text-3xl mb-2">
+                <FontAwesomeIcon icon="map-marker-alt" />
               </div>
-              <div className="p-3 border rounded">
-                <label className="block text-sm mb-1">Abreise</label>
-                <input type="date" className="w-full p-2 border rounded" />
-              </div>
-              <div className="p-3 border rounded">
-                <label className="block text-sm mb-1">Gäste</label>
-                <select className="w-full p-2 border rounded">
-                  <option>1 Erwachsener</option>
-                  <option>2 Erwachsene</option>
-                  <option>2 Erwachsene, 1 Kind</option>
-                </select>
-              </div>
-              <div className="p-3 flex items-end">
-                <Button className="w-full bg-primary text-white p-2 rounded">
-                  Verfügbarkeit prüfen
-                </Button>
-              </div>
+              <h3 className="font-semibold mb-1">Perfekte Lage</h3>
+              <p className="text-sm text-neutral-dark">Im Herzen von St. Gallen</p>
             </div>
+            
+            <div className="p-4">
+              <div className="text-primary text-3xl mb-2">
+                <FontAwesomeIcon icon="dollar-sign" />
+              </div>
+              <h3 className="font-semibold mb-1">Bester Preis</h3>
+              <p className="text-sm text-neutral-dark">Garantiert bei direkter Buchung</p>
+            </div>
+            
+            <div className="p-4">
+              <div className="text-primary text-3xl mb-2">
+                <FontAwesomeIcon icon="coffee" />
+              </div>
+              <h3 className="font-semibold mb-1">Frühstück inklusive</h3>
+              <p className="text-sm text-neutral-dark">Reichhaltiges Morgenbuffet</p>
+            </div>
+            
+            <div className="p-4">
+              <div className="text-primary text-3xl mb-2">
+                <FontAwesomeIcon icon="wifi" />
+              </div>
+              <h3 className="font-semibold mb-1">Kostenloses WLAN</h3>
+              <p className="text-sm text-neutral-dark">Highspeed-Internet im ganzen Hotel</p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-6">
+            <Button 
+              variant="default" 
+              className="bg-primary hover:bg-primary-light text-white px-8 py-3 text-lg font-medium rounded-md transform transition-transform hover:scale-105 shadow-md"
+            >
+              <span>Jetzt buchen</span>
+              <FontAwesomeIcon icon="arrow-right" className="ml-2" />
+            </Button>
+            <p className="text-sm text-neutral-dark mt-3">Die besten Preise garantiert bei direkter Buchung</p>
           </div>
         </div>
       </section>
