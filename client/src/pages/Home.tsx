@@ -11,14 +11,16 @@ const Home: React.FC = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="hero relative" 
+        className="hero relative h-screen min-h-[600px] max-h-[800px]" 
         style={{ 
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center top'
         }}
       >
-        <div className="hero-content text-center py-20">
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="hero-content text-center py-20 absolute inset-0 flex flex-col items-center justify-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
             Willkommen im Boutique Hotel Stocken
           </h1>

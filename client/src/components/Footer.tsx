@@ -13,8 +13,8 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="h-16 mb-6">
-              <img src={footerLogo} alt="Stocken Hotel Logo" className="h-14" />
+            <div className="h-32 mb-6">
+              <img src={footerLogo} alt="Stocken Hotel Logo" className="h-28" />
             </div>
             <p className="mb-4">
               Seit 1784 verkörpern wir die Tradition der Schweizer Gastfreundschaft mit modernem Luxus.
