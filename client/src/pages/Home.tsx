@@ -237,7 +237,7 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="map-marker-alt" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Zentrale Lage</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">Zentrale Lage</h3>
               <p className="text-neutral-dark">
                 Perfekt gelegen im Herzen von St. Gallen.
               </p>
@@ -289,7 +289,7 @@ const Home: React.FC = () => {
             
             <div className="lg:w-1/2 p-6">
               <div className="bg-white h-80 rounded-lg shadow-md p-8 flex flex-col items-center justify-center">
-                <h3 className="text-2xl font-serif font-bold text-neutral-dark mb-4">Boutique Hotel Stocken</h3>
+                <h3 className="text-2xl font-serif font-bold text-heading-gray mb-4">Boutique Hotel Stocken</h3>
                 <div className="mb-8 text-center space-y-4">
                   <p className="flex items-center justify-center">
                     <FontAwesomeIcon icon="map-marker-alt" className="text-primary mr-2" />
