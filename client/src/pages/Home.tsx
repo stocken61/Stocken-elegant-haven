@@ -271,7 +271,7 @@ const Home: React.FC = () => {
                 
                 <div className="flex items-start">
                   <FontAwesomeIcon icon="phone" className="text-primary mt-1 mr-3" />
-                  <p>0793000161</p>
+                  <p>+41 79 300 01 61</p>
                 </div>
                 
                 <div className="flex items-start">
@@ -288,9 +288,18 @@ const Home: React.FC = () => {
             </div>
             
             <div className="lg:w-1/2 p-6">
-              <div className="bg-white h-80 rounded-lg shadow-md flex items-center justify-center">
-                {/* Platzhalter für Google Maps */}
-                <p className="text-neutral-dark">Google Maps wird hier angezeigt</p>
+              <div className="bg-white h-80 rounded-lg shadow-md overflow-hidden">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.1046079286106!2d9.39070177673378!3d47.38344910150617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1e3c773bc6f9%3A0x7b2a1d8390126c67!2sKr%C3%A4tzernstrasse%2010%2C%209014%20St.%20Gallen%2C%20Schweiz!5e0!3m2!1sde!2sde!4v1683125678954!5m2!1sde!2sde" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Standort Boutique Hotel Stocken"
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
           </div>

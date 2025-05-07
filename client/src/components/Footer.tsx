@@ -37,15 +37,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex">
                 <FontAwesomeIcon icon="map-marker-alt" className="mt-1 mr-3" />
-                <span>Bergstrasse 123<br />6340 Baar, Schweiz</span>
+                <span>Krätzernstraße 10<br />9014 St. Gallen, Schweiz</span>
               </li>
               <li className="flex">
                 <FontAwesomeIcon icon="phone-alt" className="mt-1 mr-3" />
-                <span>+41 44 123 45 67</span>
+                <span>+41 79 300 01 61</span>
               </li>
               <li className="flex">
                 <FontAwesomeIcon icon="envelope" className="mt-1 mr-3" />
-                <span>info@stocken.ch</span>
+                <span>reservation@hotelstocken.com</span>
               </li>
             </ul>
           </div>
