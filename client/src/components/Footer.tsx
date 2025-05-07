@@ -54,28 +54,28 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-serif font-bold mb-6">Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/">
-                  <a className="hover:text-secondary-light transition">Home</a>
+                <Link href="/" className="hover:text-secondary-light transition">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="/about">
-                  <a className="hover:text-secondary-light transition">Über uns</a>
+                <Link href="/about" className="hover:text-secondary-light transition">
+                  Über uns
                 </Link>
               </li>
               <li>
-                <Link href="/rooms">
-                  <a className="hover:text-secondary-light transition">Zimmer</a>
+                <Link href="/rooms" className="hover:text-secondary-light transition">
+                  Zimmer
                 </Link>
               </li>
               <li>
-                <Link href="/restaurant">
-                  <a className="hover:text-secondary-light transition">Restaurant</a>
+                <Link href="/restaurant" className="hover:text-secondary-light transition">
+                  Restaurant
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a className="hover:text-secondary-light transition">Kontakt</a>
+                <Link href="/contact" className="hover:text-secondary-light transition">
+                  Kontakt
                 </Link>
               </li>
             </ul>
@@ -109,14 +109,14 @@ const Footer: React.FC = () => {
             &copy; {currentYear} Stocken Hotel. Alle Rechte vorbehalten.
           </p>
           <div className="flex space-x-4 text-sm">
-            <Link href="/legal/terms">
-              <a className="hover:text-secondary-light transition">AGB</a>
+            <Link href="/legal/terms" className="hover:text-secondary-light transition">
+              AGB
             </Link>
-            <Link href="/legal/privacy">
-              <a className="hover:text-secondary-light transition">Datenschutz</a>
+            <Link href="/legal/privacy" className="hover:text-secondary-light transition">
+              Datenschutz
             </Link>
-            <Link href="/legal/imprint">
-              <a className="hover:text-secondary-light transition">Impressum</a>
+            <Link href="/legal/imprint" className="hover:text-secondary-light transition">
+              Impressum
             </Link>
           </div>
         </div>
