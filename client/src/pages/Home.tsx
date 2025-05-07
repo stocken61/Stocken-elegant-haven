@@ -20,14 +20,14 @@ const Home: React.FC = () => {
       >
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="hero-content text-center py-12 absolute inset-0 flex flex-col items-center justify-center mt-8">
+        <div className="hero-content text-center py-12 absolute inset-0 flex flex-col items-center justify-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
             Willkommen im Boutique Hotel Stocken
           </h1>
-          <p className="text-xl text-white mb-8">
+          <p className="text-xl text-white mb-6">
             Ihr modernes Boutique-Hotel im Herzen von St. Gallen
           </p>
-          <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+          <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 md:mt-16 lg:mt-20">
             <Link href="/rooms">
               <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto">
                 Unsere Zimmer
