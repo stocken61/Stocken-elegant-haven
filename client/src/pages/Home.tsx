@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import heroImage from '@assets/hero_main.png';
 import roomMainImage from '@assets/room_main.webp';
+import hotelInteriorImage from '@assets/hotel_interior.png';
 
 const Home: React.FC = () => {
   // Entfernen wir die Abhängigkeit von externen Datenquellen
@@ -95,7 +96,7 @@ const Home: React.FC = () => {
                 Boutique Hotel Stocken
               </h2>
               <p className="text-lg text-neutral-dark mb-6">
-                Entdecken Sie unser einzigartiges Boutique-Hotel, das modernen Komfort mit stilvollem Design verbindet. Im Herzen von St. Gallen gelegen, bieten wir Ihnen ein unvergessliches Erlebnis.
+                Entdecken Sie unser einzigartiges Boutique-Hotel, das modernen Komfort mit stilvollem Design verbindet. Unsere eleganten Flure, klare Architektur und hochwertige Materialien schaffen eine einladende Atmosphäre im Herzen von St. Gallen.
               </p>
               <Link href="/about" className="text-primary hover:text-primary-dark font-medium transition-colors">
                 Mehr erfahren
@@ -104,8 +105,8 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2 p-6">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://via.placeholder.com/600x400" 
-                  alt="Hotel Innenansicht" 
+                  src={hotelInteriorImage} 
+                  alt="Hotel Innenansicht - Flur mit Treppe" 
                   className="w-full h-auto object-cover"
                 />
               </div>
