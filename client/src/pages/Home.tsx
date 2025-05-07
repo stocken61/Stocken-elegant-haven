@@ -288,18 +288,21 @@ const Home: React.FC = () => {
             </div>
             
             <div className="lg:w-1/2 p-6">
-              <div className="bg-white h-80 rounded-lg shadow-md overflow-hidden">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.0939078223733!2d9.388291376733778!3d47.38364280150612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1e3c729555ef%3A0x4eb14a0dafc7eb7a!2sKr%C3%A4tzernstrasse%2010%2C%209014%20St.%20Gallen!5e0!3m2!1sde!2sch!4v1715193760834!5m2!1sde!2sch"
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Standort Boutique Hotel Stocken"
-                  className="w-full h-full"
-                ></iframe>
+              <div className="bg-white h-80 rounded-lg shadow-md flex flex-col items-center justify-center p-4">
+                <h4 className="text-lg font-bold text-primary mb-2">Boutique Hotel Stocken</h4>
+                <p className="text-center mb-4">
+                  Krätzernstraße 10<br />
+                  9014 St. Gallen, Schweiz
+                </p>
+                <a 
+                  href="https://maps.google.com/?q=Krätzernstraße+10,+9014+St.+Gallen,+Schweiz" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-primary hover:bg-primary-light text-white py-2 px-4 rounded-md transition-colors inline-flex items-center"
+                >
+                  <FontAwesomeIcon icon="map-marker-alt" className="mr-2" />
+                  Auf Google Maps ansehen
+                </a>
               </div>
             </div>
           </div>
