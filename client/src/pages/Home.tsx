@@ -121,38 +121,17 @@ const Home: React.FC = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Economy Zimmer */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-64 overflow-hidden">
-                <img 
-                  src="/assets/rooms/economy-room.png" 
-                  alt="Economy Zimmer" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Economy Zimmer</h3>
-                <p className="text-neutral-dark mb-4">Komfortabel und praktisch auf 18 m²</p>
-                <Link 
-                  href="/rooms#economy" 
-                  className="text-primary hover:text-primary-dark font-medium transition-colors"
-                >
-                  Details ansehen
-                </Link>
-              </div>
-            </div>
-            
-            {/* Deluxe Doppelzimmer */}
+            {/* Deluxe Zimmer */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
                   src="/assets/rooms/deluxe-room.png" 
-                  alt="Deluxe Doppelzimmer" 
+                  alt="Deluxe Zimmer" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Deluxe Doppelzimmer</h3>
+                <h3 className="text-xl font-bold mb-2">Deluxe Zimmer</h3>
                 <p className="text-neutral-dark mb-4">Stilvolle Eleganz auf 23 m²</p>
                 <Link 
                   href="/rooms#deluxe" 
@@ -167,7 +146,7 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/rooms/premium-suite.png" 
+                  src="/assets/rooms/premium-suite-bed.png" 
                   alt="Premium Suite" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -176,7 +155,28 @@ const Home: React.FC = () => {
                 <h3 className="text-xl font-bold mb-2">Premium Suite</h3>
                 <p className="text-neutral-dark mb-4">Geräumiges Wohnerlebnis mit Sitzecke</p>
                 <Link 
-                  href="/rooms#premium" 
+                  href="/rooms#premium-suite" 
+                  className="text-primary hover:text-primary-dark font-medium transition-colors"
+                >
+                  Details ansehen
+                </Link>
+              </div>
+            </div>
+            
+            {/* Premium Family Suite */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src="/assets/rooms/premium-suite.png" 
+                  alt="Premium Family Suite" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Premium Family Suite</h3>
+                <p className="text-neutral-dark mb-4">Großzügiger Raum für die ganze Familie</p>
+                <Link 
+                  href="/rooms#premium-family" 
                   className="text-primary hover:text-primary-dark font-medium transition-colors"
                 >
                   Details ansehen
