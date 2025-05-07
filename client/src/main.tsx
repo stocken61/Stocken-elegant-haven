@@ -8,7 +8,8 @@ import {
   faLeaf, faUtensils, faHiking, faSpa, 
   faUserFriends, faVectorSquare, faBed, 
   faArrowRight, faCheck, faBars, faMapMarkerAlt, 
-  faPhoneAlt, faEnvelope, faSearch 
+  faPhoneAlt, faEnvelope, faSearch, faCoffee,
+  faWifi, faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import { 
   faFacebookF, faInstagram, faTwitter 
@@ -20,7 +21,8 @@ library.add(
   faLeaf, faUtensils, faHiking, faSpa, 
   faUserFriends, faVectorSquare, faBed, 
   faArrowRight, faCheck, faBars, faMapMarkerAlt,
-  faPhoneAlt, faEnvelope, faSearch,
+  faPhoneAlt, faEnvelope, faSearch, faCoffee,
+  faWifi, faPhone,
   faFacebookF, faInstagram, faTwitter,
   faStar, faStarHalfAlt
 );

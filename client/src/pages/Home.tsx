@@ -2,229 +2,285 @@ import React from 'react';
 import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
-import RoomCard from '@/components/RoomCard';
-import TestimonialCard from '@/components/TestimonialCard';
-import { rooms } from '@/data/rooms';
-import { testimonials } from '@/data/testimonials';
+import heroImage from '@assets/hero_main.png';
+import roomMainImage from '@assets/room_main.webp';
 
 const Home: React.FC = () => {
-  // Display only first 3 rooms on homepage
-  const featuredRooms = rooms.slice(0, 3);
-  
+  // Entfernen wir die Abhängigkeit von externen Datenquellen
   return (
     <>
       {/* Hero Section */}
       <section 
-        className="hero-section relative" 
+        className="hero relative" 
         style={{ 
-          backgroundImage: `url('/assets/hero_main.png')`,
+          backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
       >
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-        
-        <div className="container mx-auto px-4 py-24 min-h-[80vh] flex items-center relative z-10">
-          <div className="max-w-xl fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
-              Urlaub im Herzen der Schweizer Alpen
-            </h1>
-            <p className="text-lg text-white mb-8">
-              Genießen Sie die atemberaubende Aussicht und erstklassigen Service in unserem Boutique-Hotel seit 1784.
-            </p>
-            <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-              <Link href="/rooms">
-                <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto">
-                  Zimmer entdecken
-                </Button>
-              </Link>
-              <Button 
-                variant="secondary"
-                className="bg-white hover:bg-neutral-light text-primary hover:text-primary-dark py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto"
-                onClick={() => {
-                  document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Verfügbarkeit prüfen
+        <div className="hero-content text-center py-20">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
+            Willkommen im Boutique Hotel Stocken
+          </h1>
+          <p className="text-xl text-white mb-8">
+            Ihr modernes Boutique-Hotel im Herzen von St. Gallen
+          </p>
+          <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+            <Link href="/rooms">
+              <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto">
+                Unsere Zimmer
               </Button>
-            </div>
+            </Link>
+            <Button 
+              variant="secondary"
+              className="bg-white hover:bg-neutral-light text-primary hover:text-primary-dark py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto"
+            >
+              Jetzt buchen
+            </Button>
           </div>
         </div>
       </section>
       
-      {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      {/* Booking Widget Placeholder */}
+      <section className="booking-widget py-8 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
-              <img src="/assets/facade.webp" alt="Stocken Hotel Facade" className="w-full h-auto rounded-lg shadow-lg object-cover" />
-            </div>
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-dark mb-6">
-                Über Stocken
-              </h2>
-              <p className="text-lg text-neutral-dark mb-6">
-                Seit 1784 verkörpert Stocken die Tradition der Schweizer Gastfreundschaft mit modernem Luxus. Unser historisches Gebäude wurde liebevoll renoviert, um Ihnen den Komfort des 21. Jahrhunderts zu bieten, ohne den zeitlosen Charme zu verlieren.
-              </p>
-              <p className="text-lg text-neutral-dark mb-8">
-                Umgeben von der atemberaubenden Schönheit der Schweizer Alpen bietet unser Boutique-Hotel eine einzigartige Mischung aus Ruhe, Abenteuer und Kulinarik - eine wahre Oase für Reisende, die das Besondere suchen.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="flex items-start">
-                  <FontAwesomeIcon icon="leaf" className="text-primary-light text-xl mr-3 mt-1" />
-                  <div>
-                    <h3 className="font-medium text-lg">Nachhaltigkeit</h3>
-                    <p className="text-neutral-dark">Umweltbewusster Hotelbetrieb</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <FontAwesomeIcon icon="utensils" className="text-primary-light text-xl mr-3 mt-1" />
-                  <div>
-                    <h3 className="font-medium text-lg">Küche</h3>
-                    <p className="text-neutral-dark">Regionale Spezialitäten</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <FontAwesomeIcon icon="hiking" className="text-primary-light text-xl mr-3 mt-1" />
-                  <div>
-                    <h3 className="font-medium text-lg">Aktivitäten</h3>
-                    <p className="text-neutral-dark">Wandern und Skifahren</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <FontAwesomeIcon icon="spa" className="text-primary-light text-xl mr-3 mt-1" />
-                  <div>
-                    <h3 className="font-medium text-lg">Wellness</h3>
-                    <p className="text-neutral-dark">Sauna und Massage</p>
-                  </div>
-                </div>
+          <div id="mews-booking-widget" className="bg-white p-6 rounded-lg shadow-md">
+            {/* Mews Widget würde hier durch JavaScript eingefügt */}
+            <p className="text-center text-neutral-dark">Buchen Sie direkt bei uns für die besten Preise</p>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+              <div className="p-3 border rounded">
+                <label className="block text-sm mb-1">Anreise</label>
+                <input type="date" className="w-full p-2 border rounded" />
+              </div>
+              <div className="p-3 border rounded">
+                <label className="block text-sm mb-1">Abreise</label>
+                <input type="date" className="w-full p-2 border rounded" />
+              </div>
+              <div className="p-3 border rounded">
+                <label className="block text-sm mb-1">Gäste</label>
+                <select className="w-full p-2 border rounded">
+                  <option>1 Erwachsener</option>
+                  <option>2 Erwachsene</option>
+                  <option>2 Erwachsene, 1 Kind</option>
+                </select>
+              </div>
+              <div className="p-3 flex items-end">
+                <Button className="w-full bg-primary text-white p-2 rounded">
+                  Verfügbarkeit prüfen
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-      {/* Rooms Section */}
-      <section id="rooms" className="py-20 bg-neutral-light">
+
+      {/* About Section */}
+      <section className="about-preview py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-dark mb-6">
-              Unsere Zimmer
-            </h2>
-            <p className="text-lg text-neutral-dark">
-              Jedes unserer Zimmer verbindet modernen Komfort mit alpenländischem Charme. Genießen Sie die Ruhe und den atemberaubenden Ausblick auf die Bergwelt.
-            </p>
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="lg:w-1/2 p-6">
+              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
+                Boutique Hotel Stocken
+              </h2>
+              <p className="text-lg text-neutral-dark mb-6">
+                Entdecken Sie unser einzigartiges Boutique-Hotel, das modernen Komfort mit stilvollem Design verbindet. Im Herzen von St. Gallen gelegen, bieten wir Ihnen ein unvergessliches Erlebnis.
+              </p>
+              <Link href="/about" className="text-primary hover:text-primary-dark font-medium transition-colors">
+                Mehr erfahren
+              </Link>
+            </div>
+            <div className="lg:w-1/2 p-6">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://via.placeholder.com/600x400" 
+                  alt="Hotel Innenansicht" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Room Categories Preview */}
+      <section className="rooms-preview py-16 bg-neutral-light">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
+            Unsere Zimmer
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Room Category 1 */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src={roomMainImage} 
+                  alt="Zimmer Kategorie 1" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Kategorie 1</h3>
+                <p className="text-neutral-dark mb-4">Komfortable Zimmer mit 23 m²</p>
+                <Link 
+                  href="/rooms#category1" 
+                  className="text-primary hover:text-primary-dark font-medium transition-colors"
+                >
+                  Details ansehen
+                </Link>
+              </div>
+            </div>
+            
+            {/* Room Category 3 */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src={roomMainImage} 
+                  alt="Zimmer Kategorie 3" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Kategorie 3</h3>
+                <p className="text-neutral-dark mb-4">Geräumiges Zimmer mit 28 m²</p>
+                <Link 
+                  href="/rooms#category3" 
+                  className="text-primary hover:text-primary-dark font-medium transition-colors"
+                >
+                  Details ansehen
+                </Link>
+              </div>
+            </div>
+            
+            {/* Room Category 4 */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src={roomMainImage} 
+                  alt="Zimmer Kategorie 4" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Kategorie 4</h3>
+                <p className="text-neutral-dark mb-4">Luxuriöses Zimmer mit 44 m²</p>
+                <Link 
+                  href="/rooms#category4" 
+                  className="text-primary hover:text-primary-dark font-medium transition-colors"
+                >
+                  Details ansehen
+                </Link>
+              </div>
+            </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredRooms.map(room => (
-              <RoomCard key={room.id} room={room} />
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
+          <div className="text-center mt-10">
             <Link href="/rooms">
-              <Button 
-                variant="outline" 
-                className="border-primary text-primary hover:bg-primary hover:text-white"
-              >
-                Alle Zimmer anzeigen
-                <FontAwesomeIcon icon="arrow-right" className="ml-2" />
+              <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors">
+                Alle Zimmer ansehen
               </Button>
             </Link>
           </div>
         </div>
       </section>
-      
-      {/* Restaurant Section */}
-      <section id="restaurant" className="py-20 bg-white">
+
+      {/* Services Preview */}
+      <section className="services-preview py-16">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-dark mb-6">
-                Kulinarisches Erlebnis
+          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
+            Unsere Services
+          </h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="text-primary text-4xl mb-4">
+                <FontAwesomeIcon icon="utensils" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Restaurant</h3>
+              <p className="text-neutral-dark">
+                Genießen Sie kulinarische Köstlichkeiten in unserem Restaurant.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="text-primary text-4xl mb-4">
+                <FontAwesomeIcon icon="coffee" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Frühstück</h3>
+              <p className="text-neutral-dark">
+                Starten Sie den Tag mit einem reichhaltigen Frühstück.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="text-primary text-4xl mb-4">
+                <FontAwesomeIcon icon="wifi" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Kostenloses WLAN</h3>
+              <p className="text-neutral-dark">
+                Bleiben Sie mit unserem Highspeed-WLAN verbunden.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="text-primary text-4xl mb-4">
+                <FontAwesomeIcon icon="map-marker-alt" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Zentrale Lage</h3>
+              <p className="text-neutral-dark">
+                Perfekt gelegen im Herzen von St. Gallen.
+              </p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-10">
+            <Link href="/services">
+              <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors">
+                Alle Services entdecken
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Preview */}
+      <section className="contact-preview py-16 bg-neutral-light">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-start">
+            <div className="lg:w-1/2 p-6">
+              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
+                Kontaktieren Sie uns
               </h2>
-              <p className="text-lg text-neutral-dark mb-6">
-                Unser Restaurant "Bergblick" bietet eine exquisite Auswahl an traditionellen Schweizer Gerichten mit modernem Touch. Unser engagiertes Küchenteam verwendet ausschließlich frische, saisonale Zutaten von lokalen Produzenten.
-              </p>
-              <p className="text-lg text-neutral-dark mb-8">
-                Genießen Sie Ihr Essen in unserem eleganten Speisesaal mit atemberaubendem Blick auf die umliegenden Berge oder auf unserer Terrasse bei gutem Wetter.
-              </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="border-l-4 border-primary-light pl-4">
-                  <h3 className="font-medium text-xl mb-2">Frühstück</h3>
-                  <p className="text-neutral-dark">07:00 - 10:30 Uhr</p>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start">
+                  <FontAwesomeIcon icon="map-marker-alt" className="text-primary mt-1 mr-3" />
+                  <p>Krätzernstraße 10, 9014 St. Gallen, Schweiz</p>
                 </div>
-                <div className="border-l-4 border-primary-light pl-4">
-                  <h3 className="font-medium text-xl mb-2">Mittagessen</h3>
-                  <p className="text-neutral-dark">12:00 - 14:00 Uhr</p>
+                
+                <div className="flex items-start">
+                  <FontAwesomeIcon icon="phone" className="text-primary mt-1 mr-3" />
+                  <p>0793000161</p>
                 </div>
-                <div className="border-l-4 border-primary-light pl-4">
-                  <h3 className="font-medium text-xl mb-2">Abendessen</h3>
-                  <p className="text-neutral-dark">18:00 - 22:00 Uhr</p>
-                </div>
-                <div className="border-l-4 border-primary-light pl-4">
-                  <h3 className="font-medium text-xl mb-2">Bar</h3>
-                  <p className="text-neutral-dark">14:00 - 24:00 Uhr</p>
+                
+                <div className="flex items-start">
+                  <FontAwesomeIcon icon="envelope" className="text-primary mt-1 mr-3" />
+                  <p>reservation@hotelstocken.com</p>
                 </div>
               </div>
               
-              <Link href="/restaurant">
-                <Button 
-                  variant="link" 
-                  className="inline-flex items-center text-primary font-medium hover:underline px-0"
-                >
-                  <span>Speisekarte ansehen</span>
-                  <FontAwesomeIcon icon="arrow-right" className="ml-2 text-xs" />
+              <Link href="/contact">
+                <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors">
+                  Kontakt aufnehmen
                 </Button>
               </Link>
             </div>
-            <div className="lg:w-1/2">
-              <img src="/assets/restaurant.webp" alt="Restaurant Bergblick" className="w-full h-auto rounded-lg shadow-lg object-cover" />
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Testimonials Section */}
-      <section className="py-20 bg-neutral-light">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-dark mb-6">
-              Was unsere Gäste sagen
-            </h2>
-            <p className="text-lg text-neutral-dark">
-              Entdecken Sie die Erfahrungen unserer Gäste und lassen Sie sich von ihren Erlebnissen inspirieren.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.slice(0, 3).map(testimonial => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Booking Section */}
-      <section id="booking" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-lg mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-8">
-              Buchen Sie Ihren Aufenthalt
-            </h2>
             
-            <div className="bg-neutral-light p-6 rounded-lg shadow-sm">
-              <iframe 
-                src="https://booking-widget.example.com" 
-                title="Booking Widget"
-                className="w-full h-[450px] border-0 rounded"
-              >
-                {/* Fallback content if iframe doesn't load */}
-                <p>Ihr Browser unterstützt keine iFrames. Bitte buchen Sie direkt über unsere Website oder rufen Sie uns an.</p>
-              </iframe>
+            <div className="lg:w-1/2 p-6">
+              <div className="bg-white h-80 rounded-lg shadow-md flex items-center justify-center">
+                {/* Platzhalter für Google Maps */}
+                <p className="text-neutral-dark">Google Maps wird hier angezeigt</p>
+              </div>
             </div>
           </div>
         </div>
