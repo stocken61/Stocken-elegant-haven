@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="hero relative h-screen min-h-[600px] max-h-[800px]" 
+        className="hero relative h-[70vh] min-h-[400px] max-h-[600px]" 
         style={{ 
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
@@ -47,8 +47,9 @@ const Home: React.FC = () => {
       <section className="booking-widget py-8 bg-neutral-light">
         <div className="container mx-auto px-4">
           <div id="mews-booking-widget" className="bg-white p-6 rounded-lg shadow-md">
-            {/* Mews Widget würde hier durch JavaScript eingefügt */}
-            <p className="text-center text-neutral-dark">Buchen Sie direkt bei uns für die besten Preise</p>
+            {/* Platzhalter für Mews PMS System - wird später durch tatsächliches Buchungssystem ersetzt */}
+            <p className="text-center text-neutral-dark font-bold">Buchen Sie direkt bei uns für die besten Preise</p>
+            <p className="text-center text-xs text-neutral-dark mb-2">(Hier wird später das Mews PMS Buchungssystem integriert)</p>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
               <div className="p-3 border rounded">
                 <label className="block text-sm mb-1">Anreise</label>
