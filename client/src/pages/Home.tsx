@@ -194,7 +194,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="text-primary text-4xl mb-4">
-                <FontAwesomeIcon icon="utensils" />
+                <FontAwesomeIcon icon={["fas", "utensils"]} />
               </div>
               <h3 className="text-xl font-bold mb-2">Restaurant</h3>
               <p className="text-neutral-dark">
@@ -204,7 +204,7 @@ const Home: React.FC = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="text-primary text-4xl mb-4">
-                <FontAwesomeIcon icon="coffee" />
+                <FontAwesomeIcon icon={["fas", "coffee"]} />
               </div>
               <h3 className="text-xl font-bold mb-2">Frühstück</h3>
               <p className="text-neutral-dark">
@@ -214,7 +214,7 @@ const Home: React.FC = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="text-primary text-4xl mb-4">
-                <FontAwesomeIcon icon="wifi" />
+                <FontAwesomeIcon icon={["fas", "wifi"]} />
               </div>
               <h3 className="text-xl font-bold mb-2">Kostenloses WLAN</h3>
               <p className="text-neutral-dark">
@@ -224,7 +224,7 @@ const Home: React.FC = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="text-primary text-4xl mb-4">
-                <FontAwesomeIcon icon="map-marker-alt" />
+                <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />
               </div>
               <h3 className="text-xl font-bold mb-2">Zentrale Lage</h3>
               <p className="text-neutral-dark">
@@ -254,17 +254,17 @@ const Home: React.FC = () => {
               
               <div className="space-y-4 mb-6">
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="map-marker-alt" className="text-primary mt-1 mr-3" />
+                  <FontAwesomeIcon icon={["fas", "map-marker-alt"]} className="text-primary mt-1 mr-3" />
                   <p>Krätzernstraße 10, 9014 St. Gallen, Schweiz</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="phone" className="text-primary mt-1 mr-3" />
+                  <FontAwesomeIcon icon={["fas", "phone"]} className="text-primary mt-1 mr-3" />
                   <p>0793000161</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="envelope" className="text-primary mt-1 mr-3" />
+                  <FontAwesomeIcon icon={["fas", "envelope"]} className="text-primary mt-1 mr-3" />
                   <p>reservation@hotelstocken.com</p>
                 </div>
               </div>
