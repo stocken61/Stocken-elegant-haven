@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Boutique Hotel Stocken | St. Gallen</title>
+    <meta name="description" content="Kontaktieren Sie das Boutique Hotel Stocken, ein modernes Boutique-Hotel in St. Gallen.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/placeholder.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/header_logo_new.png" alt="STOCKEN by Pontera Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Menü öffnen">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="rooms.html">Zimmer</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="booking-button">
+                <a href="#" class="btn btn-booking">Buchen</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Wir freuen uns auf Ihre Nachricht</p>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Kontaktinformationen</h2>
+                        <p>Haben Sie Fragen oder möchten Sie eine Reservierung vornehmen? Kontaktieren Sie uns gerne per Telefon, E-Mail oder über das Kontaktformular.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Adresse</h3>
+                                    <p>Krätzernstraße 10<br>9014 St. Gallen<br>Schweiz</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Telefon</h3>
+                                    <p>0793000161</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>E-Mail</h3>
+                                    <p>reservation@hotelstocken.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Rezeption</h3>
+                                    <p>Täglich: 7:00 - 22:00 Uhr</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-media">
+                            <h3>Folgen Sie uns</h3>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h2>Kontaktformular</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Betreff *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Nachricht *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">Ich habe die <a href="privacy.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="text-center">Anfahrt</h2>
+                <p class="text-center mb-4">So finden Sie zu uns</p>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.816778301987!2d9.35866631562307!3d47.4160189791725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1e1a1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sKr%C3%A4tzernstrasse%2010%2C%209014%20St.%20Gallen%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1678886400000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <div class="directions">
+                    <div class="direction-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <h3>Mit dem Auto</h3>
+                            <p>Folgen Sie der Beschilderung nach St. Gallen. Unser Hotel befindet sich in der Krätzernstraße 10. Parkplätze stehen Ihnen vor dem Hotel zur Verfügung.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-item">
+                        <i class="fas fa-train"></i>
+                        <div>
+                            <h3>Mit der Bahn</h3>
+                            <p>Der Hauptbahnhof St. Gallen ist etwa 2 km von unserem Hotel entfernt. Sie können entweder einen kurzen Spaziergang machen oder ein Taxi nehmen.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-item">
+                        <i class="fas fa-plane"></i>
+                        <div>
+                            <h3>Mit dem Flugzeug</h3>
+                            <p>Der nächstgelegene Flughafen ist der Flughafen Zürich, etwa 85 km entfernt. Von dort können Sie mit dem Zug oder Mietwagen nach St. Gallen gelangen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section bg-light">
+            <div class="container">
+                <h2 class="text-center">Häufig gestellte Fragen</h2>
+                <p class="text-center mb-4">Hier finden Sie Antworten auf die häufigsten Fragen</p>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3>Wann ist Check-in und Check-out?</h3>
+                        <p>Der Check-in ist ab 15:00 Uhr möglich, der Check-out bis 11:00 Uhr. Bei Bedarf können Sie an der Rezeption nach einem frühen Check-in oder späten Check-out fragen.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Gibt es WLAN im Hotel?</h3>
+                        <p>Ja, wir bieten kostenloses Highspeed-WLAN in allen Bereichen des Hotels an.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Ist das Frühstück im Zimmerpreis inbegriffen?</h3>
+                        <p>Ja, ein reichhaltiges Frühstücksbuffet ist im Zimmerpreis inbegriffen. Es wird täglich von 7:00 bis 10:30 Uhr serviert.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Sind Haustiere erlaubt?</h3>
+                        <p>Haustiere sind auf Anfrage und gegen eine zusätzliche Gebühr erlaubt. Bitte informieren Sie uns im Voraus, wenn Sie mit einem Haustier reisen möchten.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Gibt es Parkplätze am Hotel?</h3>
+                        <p>Ja, wir bieten kostenlose Parkplätze für unsere Gäste an, vorbehaltlich der Verfügbarkeit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Bereit für einen unvergesslichen Aufenthalt?</h2>
+                <p>Buchen Sie jetzt Ihr Zimmer im Boutique Hotel Stocken und erleben Sie St. Gallen auf eine besondere Art und Weise.</p>
+                <a href="#" class="btn btn-primary">Jetzt buchen</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/images/logo/footer_logo_beige.png" alt="STOCKEN by Pontera Logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="rooms.html">Zimmer</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <p>Krätzernstraße 10<br>9014 St. Gallen<br>Schweiz</p>
+                    <p>Tel: 0793000161</p>
+                    <p>Email: reservation@hotelstocken.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Folgen Sie uns</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Boutique Hotel Stocken. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Datenschutz</a>
+                    <a href="imprint.html">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
