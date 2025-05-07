@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="350" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background map texture -->
+  <rect width="600" height="350" fill="#EBE3D5" />
+  
+  <!-- Map grid lines -->
+  <g stroke="#D4C8B9" stroke-width="1">
+    <line x1="0" y1="50" x2="600" y2="50" />
+    <line x1="0" y1="100" x2="600" y2="100" />
+    <line x1="0" y1="150" x2="600" y2="150" />
+    <line x1="0" y1="200" x2="600" y2="200" />
+    <line x1="0" y1="250" x2="600" y2="250" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    
+    <line x1="50" y1="0" x2="50" y2="350" />
+    <line x1="100" y1="0" x2="100" y2="350" />
+    <line x1="150" y1="0" x2="150" y2="350" />
+    <line x1="200" y1="0" x2="200" y2="350" />
+    <line x1="250" y1="0" x2="250" y2="350" />
+    <line x1="300" y1="0" x2="300" y2="350" />
+    <line x1="350" y1="0" x2="350" y2="350" />
+    <line x1="400" y1="0" x2="400" y2="350" />
+    <line x1="450" y1="0" x2="450" y2="350" />
+    <line x1="500" y1="0" x2="500" y2="350" />
+    <line x1="550" y1="0" x2="550" y2="350" />
+  </g>
+  
+  <!-- Main roads -->
+  <g stroke="#C4B5A0" stroke-width="3">
+    <path d="M100,100 L500,100" />
+    <path d="M300,50 L300,300" />
+    <path d="M150,150 L450,150" />
+    <path d="M200,200 L400,200" />
+  </g>
+  
+  <!-- Secondary roads -->
+  <g stroke="#D4C8B9" stroke-width="2">
+    <path d="M250,75 L350,75" />
+    <path d="M250,125 L350,125" />
+    <path d="M250,175 L350,175" />
+    <path d="M250,225 L350,225" />
+    <path d="M250,275 L350,275" />
+    
+    <path d="M125,150 L125,250" />
+    <path d="M175,125 L175,275" />
+    <path d="M225,100 L225,300" />
+    <path d="M275,75 L275,325" />
+    <path d="M325,50 L325,300" />
+    <path d="M375,75 L375,275" />
+    <path d="M425,100 L425,250" />
+    <path d="M475,125 L475,225" />
+  </g>
+  
+  <!-- Parks and green areas -->
+  <g fill="#C2D6BB" fill-opacity="0.5">
+    <circle cx="200" cy="150" r="30" />
+    <circle cx="400" cy="150" r="40" />
+    <rect x="250" y="250" width="100" height="50" rx="10" />
+  </g>
+  
+  <!-- Water -->
+  <path d="M50,50 Q100,75 150,50 Q200,25 250,50 L250,50 L250,0 L50,0 Z" fill="#BCD8E5" />
+  
+  <!-- Hotel location marker -->
+  <g>
+    <circle cx="300" cy="175" r="15" fill="#8B5A2B" />
+    <circle cx="300" cy="175" r="7" fill="#E3D5C0" />
+    <line x1="300" y1="190" x2="300" y2="210" stroke="#8B5A2B" stroke-width="2" />
+    <path d="M290,210 L300,225 L310,210 Z" fill="#8B5A2B" />
+  </g>
+  
+  <!-- Street names -->
+  <g fill="#6D5D47" font-family="Arial, sans-serif" font-size="10">
+    <text x="290" y="164" text-anchor="middle">Krätzernstraße</text>
+    <text x="335" y="185" text-anchor="start">Altstadt</text>
+    <text x="230" y="185" text-anchor="end">Bahnhof</text>
+    <text x="310" y="250" text-anchor="middle">St. Gallen</text>
+  </g>
+  
+  <!-- Compass rose -->
+  <g transform="translate(530,50)">
+    <circle cx="0" cy="0" r="20" fill="#E3D5C0" stroke="#8B5A2B" />
+    <line x1="0" y1="-18" x2="0" y2="18" stroke="#8B5A2B" stroke-width="1" />
+    <line x1="-18" y1="0" x2="18" y2="0" stroke="#8B5A2B" stroke-width="1" />
+    <text x="0" y="-5" font-family="Arial, sans-serif" fill="#8B5A2B" font-size="10" text-anchor="middle">N</text>
+    <text x="0" y="13" font-family="Arial, sans-serif" fill="#8B5A2B" font-size="10" text-anchor="middle">S</text>
+    <text x="13" y="4" font-family="Arial, sans-serif" fill="#8B5A2B" font-size="10" text-anchor="middle">E</text>
+    <text x="-13" y="4" font-family="Arial, sans-serif" fill="#8B5A2B" font-size="10" text-anchor="middle">W</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(30,310)">
+    <rect width="180" height="30" fill="#EBE3D5" stroke="#8B5A2B" stroke-width="1" />
+    <circle cx="20" cy="15" r="7" fill="#8B5A2B" />
+    <text x="35" y="19" font-family="Arial, sans-serif" fill="#6D5D47" font-size="12">Boutique Hotel Stocken</text>
+  </g>
+  
+  <!-- Address label -->
+  <g>
+    <text x="300" y="140" font-family="Arial, sans-serif" fill="#6D5D47" font-size="12" font-weight="bold" text-anchor="middle">Boutique Hotel Stocken</text>
+    <text x="300" y="155" font-family="Arial, sans-serif" fill="#6D5D47" font-size="10" text-anchor="middle">Krätzernstraße 10, 9014 St. Gallen</text>
+  </g>
+</svg>
