@@ -20,7 +20,7 @@ const Home: React.FC = () => {
       >
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="hero-content text-center py-12 absolute inset-0 flex flex-col items-center justify-center">
+        <div className="hero-content text-center py-12 absolute inset-0 flex flex-col items-center justify-start pt-12 md:pt-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
             Willkommen im Boutique Hotel Stocken
           </h1>
