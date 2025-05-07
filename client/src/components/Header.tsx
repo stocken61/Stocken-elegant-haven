@@ -40,38 +40,26 @@ const Header: React.FC = () => {
     <header className={`bg-white shadow-md sticky top-0 z-50 transition-all ${scrolled ? 'py-2' : 'py-3'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/">
-          <a className="flex items-center">
-            <StockenLogo className="h-14" />
-          </a>
+        <Link href="/" className="flex items-center">
+          <StockenLogo className="h-14" />
         </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <Link href="/">
-            <a className={`nav-link ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Home
-            </a>
+          <Link href="/" className={`nav-link ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+            Home
           </Link>
-          <Link href="/about">
-            <a className={`nav-link ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Über uns
-            </a>
+          <Link href="/about" className={`nav-link ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+            Über uns
           </Link>
-          <Link href="/rooms">
-            <a className={`nav-link ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Zimmer
-            </a>
+          <Link href="/rooms" className={`nav-link ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+            Zimmer
           </Link>
-          <Link href="/restaurant">
-            <a className={`nav-link ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Restaurant
-            </a>
+          <Link href="/restaurant" className={`nav-link ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+            Restaurant
           </Link>
-          <Link href="/contact">
-            <a className={`nav-link ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Kontakt
-            </a>
+          <Link href="/contact" className={`nav-link ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+            Kontakt
           </Link>
         </nav>
         
@@ -107,45 +95,40 @@ const Header: React.FC = () => {
         className={`bg-white md:hidden py-5 px-4 border-t absolute w-full shadow-lg transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 invisible'}`}
       >
         <div className="space-y-4">
-          <Link href="/">
-            <a 
-              className={`block ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
-              onClick={closeMenu}
-            >
-              Home
-            </a>
+          <Link 
+            href="/"
+            className={`block ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
+            onClick={closeMenu}
+          >
+            Home
           </Link>
-          <Link href="/about">
-            <a 
-              className={`block ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
-              onClick={closeMenu}
-            >
-              Über uns
-            </a>
+          <Link 
+            href="/about"
+            className={`block ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
+            onClick={closeMenu}
+          >
+            Über uns
           </Link>
-          <Link href="/rooms">
-            <a 
-              className={`block ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
-              onClick={closeMenu}
-            >
-              Zimmer
-            </a>
+          <Link 
+            href="/rooms"
+            className={`block ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
+            onClick={closeMenu}
+          >
+            Zimmer
           </Link>
-          <Link href="/restaurant">
-            <a 
-              className={`block ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
-              onClick={closeMenu}
-            >
-              Restaurant
-            </a>
+          <Link 
+            href="/restaurant"
+            className={`block ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
+            onClick={closeMenu}
+          >
+            Restaurant
           </Link>
-          <Link href="/contact">
-            <a 
-              className={`block ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
-              onClick={closeMenu}
-            >
-              Kontakt
-            </a>
+          <Link 
+            href="/contact"
+            className={`block ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
+            onClick={closeMenu}
+          >
+            Kontakt
           </Link>
           
           <div className="pt-3 border-t border-neutral">
