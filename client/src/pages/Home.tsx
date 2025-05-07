@@ -11,11 +11,11 @@ const Home: React.FC = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="hero relative h-[70vh] min-h-[400px] max-h-[600px]" 
+        className="hero relative h-[60vh] min-h-[350px] max-h-[500px]" 
         style={{ 
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center center'
+          backgroundPosition: 'center top'
         }}
       >
         {/* Overlay for better text readability */}
