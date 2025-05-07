@@ -1,0 +1,46 @@
+import { Switch, Route, useLocation } from "wouter";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { queryClient } from "./lib/queryClient";
+import { Toaster } from "@/components/ui/toaster";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import Layout from "@/components/Layout";
+import Home from "@/pages/Home";
+import About from "@/pages/About";
+import Rooms from "@/pages/Rooms";
+import RoomDetail from "@/pages/RoomDetail";
+import Restaurant from "@/pages/Restaurant";
+import Contact from "@/pages/Contact";
+import Legal from "@/pages/Legal";
+import NotFound from "@/pages/not-found";
+
+function Router() {
+  return (
+    <Switch>
+      <Route path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/rooms" component={Rooms} />
+      <Route path="/room/:id" component={RoomDetail} />
+      <Route path="/restaurant" component={Restaurant} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/legal/:type" component={Legal} />
+      <Route component={NotFound} />
+    </Switch>
+  );
+}
+
+function App() {
+  const [location] = useLocation();
+  
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Layout>
+          <Router />
+        </Layout>
+        <Toaster />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
+
+export default App;
