@@ -22,8 +22,8 @@
   --primary-dark: 158 69% 12%;
   --primary-foreground: 0 0% 100%;
   
-  --secondary: 40 42% 81%;
-  --secondary-light: 40 42% 89%;
+  --secondary: 40 42% 70%;
+  --secondary-light: 40 42% 75%;
   --secondary-dark: 40 42% 60%;
   --secondary-foreground: 20 14.3% 4.1%;
   
@@ -52,7 +52,7 @@
   --input: 240 3.7% 15.9%;
   --primary: 158 67% 18%;
   --primary-foreground: 0 0% 98%;
-  --secondary: 40 42% 81%;
+  --secondary: 40 42% 70%;
   --secondary-foreground: 0 0% 98%;
   --accent: 142 76% 36%;
   --accent-foreground: 0 0% 98%;
