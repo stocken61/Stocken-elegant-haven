@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="hero relative h-[70vh] min-h-[400px] max-h-[600px]" 
+        className="hero relative h-[60vh] min-h-[350px] max-h-[500px]" 
         style={{ 
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
@@ -44,9 +44,9 @@ const Home: React.FC = () => {
       </section>
       
       {/* Booking Widget Placeholder */}
-      <section className="booking-widget py-8 bg-neutral-light">
+      <section className="booking-widget py-0 -mt-1 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <div id="mews-booking-widget" className="bg-white p-6 rounded-lg shadow-md">
+          <div id="mews-booking-widget" className="bg-white p-6 rounded-lg shadow-md my-4">
             {/* Platzhalter für Mews PMS System - wird später durch tatsächliches Buchungssystem ersetzt */}
             <p className="text-center text-neutral-dark font-bold">Buchen Sie direkt bei uns für die besten Preise</p>
             <p className="text-center text-xs text-neutral-dark mb-2">(Hier wird später das Mews PMS Buchungssystem integriert)</p>
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* About Section */}
-      <section className="about-preview py-16">
+      <section className="about-preview py-16 mt-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 p-6">
