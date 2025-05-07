@@ -316,7 +316,7 @@ const Home: React.FC = () => {
                   </a>
                   <a 
                     href="tel:+41793000161"
-                    className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
+                    className="bg-secondary hover:bg-secondary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
                   >
                     <FontAwesomeIcon icon="phone" className="mr-2" />
                     Anrufen
