@@ -37,10 +37,10 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`bg-white shadow-md sticky top-0 z-50 transition-all ${scrolled ? 'py-0.5' : 'py-1'}`}>
+    <header className={`bg-white shadow-md sticky top-0 z-50 transition-all ${scrolled ? 'py-0' : 'py-0'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center -my-4">
           <img src={logoImage} alt="Stocken Hotel Logo" className="h-44" />
         </Link>
         
