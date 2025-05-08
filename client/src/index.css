@@ -5,16 +5,6 @@
 @tailwind utilities;
 
 /* Custom styles */
-.section-heading {
-  background-color: #C6A75E;
-  color: #333;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.375rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 :root {
   --background: 0 0% 100%;
