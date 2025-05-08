@@ -16,7 +16,7 @@ const About: React.FC = () => {
             Über Stocken
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Entdecken Sie die Geschichte und Philosophie unseres historischen Boutique-Hotels in den Schweizer Alpen.
+            Entdecken Sie die Geschichte und Philosophie unseres historischen Boutique-Hotels.
           </p>
         </div>
       </section>
