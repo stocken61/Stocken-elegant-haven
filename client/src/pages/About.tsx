@@ -73,9 +73,9 @@ const About: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-light rounded-full text-white mb-6">
                 <FontAwesomeIcon icon="utensils" className="text-2xl" />
               </div>
-              <h3 className="text-xl font-serif font-bold mb-4">Lokale Küche</h3>
+              <h3 className="text-xl font-serif font-bold mb-4">Exklusive Küche</h3>
               <p className="text-neutral-dark">
-                Unsere Küche setzt auf Schweizer Spezialitäten mit modernem Touch, zubereitet mit frischen Zutaten von lokalen Produzenten.
+                Unsere Küche verbindet Qualität, Authentizität und ausgewählte Zutaten. Inspiriert von der Schwarzmeerregion und verfeinert mit Schweizer Handwerkskunst, servieren wir Spezialitäten wie das Pontus-Frühstück in stilvoller Atmosphäre – exklusiv, ehrlich und handgemacht.
               </p>
             </div>
             
