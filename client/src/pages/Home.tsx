@@ -116,9 +116,11 @@ const Home: React.FC = () => {
       {/* Room Categories Preview */}
       <section className="rooms-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 py-3 px-6 rounded-md shadow-sm inline-block mx-auto" style={{ backgroundColor: '#D4AF37' }}>
-            Unsere Zimmer
-          </h2>
+          <div className="section-container">
+            <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 gold-heading">
+              Unsere Zimmer
+            </h2>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Deluxe Zimmer */}
@@ -198,9 +200,11 @@ const Home: React.FC = () => {
       {/* Services Preview */}
       <section className="services-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 py-3 px-6 rounded-md shadow-sm inline-block mx-auto" style={{ backgroundColor: '#D4AF37' }}>
-            Unsere Services
-          </h2>
+          <div className="section-container">
+            <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 gold-heading">
+              Unsere Services
+            </h2>
+          </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -259,7 +263,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-1/2 p-6">
-              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 py-3 px-6 rounded-md shadow-sm" style={{ backgroundColor: '#D4AF37' }}>
+              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 gold-heading">
                 Kontaktieren Sie uns
               </h2>
               
