@@ -9,12 +9,12 @@ import {
   faUserFriends, faVectorSquare, faBed, 
   faArrowRight, faCheck, faBars, faMapMarkerAlt, 
   faPhoneAlt, faEnvelope, faSearch, faCoffee,
-  faWifi, faPhone
+  faWifi, faPhone, faUsers, faCar, faTrain,
+  faStar, faStarHalfAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { 
   faFacebookF, faInstagram, faTwitter 
 } from "@fortawesome/free-brands-svg-icons";
-import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 
 // Add icons to the library
 library.add(
@@ -22,7 +22,7 @@ library.add(
   faUserFriends, faVectorSquare, faBed, 
   faArrowRight, faCheck, faBars, faMapMarkerAlt,
   faPhoneAlt, faEnvelope, faSearch, faCoffee,
-  faWifi, faPhone,
+  faWifi, faPhone, faUsers, faCar, faTrain,
   faFacebookF, faInstagram, faTwitter,
   faStar, faStarHalfAlt
 );
