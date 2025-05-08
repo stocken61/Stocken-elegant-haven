@@ -26,7 +26,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <img src="/assets/facade/stocken-facade.png" alt="Stocken Hotel Historisches Gebäude" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+              <img src="/assets/stocken-facade.png" alt="Stocken Hotel Historisches Gebäude" className="rounded-lg shadow-lg w-full h-auto object-cover" />
             </div>
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
