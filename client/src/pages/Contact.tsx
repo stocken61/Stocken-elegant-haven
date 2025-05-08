@@ -35,8 +35,8 @@ const Contact: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-xl mb-3">Adresse</h3>
                   <p className="text-neutral-dark mb-1">Stocken Hotel</p>
-                  <p className="text-neutral-dark mb-1">Bergstrasse 123</p>
-                  <p className="text-neutral-dark mb-1">6340 Baar</p>
+                  <p className="text-neutral-dark mb-1">Kräzernstrasse 10</p>
+                  <p className="text-neutral-dark mb-1">9014 St. Gallen</p>
                   <p className="text-neutral-dark">Schweiz</p>
                 </div>
                 <div>
@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
                 <h3 className="font-semibold text-xl mb-3">Anfahrt</h3>
                 <div className="bg-neutral rounded-lg w-full h-80">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43323.79854758616!2d8.506938637931473!3d47.18795877248435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aaa1d3a568acd%3A0x7810c568e0d64548!2s6340%20Baar%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1654789542944!5m2!1sen!2sus" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.0939024457154!2d9.366933876775936!3d47.4234029017655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1e4f36b7e5f7%3A0x7e5a8cd0240b91d8!2sKr%C3%A4zernstrasse%2010%2C%209014%20St.%20Gallen%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1698920523071!5m2!1sen!2sus" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 

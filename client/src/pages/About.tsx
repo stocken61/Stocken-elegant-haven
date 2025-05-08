@@ -163,7 +163,7 @@ const About: React.FC = () => {
                 Unsere Lage
               </h2>
               <p className="text-lg text-neutral-dark mb-4">
-                Das Stocken Hotel liegt im malerischen Ort St. Gallen, mit seiner reichen Geschichte und kulturellen Vielfalt. Die idyllische Lage bietet einen wunderschönen Ausgangspunkt, um die Stadt und die Umgebung zu erkunden.
+                Das Stocken Hotel liegt im malerischen St. Gallen an der Kräzernstrasse 10, mit seiner reichen Geschichte und kulturellen Vielfalt. Die idyllische Lage bietet einen wunderschönen Ausgangspunkt, um die Stadt und die Umgebung zu erkunden.
               </p>
               <p className="text-lg text-neutral-dark mb-4">
                 Unser Hotel ist der perfekte Ausgangspunkt für Ausflüge in die Stadt und die umliegende Region. Die Gegend bietet zahlreiche kulturelle Sehenswürdigkeiten, Einkaufsmöglichkeiten und Freizeitaktivitäten für jeden Geschmack.
