@@ -29,7 +29,7 @@ const Rooms: React.FC = () => {
       <section 
         className="relative py-20 bg-cover bg-center" 
         style={{ 
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/hero_main.png')`,
+          backgroundColor: '#C6A75E',
         }}
       >
         <div className="container mx-auto px-4 text-center">
