@@ -34,16 +34,15 @@ const Contact: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 <div>
                   <h3 className="font-semibold text-xl mb-3">Adresse</h3>
-                  <p className="text-neutral-dark mb-1">Stocken Hotel</p>
+                  <p className="text-neutral-dark mb-1">Boutique Hotel Stocken</p>
                   <p className="text-neutral-dark mb-1">Kräzernstrasse 10</p>
                   <p className="text-neutral-dark mb-1">9014 St. Gallen</p>
                   <p className="text-neutral-dark">Schweiz</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-xl mb-3">Kontaktdaten</h3>
-                  <p className="text-neutral-dark mb-1">Tel: +41 44 123 45 67</p>
-                  <p className="text-neutral-dark mb-1">Fax: +41 44 123 45 68</p>
-                  <p className="text-neutral-dark">E-Mail: info@stocken.ch</p>
+                  <p className="text-neutral-dark mb-1">Tel: +41 79 300 01 61</p>
+                  <p className="text-neutral-dark">E-Mail: info@hotelstocken.com</p>
                 </div>
               </div>
               
