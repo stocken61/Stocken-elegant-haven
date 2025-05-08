@@ -1,7 +1,6 @@
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import "./styles/custom.css";
 
 // Add Font Awesome CSS
 import { library } from "@fortawesome/fontawesome-svg-core";

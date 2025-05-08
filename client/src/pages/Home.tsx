@@ -114,13 +114,11 @@ const Home: React.FC = () => {
       </section>
 
       {/* Room Categories Preview */}
-      <section className="rooms-preview py-16 gold-bg">
+      <section className="rooms-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <div className="section-container">
-            <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 gold-heading">
-              Unsere Zimmer
-            </h2>
-          </div>
+          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
+            Unsere Zimmer
+          </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Deluxe Zimmer */}
@@ -198,13 +196,11 @@ const Home: React.FC = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="services-preview py-16 gold-bg">
+      <section className="services-preview py-16">
         <div className="container mx-auto px-4">
-          <div className="section-container">
-            <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 gold-heading">
-              Unsere Services
-            </h2>
-          </div>
+          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
+            Unsere Services
+          </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -241,7 +237,7 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="map-marker-alt" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-heading-gray">Zentrale Lage</h3>
+              <h3 className="text-xl font-bold mb-2">Zentrale Lage</h3>
               <p className="text-neutral-dark">
                 Perfekt gelegen im Herzen von St. Gallen.
               </p>
@@ -263,7 +259,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-1/2 p-6">
-              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 gold-heading">
+              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
                 Kontaktieren Sie uns
               </h2>
               
@@ -293,7 +289,7 @@ const Home: React.FC = () => {
             
             <div className="lg:w-1/2 p-6">
               <div className="bg-white h-80 rounded-lg shadow-md p-8 flex flex-col items-center justify-center">
-                <h3 className="text-2xl font-serif font-bold text-heading-gray mb-4">Boutique Hotel Stocken</h3>
+                <h3 className="text-2xl font-serif font-bold text-neutral-dark mb-4">Boutique Hotel Stocken</h3>
                 <div className="mb-8 text-center space-y-4">
                   <p className="flex items-center justify-center">
                     <FontAwesomeIcon icon="map-marker-alt" className="text-primary mr-2" />
