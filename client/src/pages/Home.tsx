@@ -116,7 +116,7 @@ const Home: React.FC = () => {
       {/* Room Categories Preview */}
       <section className="rooms-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 bg-gold-bg py-3 px-6 rounded-md shadow-sm inline-block mx-auto">
+          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 py-3 px-6 rounded-md shadow-sm inline-block mx-auto" style={{ backgroundColor: '#D4AF37' }}>
             Unsere Zimmer
           </h2>
           
@@ -198,7 +198,7 @@ const Home: React.FC = () => {
       {/* Services Preview */}
       <section className="services-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 bg-gold-bg py-3 px-6 rounded-md shadow-sm inline-block mx-auto">
+          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 py-3 px-6 rounded-md shadow-sm inline-block mx-auto" style={{ backgroundColor: '#D4AF37' }}>
             Unsere Services
           </h2>
           
@@ -259,7 +259,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-1/2 p-6">
-              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 bg-gold-bg py-3 px-6 rounded-md shadow-sm">
+              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 py-3 px-6 rounded-md shadow-sm" style={{ backgroundColor: '#D4AF37' }}>
                 Kontaktieren Sie uns
               </h2>
               
