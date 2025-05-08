@@ -42,6 +42,15 @@ const Rooms: React.FC = () => {
         </div>
       </section>
       
+      {/* Page Header */}
+      <section className="page-header">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-serif font-bold text-white">
+            Zimmer & Suiten
+          </h2>
+        </div>
+      </section>
+      
       {/* Rooms Filter and List */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -89,9 +98,9 @@ const Rooms: React.FC = () => {
       </section>
       
       {/* Amenities Section */}
-      <section className="py-20 bg-neutral-light">
+      <section className="page-header">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-12 text-center">
+          <h2 className="text-3xl font-serif font-bold text-white mb-12 text-center">
             Hotelausstattung
           </h2>
           

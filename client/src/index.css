@@ -83,6 +83,12 @@
 }
 
 @layer components {
+  .page-header {
+    background-color: #C6A75E;
+    color: white;
+    padding: 3rem 0;
+  }
+
   .hero-section {
     min-height: 80vh;
     background-position: center;
