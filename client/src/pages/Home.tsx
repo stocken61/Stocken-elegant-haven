@@ -114,9 +114,9 @@ const Home: React.FC = () => {
       </section>
 
       {/* Room Categories Preview */}
-      <section className="rooms-preview py-16 golden-bg">
+      <section className="rooms-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-center text-white mb-10">
+          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
             Unsere Zimmer
           </h2>
           
@@ -196,9 +196,9 @@ const Home: React.FC = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="services-preview py-16 golden-bg">
+      <section className="services-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-center text-white mb-10">
+          <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
             Unsere Services
           </h2>
           
@@ -255,28 +255,28 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Preview */}
-      <section className="contact-preview py-16 golden-bg">
+      <section className="contact-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-1/2 p-6">
-              <h2 className="text-3xl font-serif font-bold text-white mb-6">
+              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
                 Kontaktieren Sie uns
               </h2>
               
               <div className="space-y-4 mb-6">
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="map-marker-alt" className="text-white mt-1 mr-3" />
-                  <p className="text-white">Krätzernstraße 10, 9014 St. Gallen, Schweiz</p>
+                  <FontAwesomeIcon icon="map-marker-alt" className="text-primary-light mt-1 mr-3" />
+                  <p className="text-neutral-dark">Krätzernstraße 10, 9014 St. Gallen, Schweiz</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="phone" className="text-white mt-1 mr-3" />
-                  <p className="text-white">+41 79 300 01 61</p>
+                  <FontAwesomeIcon icon="phone" className="text-primary-light mt-1 mr-3" />
+                  <p className="text-neutral-dark">+41 79 300 01 61</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="envelope" className="text-white mt-1 mr-3" />
-                  <p className="text-white">reservation@hotelstocken.com</p>
+                  <FontAwesomeIcon icon="envelope" className="text-primary-light mt-1 mr-3" />
+                  <p className="text-neutral-dark">reservation@hotelstocken.com</p>
                 </div>
               </div>
               
