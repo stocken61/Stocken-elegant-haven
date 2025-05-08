@@ -7,10 +7,7 @@ const About: React.FC = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="relative py-12 bg-cover bg-center" 
-        style={{ 
-          backgroundColor: '#8C6A2F',
-        }}
+        className="relative py-12 bg-cover bg-center bg-primary" 
       >
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-3">
