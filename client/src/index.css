@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 /* Custom styles */
+.golden-bg {
+  background-color: #C6A75E;
+  color: white;
+}
 
 :root {
   --background: 0 0% 100%;
