@@ -255,7 +255,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Preview */}
-      <section className="contact-preview py-16 bg-neutral-light">
+      <section className="contact-preview py-16 gold-bg">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-1/2 p-6">
