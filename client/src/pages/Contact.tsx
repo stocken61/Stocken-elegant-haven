@@ -115,21 +115,21 @@ const Contact: React.FC = () => {
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-medium mb-3">Ist das Frühstück im Zimmerpreis inbegriffen?</h3>
                 <p className="text-neutral-dark">
-                  Ja, unser reichhaltiges Frühstücksbuffet ist im Zimmerpreis inbegriffen und wird täglich von 07:00 bis 10:30 Uhr im Restaurant serviert.
+                  Nein, das Frühstück ist nicht im Zimmerpreis enthalten. Unser reichhaltiges Frühstücksbuffet können Sie täglich von 07:00 bis 10:30 Uhr im Restaurant gegen Aufpreis genießen.
                 </p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-medium mb-3">Gibt es Parkplätze beim Hotel?</h3>
                 <p className="text-neutral-dark">
-                  Ja, wir bieten kostenfreie Parkplätze für unsere Gäste an. Diese stehen auf Basis "first come, first served" zur Verfügung.
+                  Ja, wir bieten kostenfreie Parkplätze für unsere Gäste an. Diese sind grundsätzlich verfügbar und müssen nicht reserviert werden.
                 </p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-medium mb-3">Sind Haustiere im Hotel erlaubt?</h3>
                 <p className="text-neutral-dark">
-                  Ja, kleine bis mittelgroße Hunde sind in ausgewählten Zimmern gegen eine zusätzliche Gebühr willkommen. Bitte informieren Sie uns bei der Buchung über Ihr Haustier.
+                  Ja, Haustiere sind grundsätzlich erlaubt, mit Ausnahme von Hunden. Bitte informieren Sie uns bei der Buchung über Ihr Haustier.
                 </p>
               </div>
               
