@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 /* Custom styles */
+.section-title {
+  color: #C6A75E;
+  font-weight: bold;
+}
 
 :root {
   --background: 0 0% 100%;
