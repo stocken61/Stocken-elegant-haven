@@ -114,7 +114,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Room Categories Preview */}
-      <section className="rooms-preview py-16 bg-neutral-light">
+      <section className="rooms-preview py-16 bg-gold-bg">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
             Unsere Zimmer
@@ -196,7 +196,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="services-preview py-16">
+      <section className="services-preview py-16 bg-gold-bg">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
             Unsere Services
@@ -255,7 +255,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Preview */}
-      <section className="contact-preview py-16 bg-neutral-light">
+      <section className="contact-preview py-16 bg-gold-bg">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-1/2 p-6">
