@@ -114,7 +114,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Room Categories Preview */}
-      <section className="rooms-preview py-16 bg-neutral-light">
+      <section className="rooms-preview py-16 gold-bg">
         <div className="container mx-auto px-4">
           <div className="section-container">
             <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 gold-heading">
@@ -198,7 +198,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="services-preview py-16 bg-neutral-light">
+      <section className="services-preview py-16 gold-bg">
         <div className="container mx-auto px-4">
           <div className="section-container">
             <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10 gold-heading">
