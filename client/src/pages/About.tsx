@@ -26,14 +26,14 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <img src="/assets/facade.webp" alt="Stocken Hotel Historisches Gebäude" className="rounded-lg shadow-lg" />
+              <img src="/assets/facade/stocken-facade.png" alt="Stocken Hotel Historisches Gebäude" className="rounded-lg shadow-lg w-full h-auto object-cover" />
             </div>
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
                 Unsere Geschichte
               </h2>
               <p className="text-lg text-neutral-dark mb-4">
-                Das Stocken Hotel blickt auf eine lange und traditionsreiche Geschichte zurück. Im Jahr 1784 gegründet, begann es als kleines Gasthaus für Reisende, die die malerischen Pässe der Schweizer Alpen überquerten.
+                Das Stocken Hotel blickt auf eine lange und traditionsreiche Geschichte zurück. Im Jahr 1784 gegründet, begann es als kleines Gasthaus für Reisende, die die malerische Stadt St. Gallen besuchten.
               </p>
               <p className="text-lg text-neutral-dark mb-4">
                 Im Laufe der Jahrhunderte hat sich unser Haus stetig weiterentwickelt und angepasst, ohne dabei seinen ursprünglichen Charme und seine Authentizität zu verlieren. Die charakteristische gelbe Fassade mit dem Schweizer Wappen ist seit Generationen ein bekannter Anblick in der Region.
@@ -163,10 +163,10 @@ const About: React.FC = () => {
                 Unsere Lage
               </h2>
               <p className="text-lg text-neutral-dark mb-4">
-                Das Stocken Hotel liegt im malerischen Ort Baar, umgeben von der atemberaubenden Schönheit der Schweizer Alpen. Die idyllische Lage bietet einen spektakulären Panoramablick auf die Bergketten und grünen Täler.
+                Das Stocken Hotel liegt im malerischen Ort St. Gallen, mit seiner reichen Geschichte und kulturellen Vielfalt. Die idyllische Lage bietet einen wunderschönen Ausgangspunkt, um die Stadt und die Umgebung zu erkunden.
               </p>
               <p className="text-lg text-neutral-dark mb-4">
-                Nur 30 Minuten von Zürich entfernt, ist unser Hotel der perfekte Ausgangspunkt für Erkundungstouren in die Alpen oder Ausflüge in die pulsierende Stadt. Die Region bietet zahlreiche Aktivitäten für Naturliebhaber, von Wandern und Mountainbiken im Sommer bis hin zu Skifahren und Schneeschuhwandern im Winter.
+                Unser Hotel ist der perfekte Ausgangspunkt für Ausflüge in die Stadt und die umliegende Region. Die Gegend bietet zahlreiche kulturelle Sehenswürdigkeiten, Einkaufsmöglichkeiten und Freizeitaktivitäten für jeden Geschmack.
               </p>
               <div className="mt-8">
                 <h3 className="text-xl font-medium mb-3">Anfahrt</h3>
@@ -175,7 +175,7 @@ const About: React.FC = () => {
                   <div>
                     <p className="font-medium">Mit dem Auto</p>
                     <p className="text-neutral-dark">
-                      Über die A4 bis Ausfahrt Baar, dann der Beschilderung folgen.
+                      Über die A1 bis Ausfahrt St. Gallen-Kreuzbleiche, dann der Beschilderung in die Innenstadt folgen.
                     </p>
                   </div>
                 </div>
@@ -184,7 +184,7 @@ const About: React.FC = () => {
                   <div>
                     <p className="font-medium">Mit der Bahn</p>
                     <p className="text-neutral-dark">
-                      Bis Bahnhof Baar, dann 10 Minuten mit dem Taxi oder dem Hotelshuttle.
+                      Bis Bahnhof St. Gallen, dann 5 Minuten zu Fuß oder mit dem Taxi zum Hotel.
                     </p>
                   </div>
                 </div>
