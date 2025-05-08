@@ -7,31 +7,31 @@ const About: React.FC = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="relative py-20 bg-cover bg-center" 
+        className="relative py-12 bg-cover bg-center" 
         style={{ 
           backgroundColor: '#8C6A2F',
         }}
       >
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-3">
             Über Stocken
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-white mx-auto">
             Entdecken Sie die Geschichte und Philosophie unseres historischen Boutique-Hotels.
           </p>
         </div>
       </section>
       
       {/* History Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 p-6 flex justify-center items-center">
+          <div className="flex flex-col lg:flex-row items-start">
+            <div className="lg:w-5/12 p-4 flex justify-center items-start">
               <div className="rounded-lg overflow-hidden shadow-lg w-3/4">
                 <img src={stockenFacade} alt="Stocken Hotel Historisches Gebäude" className="w-full h-auto object-cover" />
               </div>
             </div>
-            <div className="lg:w-1/2 p-6">
+            <div className="lg:w-7/12 p-4">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
                 Unsere Geschichte
               </h2>
@@ -50,10 +50,10 @@ const About: React.FC = () => {
       </section>
       
       {/* Philosophy Section */}
-      <section className="py-20 bg-neutral-light">
+      <section className="py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-4">
               Unsere Philosophie
             </h2>
             <p className="text-lg text-neutral-dark">
@@ -96,12 +96,12 @@ const About: React.FC = () => {
       </section>
       
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 text-center">
+          <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-4 text-center">
             Unser Team
           </h2>
-          <p className="text-lg text-neutral-dark text-center max-w-3xl mx-auto mb-16">
+          <p className="text-lg text-neutral-dark text-center max-w-3xl mx-auto mb-10">
             Hinter dem Stocken Hotel steht ein engagiertes Team von Fachleuten, die sich der Exzellenz und dem Service verschrieben haben.
           </p>
           
@@ -161,8 +161,8 @@ const About: React.FC = () => {
       <section className="py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 p-6">
-              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
+            <div className="lg:w-7/12 p-4">
+              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-4">
                 Unsere Lage
               </h2>
               <p className="text-lg text-neutral-dark mb-4">
@@ -193,7 +193,7 @@ const About: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 p-6 flex justify-center items-center">
+            <div className="lg:w-5/12 p-4 flex justify-center items-start">
               <div className="rounded-lg overflow-hidden shadow-lg w-3/4">
                 <img src="/assets/hero_main.png" alt="Umgebung des Stocken Hotels" className="w-full h-auto object-cover" />
               </div>
