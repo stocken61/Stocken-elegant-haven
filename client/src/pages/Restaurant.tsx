@@ -21,6 +21,15 @@ const Restaurant: React.FC = () => {
         </div>
       </section>
       
+      {/* Page Header */}
+      <section className="page-header">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-serif font-bold text-white">
+            Unser Restaurant
+          </h2>
+        </div>
+      </section>
+      
       {/* About Restaurant Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -67,9 +76,9 @@ const Restaurant: React.FC = () => {
       </section>
       
       {/* Menu Section */}
-      <section className="py-20 bg-neutral-light">
+      <section className="page-header">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-12 text-center">
+          <h2 className="text-3xl font-serif font-bold text-white mb-12 text-center">
             Unsere Speisekarte
           </h2>
           
@@ -234,13 +243,13 @@ const Restaurant: React.FC = () => {
       </section>
       
       {/* Reservation Section */}
-      <section className="py-20 bg-white">
+      <section className="page-header">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
+            <h2 className="text-3xl font-serif font-bold text-white mb-6">
               Tisch reservieren
             </h2>
-            <p className="text-lg text-neutral-dark mb-8">
+            <p className="text-lg text-white mb-8">
               Sichern Sie sich einen Tisch in unserem Restaurant und genießen Sie die hervorragende Küche und den atemberaubenden Ausblick.
             </p>
             
@@ -255,7 +264,7 @@ const Restaurant: React.FC = () => {
               </a>
             </div>
             
-            <p className="text-sm text-neutral-dark mt-6">
+            <p className="text-sm text-white mt-6">
               Für Gruppen ab 8 Personen bitten wir um Reservierung mindestens 48 Stunden im Voraus.
             </p>
           </div>
@@ -263,17 +272,17 @@ const Restaurant: React.FC = () => {
       </section>
       
       {/* Private Events Section */}
-      <section className="py-20 bg-neutral-light">
+      <section className="page-header">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
+              <h2 className="text-3xl font-serif font-bold text-white mb-6">
                 Private Events & Feiern
               </h2>
-              <p className="text-lg text-neutral-dark mb-4">
+              <p className="text-lg text-white mb-4">
                 Unser Restaurant bietet den perfekten Rahmen für Ihre privaten Feiern und Firmenveranstaltungen. Von Geburtstagen und Jubiläen bis hin zu Geschäftsessen und Teamevents – wir sorgen für ein unvergessliches Erlebnis.
               </p>
-              <p className="text-lg text-neutral-dark mb-6">
+              <p className="text-lg text-white mb-6">
                 Unser Event-Team hilft Ihnen gerne bei der Planung und Umsetzung Ihrer Veranstaltung. Wir können Menüs nach Ihren Wünschen anpassen und bieten verschiedene Räumlichkeiten für unterschiedliche Gruppengrößen.
               </p>
               
@@ -281,8 +290,8 @@ const Restaurant: React.FC = () => {
                 <div className="flex items-start">
                   <FontAwesomeIcon icon="users" className="text-primary-light mt-1 mr-3" />
                   <div>
-                    <h3 className="font-medium">Kapazität</h3>
-                    <p className="text-neutral-dark">
+                    <h3 className="font-medium text-white">Kapazität</h3>
+                    <p className="text-white">
                       Bis zu 60 Personen im Hauptrestaurant, bis zu 25 Personen im privaten Speiseraum
                     </p>
                   </div>
@@ -290,8 +299,8 @@ const Restaurant: React.FC = () => {
                 <div className="flex items-start">
                   <FontAwesomeIcon icon="glass-cheers" className="text-primary-light mt-1 mr-3" />
                   <div>
-                    <h3 className="font-medium">Anlässe</h3>
-                    <p className="text-neutral-dark">
+                    <h3 className="font-medium text-white">Anlässe</h3>
+                    <p className="text-white">
                       Hochzeiten, Geburtstage, Jubiläen, Firmenfeiern, Weihnachtsfeiern
                     </p>
                   </div>
@@ -299,8 +308,8 @@ const Restaurant: React.FC = () => {
                 <div className="flex items-start">
                   <FontAwesomeIcon icon="envelope" className="text-primary-light mt-1 mr-3" />
                   <div>
-                    <h3 className="font-medium">Anfragen</h3>
-                    <p className="text-neutral-dark">
+                    <h3 className="font-medium text-white">Anfragen</h3>
+                    <p className="text-white">
                       Bitte kontaktieren Sie uns unter events@stocken.ch für weitere Informationen
                     </p>
                   </div>
