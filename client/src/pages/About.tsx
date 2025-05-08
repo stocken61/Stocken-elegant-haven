@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import stockenFacade from '../assets/stocken-facade.png';
+import stockenFacade from '../assets/stocken-facade-square.jpg';
 
 const About: React.FC = () => {
   return (
