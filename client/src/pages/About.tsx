@@ -36,13 +36,13 @@ const About: React.FC = () => {
                 Unsere Geschichte
               </h2>
               <p className="text-lg text-neutral-dark mb-4">
-                Das Stocken Hotel blickt auf eine lange und traditionsreiche Geschichte zurück. Im Jahr 1784 gegründet, begann es als kleines Gasthaus für Reisende, die die malerische Stadt St. Gallen besuchten.
+                Das Boutique Hotel Stocken vereint Geschichte und Gegenwart auf einzigartige Weise. Unser traditionsreiches Gebäude stammt aus dem Jahr 1784 und wurde mit großer Sorgfalt restauriert, um seinen historischen Charme zu bewahren. Gleichzeitig haben wir es mit zeitgemäßem Design und modernstem Komfort ausgestattet.
               </p>
               <p className="text-lg text-neutral-dark mb-4">
-                Im Laufe der Jahrhunderte hat sich unser Haus stetig weiterentwickelt und angepasst, ohne dabei seinen ursprünglichen Charme und seine Authentizität zu verlieren. Die charakteristische gelbe Fassade mit dem Schweizer Wappen ist seit Generationen ein bekannter Anblick in der Region.
+                Die Geschichte unseres Hauses beginnt im 18. Jahrhundert – heute schreiben wir sie mit einer neuen Vision weiter: einen Ort zu schaffen, der die kulturelle Tiefe und architektonische Schönheit von St. Gallen würdigt und zugleich ein stilvolles Zuhause für Reisende von heute bietet.
               </p>
               <p className="text-lg text-neutral-dark">
-                2015 wurde das Hotel umfassend renoviert und modernisiert, wobei besonderer Wert auf die Erhaltung historischer Elemente gelegt wurde. Heute vereint das Stocken Hotel historischen Charme mit zeitgemäßem Komfort und bietet seinen Gästen ein unvergessliches Erlebnis.
+                Jedes Detail – von der Fassade bis zur Einrichtung – erzählt von unserer Leidenschaft für Qualität, Gastfreundschaft und Ästhetik.
               </p>
             </div>
           </div>
