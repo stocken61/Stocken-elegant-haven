@@ -94,9 +94,9 @@ const Contact: React.FC = () => {
       </section>
       
       {/* FAQ Section */}
-      <section className="py-20 bg-neutral-light">
+      <section className="py-20 golden-bg">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-12 text-center">
+          <h2 className="text-3xl font-serif font-bold text-white mb-12 text-center">
             Häufig gestellte Fragen
           </h2>
           
