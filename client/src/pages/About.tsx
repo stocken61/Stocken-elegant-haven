@@ -26,12 +26,12 @@ const About: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
-              <div className="flex justify-center">
-                <img src={stockenFacade} alt="Stocken Hotel Historisches Gebäude" className="rounded-lg shadow-lg w-2/3 h-auto object-cover" />
+            <div className="lg:w-1/2 p-6">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img src={stockenFacade} alt="Stocken Hotel Historisches Gebäude" className="w-full h-auto object-cover" />
               </div>
             </div>
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 p-6">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
                 Unsere Geschichte
               </h2>
@@ -161,7 +161,7 @@ const About: React.FC = () => {
       <section className="py-20 bg-neutral-light">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 p-6">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
                 Unsere Lage
               </h2>
@@ -193,8 +193,10 @@ const About: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2">
-              <img src="/assets/hero_main.png" alt="Umgebung des Stocken Hotels" className="rounded-lg shadow-lg" />
+            <div className="lg:w-1/2 p-6">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img src="/assets/hero_main.png" alt="Umgebung des Stocken Hotels" className="w-full h-auto object-cover" />
+              </div>
             </div>
           </div>
         </div>
