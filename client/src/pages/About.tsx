@@ -8,7 +8,7 @@ const About: React.FC = () => {
       <section 
         className="relative py-20 bg-cover bg-center" 
         style={{ 
-          backgroundColor: '#C6A75E',
+          backgroundColor: '#8C6A2F',
         }}
       >
         <div className="container mx-auto px-4 text-center">
