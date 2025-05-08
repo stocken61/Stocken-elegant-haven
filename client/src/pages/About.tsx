@@ -21,15 +21,6 @@ const About: React.FC = () => {
         </div>
       </section>
       
-      {/* Page Header */}
-      <section className="page-header">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-serif font-bold text-white">
-            Über uns
-          </h2>
-        </div>
-      </section>
-      
       {/* History Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -56,13 +47,13 @@ const About: React.FC = () => {
       </section>
       
       {/* Philosophy Section */}
-      <section className="py-20 golden-bg">
+      <section className="py-20 bg-neutral-light">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-serif font-bold text-white mb-6">
+            <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
               Unsere Philosophie
             </h2>
-            <p className="text-lg text-white">
+            <p className="text-lg text-neutral-dark">
               Wir glauben an authentische Schweizer Gastfreundschaft, nachhaltige Praktiken und die Schaffung unvergesslicher Erlebnisse für unsere Gäste.
             </p>
           </div>
@@ -164,35 +155,35 @@ const About: React.FC = () => {
       </section>
       
       {/* Location Section */}
-      <section className="py-20 golden-bg">
+      <section className="py-20 bg-neutral-light">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-serif font-bold text-white mb-6">
+              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
                 Unsere Lage
               </h2>
-              <p className="text-lg text-white mb-4">
+              <p className="text-lg text-neutral-dark mb-4">
                 Das Stocken Hotel liegt im malerischen Ort Baar, umgeben von der atemberaubenden Schönheit der Schweizer Alpen. Die idyllische Lage bietet einen spektakulären Panoramablick auf die Bergketten und grünen Täler.
               </p>
-              <p className="text-lg text-white mb-4">
+              <p className="text-lg text-neutral-dark mb-4">
                 Nur 30 Minuten von Zürich entfernt, ist unser Hotel der perfekte Ausgangspunkt für Erkundungstouren in die Alpen oder Ausflüge in die pulsierende Stadt. Die Region bietet zahlreiche Aktivitäten für Naturliebhaber, von Wandern und Mountainbiken im Sommer bis hin zu Skifahren und Schneeschuhwandern im Winter.
               </p>
               <div className="mt-8">
-                <h3 className="text-xl font-medium text-white mb-3">Anfahrt</h3>
+                <h3 className="text-xl font-medium mb-3">Anfahrt</h3>
                 <div className="flex items-start mb-2">
-                  <FontAwesomeIcon icon="car" className="text-white mt-1 mr-3" />
+                  <FontAwesomeIcon icon="car" className="text-primary-light mt-1 mr-3" />
                   <div>
-                    <p className="font-medium text-white">Mit dem Auto</p>
-                    <p className="text-white">
+                    <p className="font-medium">Mit dem Auto</p>
+                    <p className="text-neutral-dark">
                       Über die A4 bis Ausfahrt Baar, dann der Beschilderung folgen.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="train" className="text-white mt-1 mr-3" />
+                  <FontAwesomeIcon icon="train" className="text-primary-light mt-1 mr-3" />
                   <div>
-                    <p className="font-medium text-white">Mit der Bahn</p>
-                    <p className="text-white">
+                    <p className="font-medium">Mit der Bahn</p>
+                    <p className="text-neutral-dark">
                       Bis Bahnhof Baar, dann 10 Minuten mit dem Taxi oder dem Hotelshuttle.
                     </p>
                   </div>

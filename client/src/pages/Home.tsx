@@ -265,18 +265,18 @@ const Home: React.FC = () => {
               
               <div className="space-y-4 mb-6">
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="map-marker-alt" className="text-primary-light mt-1 mr-3" />
-                  <p className="text-neutral-dark">Krätzernstraße 10, 9014 St. Gallen, Schweiz</p>
+                  <FontAwesomeIcon icon="map-marker-alt" className="text-primary mt-1 mr-3" />
+                  <p>Krätzernstraße 10, 9014 St. Gallen, Schweiz</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="phone" className="text-primary-light mt-1 mr-3" />
-                  <p className="text-neutral-dark">+41 79 300 01 61</p>
+                  <FontAwesomeIcon icon="phone" className="text-primary mt-1 mr-3" />
+                  <p>+41 79 300 01 61</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <FontAwesomeIcon icon="envelope" className="text-primary-light mt-1 mr-3" />
-                  <p className="text-neutral-dark">reservation@hotelstocken.com</p>
+                  <FontAwesomeIcon icon="envelope" className="text-primary mt-1 mr-3" />
+                  <p>reservation@hotelstocken.com</p>
                 </div>
               </div>
               
