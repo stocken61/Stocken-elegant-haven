@@ -11,7 +11,7 @@ interface RoomCardProps {
 const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
   return (
     <div className="room-card bg-white rounded-lg overflow-hidden shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg h-full flex flex-col">
-      <div className="aspect-video overflow-hidden">
+      <div className="aspect-square sm:aspect-video overflow-hidden">
         <img 
           src={room.images[0]} 
           alt={room.name} 
@@ -24,18 +24,18 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
           <span className="text-primary-dark font-medium">ab {room.price} CHF</span>
         </div>
         <p className="text-neutral-dark text-sm mb-4">
-          {room.shortDescription.length > 80 ? room.shortDescription.substring(0, 80) + '...' : room.shortDescription}
+          {room.shortDescription.length > 70 ? room.shortDescription.substring(0, 70) + '...' : room.shortDescription}
         </p>
-        <div className="flex flex-wrap gap-3 mb-4">
+        <div className="flex flex-wrap gap-2 mb-4">
           <div className="flex items-center text-xs text-neutral-dark">
             <FontAwesomeIcon icon="user-friends" className="mr-1" />
             <span>{room.capacity} {room.capacity === 1 ? 'Person' : 'Personen'}</span>
           </div>
-          <div className="flex items-center text-xs text-neutral-dark">
+          <div className="flex items-center text-xs text-neutral-dark ml-2">
             <FontAwesomeIcon icon="vector-square" className="mr-1" />
             <span>{room.size} m²</span>
           </div>
-          <div className="flex items-center text-xs text-neutral-dark">
+          <div className="flex items-center text-xs text-neutral-dark w-full mt-1">
             <FontAwesomeIcon icon="bed" className="mr-1" />
             <span>{room.bed}</span>
           </div>
