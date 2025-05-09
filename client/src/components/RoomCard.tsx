@@ -20,11 +20,11 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
       </div>
       <div className="p-2 sm:p-3 flex flex-col flex-grow">
         <div className="flex justify-between items-center mb-1">
-          <h3 className="text-sm sm:text-base font-serif font-bold truncate">{room.name}</h3>
+          <h3 className="text-xs sm:text-sm md:text-base font-serif font-bold w-3/5">{room.name}</h3>
           <span className="text-primary-dark font-medium text-xs whitespace-nowrap">ab {room.price} CHF</span>
         </div>
         <p className="text-neutral-dark text-xs mb-1 line-clamp-2">
-          {room.shortDescription.length > 50 ? room.shortDescription.substring(0, 50) + '...' : room.shortDescription}
+          {room.shortDescription.length > 45 ? room.shortDescription.substring(0, 45) + '...' : room.shortDescription}
         </p>
         <div className="flex flex-wrap mb-1">
           <div className="flex items-center text-xs text-neutral-dark">

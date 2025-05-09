@@ -210,7 +210,7 @@ export const rooms: Room[] = [
   {
     id: 'premium-suite',
     category: 'premium-suite',
-    name: 'Premium Suite',
+    name: 'Premium',
     shortDescription: 'Unsere stilvolle Premium Suite mit 28 m² bietet ein Doppelbett und ein Schlafsofa für bis zu 3 Personen.',
     description: 'Unsere Premium Suite bietet gehobenen Komfort auf 28 m² mit Doppelbett und einem zusätzlichen Schlafsofa für bis zu 3 Personen.',
     extendedDescription: 'Die geräumige Premium Suite besticht durch ihr elegantes Design und den zusätzlichen Wohnbereich. Das hochwertige Doppelbett und das bequeme Schlafsofa bieten Platz für bis zu 3 Personen. Genießen Sie den zusätzlichen Platz und die exklusiven Annehmlichkeiten.',
@@ -246,7 +246,7 @@ export const rooms: Room[] = [
   {
     id: 'premium-family-suite',
     category: 'premium-family',
-    name: 'Premium Family Suite',
+    name: 'Premium Family',
     shortDescription: 'Unsere großzügige Premium Family Suite bietet zwei Doppelbetten und ein Schlafsofa - ideal für Familien.',
     description: 'Die Premium Family Suite ist unsere geräumigste Unterkunft mit zwei separaten Doppelbetten und einem Schlafsofa, ideal für Familien oder kleine Gruppen.',
     extendedDescription: 'Die Premium Family Suite bietet großzügigen Platz für die ganze Familie oder kleine Gruppen. Mit zwei Doppelbetten und einem zusätzlichen Schlafsofa ist sie ideal für bis zu 6 Personen. Die Suite verfügt über einen separaten Wohnbereich und ein großzügiges Badezimmer mit Badewanne und Dusche.',
