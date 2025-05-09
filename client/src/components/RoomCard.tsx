@@ -11,7 +11,7 @@ interface RoomCardProps {
 const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
   return (
     <div className="room-card bg-white rounded-lg overflow-hidden shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
-      <div className="aspect-square overflow-hidden">
+      <div className="aspect-video overflow-hidden">
         <img 
           src={room.images[0]} 
           alt={room.name} 

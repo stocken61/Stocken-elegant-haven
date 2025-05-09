@@ -31,17 +31,10 @@ const Rooms: React.FC = () => {
     }
   }, []);
   
-  // Für "Alle Zimmer" und die Kategorien Economy und Deluxe zeigen wir nur ein Zimmer an
+  // Alle verfügbaren Zimmer pro Kategorie anzeigen
   const filteredRooms = activeTab === 'all' 
-    ? [
-        rooms.find(room => room.category === 'economy'),
-        rooms.find(room => room.category === 'deluxe'),
-        rooms.find(room => room.category === 'premium-suite'),
-        rooms.find(room => room.category === 'premium-family')
-      ].filter(Boolean) as Room[]
-    : activeTab === 'economy' || activeTab === 'deluxe'
-      ? [rooms.find(room => room.category === activeTab)].filter(Boolean) as Room[]
-      : rooms.filter(room => room.category === activeTab);
+    ? rooms // Alle Zimmer anzeigen
+    : rooms.filter(room => room.category === activeTab); // Zimmer nach Kategorie filtern
   
   return (
     <>
@@ -67,7 +60,7 @@ const Rooms: React.FC = () => {
               defaultValue="all" 
               value={activeTab}
               onValueChange={setActiveTab}
-              className="w-full max-w-xl mx-auto"
+              className="w-full max-w-3xl mx-auto"
             >
               <TabsList className="grid grid-cols-5">
                 {roomCategories.map(category => (
@@ -81,20 +74,12 @@ const Rooms: React.FC = () => {
                 ))}
               </TabsList>
               
-              <div className="mt-8 text-left">
-                <p className="text-neutral-dark mb-4">
-                  {filteredRooms.length} Zimmer gefunden
+              <div className="mt-8">
+                <p className="text-neutral-dark mb-4 text-center">
+                  {filteredRooms.length} Zimmer {activeTab !== 'all' ? `in der Kategorie ${roomCategories.find(c => c.id === activeTab)?.name}` : ''} gefunden
                 </p>
                 
-                <div className={`grid grid-cols-1 gap-8 ${
-                    filteredRooms.length === 1 
-                      ? 'md:grid-cols-1 max-w-xl mx-auto' 
-                      : filteredRooms.length === 2 
-                        ? 'md:grid-cols-2 max-w-3xl mx-auto' 
-                        : filteredRooms.length === 3 
-                          ? 'md:grid-cols-3' 
-                          : 'md:grid-cols-2 lg:grid-cols-3'
-                  }`}>
+                <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {filteredRooms.map(room => (
                     <RoomCard key={room.id} room={room} />
                   ))}
