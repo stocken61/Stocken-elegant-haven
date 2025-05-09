@@ -184,7 +184,7 @@ const About: React.FC = () => {
                   <div>
                     <p className="font-medium">Mit der Bahn</p>
                     <p className="text-neutral-dark">
-                      Bis zum Hauptbahnhof St. Gallen, dann mit der Buslinie 1 bis zur Haltestelle "Stocken". Die Haltestelle befindet sich direkt vor unserem Hotel.
+                      Die Bahn fährt direkt bis zur Haltestelle St. Gallen Bruggen. Von dort aus sind es nur 6 Minuten zu Fuß bis zu unserem Hotel.
                     </p>
                   </div>
                 </div>
