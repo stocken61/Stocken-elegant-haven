@@ -144,8 +144,8 @@ export const rooms: Room[] = [
   {
     id: 'deluxe-room-2',
     category: 'deluxe',
-    name: 'Deluxe Doppelzimmer',
-    shortDescription: 'Unser großzügiges Deluxe-Zimmer mit 23 m² bietet gehobenen Komfort und mehr Platz für Ihren Aufenthalt.',
+    name: 'Deluxe',
+    shortDescription: 'Unser Deluxe mit 23 m² - gehobener Komfort mit Doppelbett.',
     description: 'Unser Deluxe Zimmer bietet alles für einen angenehmen Aufenthalt mit hochwertigem Komfort und 23 m² Wohnfläche.',
     extendedDescription: 'Das Deluxe Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das luxuriöse Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt oder Umgebung.',
     price: 195,
@@ -176,8 +176,8 @@ export const rooms: Room[] = [
   {
     id: 'deluxe-room-3',
     category: 'deluxe',
-    name: 'Deluxe Doppelzimmer',
-    shortDescription: 'Unser großzügiges Deluxe-Zimmer mit 23 m² bietet gehobenen Komfort und mehr Platz für Ihren Aufenthalt.',
+    name: 'Deluxe',
+    shortDescription: 'Unser Deluxe mit 23 m² - gehobener Komfort mit Doppelbett.',
     description: 'Unser Deluxe Zimmer bietet alles für einen angenehmen Aufenthalt mit hochwertigem Komfort und 23 m² Wohnfläche.',
     extendedDescription: 'Das Deluxe Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das luxuriöse Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt oder Umgebung.',
     price: 195,
@@ -252,7 +252,7 @@ export const rooms: Room[] = [
     extendedDescription: 'Die Premium Family Suite bietet großzügigen Platz für die ganze Familie oder kleine Gruppen. Mit zwei Doppelbetten und einem zusätzlichen Schlafsofa ist sie ideal für bis zu 6 Personen. Die Suite verfügt über einen separaten Wohnbereich und ein großzügiges Badezimmer mit Badewanne und Dusche.',
     price: 290,
     capacity: 6,
-    size: 35,
+    size: 49,
     bed: '2 Doppelbetten + Schlafsofa',
     view: 'Stadt und Umgebung',
     images: [
