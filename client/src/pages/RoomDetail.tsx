@@ -41,13 +41,17 @@ const RoomDetail: React.FC = () => {
               </div>
               <div className="grid grid-cols-4 gap-2">
                 {room.images.slice(0, 4).map((image, index) => (
-                  <img 
+                  <div 
                     key={index} 
-                    src={image} 
-                    alt={`${room.name} Ansicht ${index + 1}`} 
-                    className="rounded cursor-pointer hover:opacity-80 transition"
+                    className="aspect-square overflow-hidden rounded cursor-pointer hover:opacity-80 transition"
                     onClick={() => openLightbox(index)}
-                  />
+                  >
+                    <img 
+                      src={image} 
+                      alt={`${room.name} Ansicht ${index + 1}`} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 ))}
               </div>
             </div>

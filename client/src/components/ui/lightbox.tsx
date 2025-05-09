@@ -61,6 +61,24 @@ export const Lightbox: React.FC<LightboxProps> = ({
           />
         </div>
         
+        <div className="mt-4 grid grid-cols-5 gap-2">
+          {images.map((image, index) => (
+            <div 
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`aspect-square overflow-hidden rounded cursor-pointer transition ${
+                index === currentIndex ? 'border-2 border-primary' : 'opacity-70 hover:opacity-100'
+              }`}
+            >
+              <img 
+                src={image}
+                alt={`${alt} thumbnail ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+        
         <div className="absolute left-0 top-1/2 -translate-y-1/2 flex w-full justify-between px-4">
           <Button 
             variant="ghost" 
