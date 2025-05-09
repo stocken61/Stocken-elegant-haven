@@ -11,9 +11,10 @@ import { rooms } from '@/data/rooms';
 const Rooms: React.FC = () => {
   const roomCategories = [
     { id: 'all', name: 'Alle Zimmer' },
-    { id: 'standard', name: 'Economy' },
+    { id: 'economy', name: 'Economy' },
     { id: 'deluxe', name: 'Deluxe' },
-    { id: 'suite', name: 'Suiten' }
+    { id: 'premium-suite', name: 'Premium Suite' },
+    { id: 'premium-family', name: 'Premium Family' }
   ];
   
   const [activeTab, setActiveTab] = useState('all');
@@ -49,7 +50,7 @@ const Rooms: React.FC = () => {
               onValueChange={setActiveTab}
               className="w-full max-w-xl mx-auto"
             >
-              <TabsList className="grid grid-cols-4">
+              <TabsList className="grid grid-cols-5">
                 {roomCategories.map(category => (
                   <TabsTrigger 
                     key={category.id} 
