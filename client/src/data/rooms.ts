@@ -29,10 +29,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt',
     images: [
-      '/assets/room_main.webp',
-      '/assets/restaurant.webp',
-      '/assets/hero_main.png',
-      '/assets/facade.webp'
+      '/assets/zimmer1.png',
+      '/assets/zimmer1bett.png',
+      '/assets/kategorie1und2 front.png',
+      '/assets/kategorie 1und2kleider.png',
+      '/assets/bad1.png'
     ],
     amenities: [
       'Kostenloses WLAN',
