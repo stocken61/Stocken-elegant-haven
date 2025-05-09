@@ -18,15 +18,15 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
           className="w-full h-full object-cover" 
         />
       </div>
-      <div className="p-4 flex flex-col flex-grow">
-        <div className="flex justify-between items-start mb-2">
-          <h3 className="text-lg font-serif font-bold">{room.name}</h3>
-          <span className="text-primary-dark font-medium">ab {room.price} CHF</span>
+      <div className="p-3 sm:p-4 flex flex-col flex-grow">
+        <div className="flex justify-between items-start mb-1">
+          <h3 className="text-base sm:text-lg font-serif font-bold">{room.name}</h3>
+          <span className="text-primary-dark font-medium text-sm">ab {room.price} CHF</span>
         </div>
-        <p className="text-neutral-dark text-sm mb-4">
-          {room.shortDescription.length > 70 ? room.shortDescription.substring(0, 70) + '...' : room.shortDescription}
+        <p className="text-neutral-dark text-xs sm:text-sm mb-2">
+          {room.shortDescription.length > 60 ? room.shortDescription.substring(0, 60) + '...' : room.shortDescription}
         </p>
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-1 mb-2">
           <div className="flex items-center text-xs text-neutral-dark">
             <FontAwesomeIcon icon="user-friends" className="mr-1" />
             <span>{room.capacity} {room.capacity === 1 ? 'Person' : 'Personen'}</span>
@@ -42,12 +42,12 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
         </div>
         <div className="flex gap-2 mt-auto">
           <Link href={`/room/${room.id}`}>
-            <Button variant="outline" className="flex-1 text-sm py-1 h-auto">
+            <Button variant="outline" className="flex-1 text-xs sm:text-sm py-1 h-auto">
               Details
             </Button>
           </Link>
           <Link href={`/room/${room.id}#booking`}>
-            <Button className="bg-primary hover:bg-primary-light text-white flex-1 text-sm py-1 h-auto">
+            <Button className="bg-primary hover:bg-primary-light text-white flex-1 text-xs sm:text-sm py-1 h-auto">
               Buchen
             </Button>
           </Link>

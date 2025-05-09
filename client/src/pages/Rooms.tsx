@@ -87,7 +87,7 @@ const Rooms: React.FC = () => {
                 <div className={`container mx-auto grid ${
                     activeTab === 'all' 
                       ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4' 
-                      : 'max-w-xl grid-cols-1 gap-0'
+                      : 'grid-cols-1 md:grid-cols-2 max-w-4xl gap-6 px-4'
                   }`}>
                   {filteredRooms.map(room => (
                     <RoomCard key={room.id} room={room} />
