@@ -6,23 +6,28 @@ import {
   TabsList, 
   TabsTrigger 
 } from "@/components/ui/tabs";
-import { rooms } from '@/data/rooms';
+import { rooms, Room } from '@/data/rooms';
 
 const Rooms: React.FC = () => {
   const roomCategories = [
     { id: 'all', name: 'Alle Zimmer' },
     { id: 'economy', name: 'Economy' },
     { id: 'deluxe', name: 'Deluxe' },
-    { id: 'premium-suite', name: 'Premium Suite' },
-    { id: 'premium-family', name: 'Premium Family' }
+    { id: 'premium-suite', name: 'Premium' },
+    { id: 'premium-family', name: 'Family' }
   ];
   
   const [activeTab, setActiveTab] = useState('all');
   
-  const filteredRooms = rooms.filter(room => {
-    if (activeTab === 'all') return true;
-    return room.category === activeTab;
-  });
+  // Für "Alle Zimmer" zeigen wir nur ein Zimmer pro Kategorie an
+  const filteredRooms = activeTab === 'all' 
+    ? [
+        rooms.find(room => room.category === 'economy'),
+        rooms.find(room => room.category === 'deluxe'),
+        rooms.find(room => room.category === 'premium-suite'),
+        rooms.find(room => room.category === 'premium-family')
+      ].filter(Boolean) as Room[]
+    : rooms.filter(room => room.category === activeTab);
   
   return (
     <>
@@ -55,7 +60,7 @@ const Rooms: React.FC = () => {
                   <TabsTrigger 
                     key={category.id} 
                     value={category.id}
-                    className="text-sm md:text-base"
+                    className="text-sm md:text-base whitespace-nowrap px-1 md:px-3"
                   >
                     {category.name}
                   </TabsTrigger>

@@ -11,11 +11,13 @@ interface RoomCardProps {
 const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
   return (
     <div className="room-card bg-white rounded-lg overflow-hidden shadow-md">
-      <img 
-        src={room.images[0]} 
-        alt={room.name} 
-        className="w-full h-64 object-cover" 
-      />
+      <div className="aspect-square overflow-hidden">
+        <img 
+          src={room.images[0]} 
+          alt={room.name} 
+          className="w-full h-full object-cover" 
+        />
+      </div>
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-xl font-serif font-bold">{room.name}</h3>
