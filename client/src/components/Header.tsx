@@ -46,7 +46,7 @@ const Header: React.FC = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex md:pl-6 lg:pl-0">
-          <div className="flex space-x-4 lg:space-x-8">
+          <div className="flex space-x-6 md:space-x-8 lg:space-x-10">
             <Link href="/" className={`nav-link text-sm lg:text-base ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
               Home
             </Link>
