@@ -84,14 +84,18 @@ const Rooms: React.FC = () => {
                   {filteredRooms.length} Zimmer {activeTab !== 'all' ? `in der Kategorie ${roomCategories.find(c => c.id === activeTab)?.name}` : ''} gefunden
                 </p>
                 
-                <div className={`container mx-auto grid ${
-                    activeTab === 'all' 
-                      ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 px-4' 
-                      : 'grid-cols-1 md:grid-cols-2 max-w-4xl gap-6 px-4'
+                <div className={`container mx-auto flex justify-center ${
+                    activeTab === 'all' ? 'w-full' : ''
                   }`}>
-                  {filteredRooms.map(room => (
-                    <RoomCard key={room.id} room={room} />
-                  ))}
+                  <div className={`grid ${
+                      activeTab === 'all' 
+                        ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 px-4 w-full' 
+                        : 'grid-cols-1 md:grid-cols-1 max-w-xl gap-6 px-4'
+                    }`}>
+                    {filteredRooms.map(room => (
+                      <RoomCard key={room.id} room={room} />
+                    ))}
+                  </div>
                 </div>
                 
                 {filteredRooms.length === 0 && (
