@@ -122,10 +122,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt oder Garten',
     images: [
-      '/assets/room_main.webp',
-      '/assets/restaurant.webp',
-      '/assets/hero_main.png',
-      '/assets/facade.webp'
+      '/assets/deluxe/zimmer1.png',
+      '/assets/deluxe/zimmer1bett.png',
+      '/assets/deluxe/kategorie1und2 front.png',
+      '/assets/deluxe/kategorie 1und2kleider.png',
+      '/assets/deluxe/bad1.png'
     ],
     amenities: [
       'Kostenloses WLAN',
@@ -153,10 +154,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt oder Garten',
     images: [
-      '/assets/room_main.webp',
-      '/assets/restaurant.webp',
-      '/assets/hero_main.png',
-      '/assets/facade.webp'
+      '/assets/deluxe/zimmer1.png',
+      '/assets/deluxe/zimmer1bett.png',
+      '/assets/deluxe/kategorie1und2 front.png',
+      '/assets/deluxe/kategorie 1und2kleider.png',
+      '/assets/deluxe/bad1.png'
     ],
     amenities: [
       'Kostenloses WLAN',
@@ -184,10 +186,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt oder Garten',
     images: [
-      '/assets/room_main.webp',
-      '/assets/restaurant.webp',
-      '/assets/hero_main.png',
-      '/assets/facade.webp'
+      '/assets/deluxe/zimmer1.png',
+      '/assets/deluxe/zimmer1bett.png',
+      '/assets/deluxe/kategorie1und2 front.png',
+      '/assets/deluxe/kategorie 1und2kleider.png',
+      '/assets/deluxe/bad1.png'
     ],
     amenities: [
       'Kostenloses WLAN',
@@ -217,10 +220,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett + Schlafsofa',
     view: 'Stadt und Umgebung',
     images: [
-      '/assets/room_main.webp',
-      '/assets/restaurant.webp',
-      '/assets/hero_main.png',
-      '/assets/facade.webp'
+      '/assets/premium-suite/bett3.png',
+      '/assets/premium-suite/2bett3.png',
+      '/assets/premium-suite/kleiderhaken3.png',
+      '/assets/premium-suite/tisch3.png',
+      '/assets/premium-suite/bad3.png'
     ],
     amenities: [
       'Kostenloses Highspeed-WLAN',
