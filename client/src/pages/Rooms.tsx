@@ -67,12 +67,12 @@ const Rooms: React.FC = () => {
               onValueChange={setActiveTab}
               className="w-full max-w-6xl mx-auto"
             >
-              <TabsList className="grid grid-cols-5">
+              <TabsList className="grid grid-cols-5 gap-1">
                 {roomCategories.map(category => (
                   <TabsTrigger 
                     key={category.id} 
                     value={category.id}
-                    className="text-sm md:text-base whitespace-nowrap px-1 md:px-3"
+                    className="text-xs sm:text-sm lg:text-base whitespace-nowrap px-1 py-1.5 md:px-2"
                   >
                     {category.name}
                   </TabsTrigger>

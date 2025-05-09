@@ -38,34 +38,36 @@ const Header: React.FC = () => {
 
   return (
     <header className={`bg-white shadow-md sticky top-0 z-50 transition-all ${scrolled ? 'py-0' : 'py-0'}`}>
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-1 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center -my-4">
-          <img src={logoImage} alt="Stocken Hotel Logo" className="h-44" />
+        <Link href="/" className="flex items-center -my-4 ml-[-10px] md:ml-[-20px]">
+          <img src={logoImage} alt="Stocken Hotel Logo" className="h-36 md:h-44" />
         </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          <Link href="/" className={`nav-link ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-            Home
-          </Link>
-          <Link href="/about" className={`nav-link ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-            Über uns
-          </Link>
-          <Link href="/rooms#rooms-section" className={`nav-link ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-            Zimmer
-          </Link>
-          <Link href="/restaurant" className={`nav-link ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-            Restaurant
-          </Link>
-          <Link href="/contact" className={`nav-link ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-            Kontakt
-          </Link>
+        <nav className="hidden md:flex md:pl-6 lg:pl-0">
+          <div className="flex space-x-4 lg:space-x-8">
+            <Link href="/" className={`nav-link text-sm lg:text-base ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+              Home
+            </Link>
+            <Link href="/about" className={`nav-link text-sm lg:text-base ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+              Über uns
+            </Link>
+            <Link href="/rooms#rooms-section" className={`nav-link text-sm lg:text-base ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+              Zimmer
+            </Link>
+            <Link href="/restaurant" className={`nav-link text-sm lg:text-base ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+              Restaurant
+            </Link>
+            <Link href="/contact" className={`nav-link text-sm lg:text-base ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+              Kontakt
+            </Link>
+          </div>
         </nav>
         
         {/* Language Toggle and Booking Button */}
-        <div className="hidden md:flex items-center space-x-6">
-          <div className="flex space-x-2 text-sm">
+        <div className="hidden md:flex items-center md:space-x-3 lg:space-x-6">
+          <div className="flex space-x-2 text-xs lg:text-sm">
             <a href="#" className="font-medium text-primary">DE</a>
             <a href="#" className="text-neutral-dark hover:text-primary transition">EN</a>
             <a href="#" className="text-neutral-dark hover:text-primary transition">FR</a>
@@ -73,7 +75,7 @@ const Header: React.FC = () => {
           
           <Button 
             variant="default" 
-            className="bg-primary hover:bg-primary-light text-white"
+            className="bg-primary hover:bg-primary-light text-white text-xs lg:text-sm py-1 h-8 px-3"
           >
             <span>Buchen</span>
             <FontAwesomeIcon icon="arrow-right" className="ml-2 text-xs" />

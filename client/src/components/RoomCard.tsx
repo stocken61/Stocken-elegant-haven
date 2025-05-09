@@ -11,43 +11,43 @@ interface RoomCardProps {
 const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
   return (
     <div className="room-card bg-white rounded-lg overflow-hidden shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg h-full flex flex-col">
-      <div className="aspect-square sm:aspect-video overflow-hidden">
+      <div className="aspect-[4/3] overflow-hidden">
         <img 
           src={room.images[0]} 
           alt={room.name} 
           className="w-full h-full object-cover" 
         />
       </div>
-      <div className="p-3 sm:p-4 flex flex-col flex-grow">
-        <div className="flex justify-between items-start mb-1">
-          <h3 className="text-base sm:text-lg font-serif font-bold">{room.name}</h3>
-          <span className="text-primary-dark font-medium text-sm">ab {room.price} CHF</span>
+      <div className="p-2 sm:p-3 flex flex-col flex-grow">
+        <div className="flex justify-between items-center mb-1">
+          <h3 className="text-sm sm:text-base font-serif font-bold truncate">{room.name}</h3>
+          <span className="text-primary-dark font-medium text-xs whitespace-nowrap">ab {room.price} CHF</span>
         </div>
-        <p className="text-neutral-dark text-xs sm:text-sm mb-2">
-          {room.shortDescription.length > 60 ? room.shortDescription.substring(0, 60) + '...' : room.shortDescription}
+        <p className="text-neutral-dark text-xs mb-1 line-clamp-2">
+          {room.shortDescription.length > 50 ? room.shortDescription.substring(0, 50) + '...' : room.shortDescription}
         </p>
-        <div className="flex flex-wrap gap-1 mb-2">
+        <div className="flex flex-wrap mb-1">
           <div className="flex items-center text-xs text-neutral-dark">
             <FontAwesomeIcon icon="user-friends" className="mr-1" />
-            <span>{room.capacity} {room.capacity === 1 ? 'Person' : 'Personen'}</span>
+            <span className="text-[10px] sm:text-xs">{room.capacity}</span>
           </div>
           <div className="flex items-center text-xs text-neutral-dark ml-2">
             <FontAwesomeIcon icon="vector-square" className="mr-1" />
-            <span>{room.size} m²</span>
+            <span className="text-[10px] sm:text-xs">{room.size} m²</span>
           </div>
-          <div className="flex items-center text-xs text-neutral-dark w-full mt-1">
+          <div className="flex items-center text-xs text-neutral-dark ml-2">
             <FontAwesomeIcon icon="bed" className="mr-1" />
-            <span>{room.bed}</span>
+            <span className="text-[10px] sm:text-xs truncate max-w-[120px]">{room.bed}</span>
           </div>
         </div>
-        <div className="flex gap-2 mt-auto">
-          <Link href={`/room/${room.id}`}>
-            <Button variant="outline" className="flex-1 text-xs sm:text-sm py-1 h-auto">
+        <div className="flex gap-1 mt-1">
+          <Link href={`/room/${room.id}`} className="w-1/2">
+            <Button variant="outline" size="sm" className="w-full text-[10px] sm:text-xs py-1 h-7 px-1">
               Details
             </Button>
           </Link>
-          <Link href={`/room/${room.id}#booking`}>
-            <Button className="bg-primary hover:bg-primary-light text-white flex-1 text-xs sm:text-sm py-1 h-auto">
+          <Link href={`/room/${room.id}#booking`} className="w-1/2">
+            <Button size="sm" className="w-full bg-primary hover:bg-primary-light text-white text-[10px] sm:text-xs py-1 h-7 px-1">
               Buchen
             </Button>
           </Link>
