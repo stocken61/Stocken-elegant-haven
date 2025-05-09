@@ -175,24 +175,43 @@ const About: React.FC = () => {
                   <div>
                     <p className="font-medium">Mit dem Auto</p>
                     <p className="text-neutral-dark">
-                      Über die A1 bis Ausfahrt St. Gallen-Kreuzbleiche, dann der Beschilderung in die Innenstadt folgen.
+                      Über die A1 bis Ausfahrt St. Gallen-Kreuzbleiche, dann der Beschilderung Richtung St. Gallen-Ost folgen. Nach ca. 3 km erreichen Sie die Kräzernstrasse und unser Hotel.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start mb-2">
+                  <FontAwesomeIcon icon="train" className="text-primary-light mt-1 mr-3" />
+                  <div>
+                    <p className="font-medium">Mit der Bahn</p>
+                    <p className="text-neutral-dark">
+                      Bis zum Hauptbahnhof St. Gallen, dann mit der Buslinie 1 bis zur Haltestelle "Stocken". Die Haltestelle befindet sich direkt vor unserem Hotel.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <FontAwesomeIcon icon="train" className="text-primary-light mt-1 mr-3" />
                   <div>
-                    <p className="font-medium">Mit der Bahn</p>
+                    <p className="font-medium">Mit dem Bus</p>
                     <p className="text-neutral-dark">
-                      Bis Bahnhof St. Gallen, dann 5 Minuten zu Fuß oder mit dem Taxi zum Hotel.
+                      Die Buslinie 1 vom Hauptbahnhof St. Gallen fährt direkt zu unserem Hotel. Steigen Sie an der Haltestelle "Stocken" aus, die sich direkt vor dem Eingang befindet.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="lg:w-5/12 p-4 flex justify-center items-start">
-              <div className="rounded-lg overflow-hidden shadow-lg w-3/4">
-                <img src="/assets/hero_main.png" alt="Umgebung des Stocken Hotels" className="w-full h-auto object-cover" />
+              <div className="rounded-lg overflow-hidden shadow-lg w-full h-80">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.0939024457154!2d9.366933876775936!3d47.4234029017655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1e4f36b7e5f7%3A0x7e5a8cd0240b91d8!2sKr%C3%A4zernstrasse%2010%2C%209014%20St.%20Gallen%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1698920523071!5m2!1sen!2sus"
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Maps - Stocken Hotel"
+                  className="rounded-lg"
+                ></iframe>
               </div>
             </div>
           </div>

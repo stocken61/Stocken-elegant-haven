@@ -10,7 +10,7 @@ import {
   faArrowRight, faCheck, faBars, faMapMarkerAlt, 
   faPhoneAlt, faEnvelope, faSearch, faCoffee,
   faWifi, faPhone, faUsers, faCar, faTrain,
-  faStar, faStarHalfAlt
+  faStar, faStarHalfAlt, faBus
 } from "@fortawesome/free-solid-svg-icons";
 import { 
   faFacebookF, faInstagram, faTwitter 
@@ -24,7 +24,7 @@ library.add(
   faPhoneAlt, faEnvelope, faSearch, faCoffee,
   faWifi, faPhone, faUsers, faCar, faTrain,
   faFacebookF, faInstagram, faTwitter,
-  faStar, faStarHalfAlt
+  faStar, faStarHalfAlt, faBus
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
