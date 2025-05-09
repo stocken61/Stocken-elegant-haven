@@ -19,7 +19,7 @@ const Rooms: React.FC = () => {
   
   const [activeTab, setActiveTab] = useState('all');
   
-  // Für "Alle Zimmer" zeigen wir nur ein Zimmer pro Kategorie an
+  // Für "Alle Zimmer" und die Kategorien Economy und Deluxe zeigen wir nur ein Zimmer an
   const filteredRooms = activeTab === 'all' 
     ? [
         rooms.find(room => room.category === 'economy'),
@@ -27,7 +27,9 @@ const Rooms: React.FC = () => {
         rooms.find(room => room.category === 'premium-suite'),
         rooms.find(room => room.category === 'premium-family')
       ].filter(Boolean) as Room[]
-    : rooms.filter(room => room.category === activeTab);
+    : activeTab === 'economy' || activeTab === 'deluxe'
+      ? [rooms.find(room => room.category === activeTab)].filter(Boolean) as Room[]
+      : rooms.filter(room => room.category === activeTab);
   
   return (
     <>
@@ -72,7 +74,15 @@ const Rooms: React.FC = () => {
                   {filteredRooms.length} Zimmer gefunden
                 </p>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className={`grid grid-cols-1 gap-8 ${
+                    filteredRooms.length === 1 
+                      ? 'md:grid-cols-1 max-w-xl mx-auto' 
+                      : filteredRooms.length === 2 
+                        ? 'md:grid-cols-2 max-w-3xl mx-auto' 
+                        : filteredRooms.length === 3 
+                          ? 'md:grid-cols-3' 
+                          : 'md:grid-cols-2 lg:grid-cols-3'
+                  }`}>
                   {filteredRooms.map(room => (
                     <RoomCard key={room.id} room={room} />
                   ))}
