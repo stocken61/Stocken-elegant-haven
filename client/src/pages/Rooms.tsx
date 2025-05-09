@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import RoomCard from '@/components/RoomCard';
 import { 
   Tabs, 
@@ -18,6 +18,18 @@ const Rooms: React.FC = () => {
   ];
   
   const [activeTab, setActiveTab] = useState('all');
+
+  // Scroll to rooms section if hash is present
+  useEffect(() => {
+    if (window.location.hash === '#rooms-section') {
+      const element = document.getElementById('rooms-section');
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, []);
   
   // Für "Alle Zimmer" und die Kategorien Economy und Deluxe zeigen wir nur ein Zimmer an
   const filteredRooms = activeTab === 'all' 
@@ -48,9 +60,9 @@ const Rooms: React.FC = () => {
       </section>
       
       {/* Rooms Filter and List */}
-      <section className="py-20 bg-white">
+      <section className="py-12 bg-white" id="rooms-section">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <Tabs 
               defaultValue="all" 
               value={activeTab}
@@ -102,9 +114,9 @@ const Rooms: React.FC = () => {
       </section>
       
       {/* Amenities Section */}
-      <section className="py-20 bg-neutral-light">
+      <section className="py-12 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-12 text-center">
+          <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-8 text-center">
             Hotelausstattung
           </h2>
           

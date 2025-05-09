@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           <Link href="/about" className={`nav-link ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
             Über uns
           </Link>
-          <Link href="/rooms" className={`nav-link ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+          <Link href="/rooms#rooms-section" className={`nav-link ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
             Zimmer
           </Link>
           <Link href="/restaurant" className={`nav-link ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
@@ -110,7 +110,7 @@ const Header: React.FC = () => {
             Über uns
           </Link>
           <Link 
-            href="/rooms"
+            href="/rooms#rooms-section"
             className={`block ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
             onClick={closeMenu}
           >
