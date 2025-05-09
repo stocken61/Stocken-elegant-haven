@@ -31,10 +31,15 @@ const Rooms: React.FC = () => {
     }
   }, []);
   
-  // Alle verfügbaren Zimmer pro Kategorie anzeigen
+  // Pro Kategorie nur ein repräsentatives Zimmer anzeigen
   const filteredRooms = activeTab === 'all' 
-    ? rooms // Alle Zimmer anzeigen
-    : rooms.filter(room => room.category === activeTab); // Zimmer nach Kategorie filtern
+    ? [
+        rooms.find(room => room.category === 'economy'),
+        rooms.find(room => room.category === 'deluxe'),
+        rooms.find(room => room.category === 'premium-suite'),
+        rooms.find(room => room.category === 'premium-family')
+      ].filter(Boolean) as Room[]
+    : [rooms.find(room => room.category === activeTab)].filter(Boolean) as Room[];
   
   return (
     <>
@@ -60,7 +65,7 @@ const Rooms: React.FC = () => {
               defaultValue="all" 
               value={activeTab}
               onValueChange={setActiveTab}
-              className="w-full max-w-3xl mx-auto"
+              className="w-full max-w-6xl mx-auto"
             >
               <TabsList className="grid grid-cols-5">
                 {roomCategories.map(category => (
@@ -79,7 +84,11 @@ const Rooms: React.FC = () => {
                   {filteredRooms.length} Zimmer {activeTab !== 'all' ? `in der Kategorie ${roomCategories.find(c => c.id === activeTab)?.name}` : ''} gefunden
                 </p>
                 
-                <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className={`container mx-auto grid ${
+                    activeTab === 'all' 
+                      ? 'grid-cols-1 md:grid-cols-4 gap-4' 
+                      : 'max-w-xl grid-cols-1 gap-0'
+                  }`}>
                   {filteredRooms.map(room => (
                     <RoomCard key={room.id} room={room} />
                   ))}
