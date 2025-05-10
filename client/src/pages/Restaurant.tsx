@@ -12,11 +12,8 @@ const Restaurant: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
             Restaurant Pontera
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto mb-2">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Where Suisse Design meets Türkisch Test
-          </p>
-          <p className="text-lg text-white max-w-3xl mx-auto">
-            Genießen Sie traditionelle Schweizer Küche mit modernem Touch und atemberaubendem Ausblick.
           </p>
         </div>
       </section>
