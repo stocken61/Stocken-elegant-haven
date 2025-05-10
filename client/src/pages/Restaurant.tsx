@@ -13,7 +13,7 @@ const Restaurant: React.FC = () => {
             Restaurant Pontera
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Where Suisse Design meets Türkisch Test
+            Where Suisse Design meets Türkisch Taste
           </p>
         </div>
       </section>
@@ -21,44 +21,42 @@ const Restaurant: React.FC = () => {
       {/* About Restaurant Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
-              <img src="/assets/restaurant.webp" alt="Restaurant Pontera" className="rounded-lg shadow-lg" />
-            </div>
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
-                Kulinarische Erlebnisse im Stocken
-              </h2>
-              <p className="text-lg text-neutral-dark mb-4">
-                Unser Restaurant "Pontera" ist ein kulinarisches Highlight, das traditionelle Schweizer Gerichte mit modernen Einflüssen verbindet. In gemütlicher Atmosphäre und mit Panoramablick auf die Alpen genießen Sie eine erstklassige Küche, die auf frischen, saisonalen und lokalen Zutaten basiert.
-              </p>
-              <p className="text-lg text-neutral-dark mb-6">
-                Unser leidenschaftliches Küchenteam unter der Leitung von Küchenchefin Sophie Berger kreiert Gerichte, die sowohl authentisch als auch innovativ sind und Ihnen ein unvergessliches Geschmackserlebnis bieten.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-                <div className="border-l-4 border-primary-light pl-4">
-                  <h3 className="font-medium text-xl mb-2">Frühstück</h3>
-                  <p className="text-neutral-dark">07:00 - 10:30 Uhr</p>
-                </div>
-                <div className="border-l-4 border-primary-light pl-4">
-                  <h3 className="font-medium text-xl mb-2">Mittagessen</h3>
-                  <p className="text-neutral-dark">12:00 - 14:00 Uhr</p>
-                </div>
-                <div className="border-l-4 border-primary-light pl-4">
-                  <h3 className="font-medium text-xl mb-2">Abendessen</h3>
-                  <p className="text-neutral-dark">18:00 - 22:00 Uhr</p>
-                </div>
-                <div className="border-l-4 border-primary-light pl-4">
-                  <h3 className="font-medium text-xl mb-2">Bar</h3>
-                  <p className="text-neutral-dark">14:00 - 24:00 Uhr</p>
-                </div>
+          <div className="mb-12">
+            <img src="/assets/Restaurant.PNG" alt="Restaurant Pontera Innenraum" className="w-full h-auto rounded-lg shadow-lg mx-auto" />
+          </div>
+          <div className="mt-8">
+            <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 text-center">
+              Kulinarische Erlebnisse im Stocken
+            </h2>
+            <p className="text-lg text-neutral-dark mb-4 text-center max-w-4xl mx-auto">
+              Unser Restaurant "Pontera" ist ein kulinarisches Highlight, das traditionelle Schweizer Gerichte mit modernen Einflüssen verbindet. In gemütlicher Atmosphäre genießen Sie eine erstklassige Küche, die auf frischen, saisonalen und lokalen Zutaten basiert.
+            </p>
+            <p className="text-lg text-neutral-dark mb-6 text-center max-w-4xl mx-auto">
+              Unser leidenschaftliches Küchenteam unter der Leitung von Küchenchefin Sophie Berger kreiert Gerichte, die sowohl authentisch als auch innovativ sind und Ihnen ein unvergessliches Geschmackserlebnis bieten.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4 max-w-4xl mx-auto">
+              <div className="border-l-4 border-primary-light pl-4">
+                <h3 className="font-medium text-xl mb-2">Frühstück</h3>
+                <p className="text-neutral-dark">07:00 - 10:30 Uhr</p>
               </div>
-              
-              <p className="text-sm text-neutral-dark italic">
-                Wir empfehlen für das Abendessen eine Reservierung.
-              </p>
+              <div className="border-l-4 border-primary-light pl-4">
+                <h3 className="font-medium text-xl mb-2">Mittagessen</h3>
+                <p className="text-neutral-dark">12:00 - 14:00 Uhr</p>
+              </div>
+              <div className="border-l-4 border-primary-light pl-4">
+                <h3 className="font-medium text-xl mb-2">Abendessen</h3>
+                <p className="text-neutral-dark">18:00 - 22:00 Uhr</p>
+              </div>
+              <div className="border-l-4 border-primary-light pl-4">
+                <h3 className="font-medium text-xl mb-2">Bar</h3>
+                <p className="text-neutral-dark">14:00 - 24:00 Uhr</p>
+              </div>
             </div>
+            
+            <p className="text-sm text-neutral-dark italic text-center mt-4">
+              Wir empfehlen für das Abendessen eine Reservierung.
+            </p>
           </div>
         </div>
       </section>
