@@ -34,7 +34,7 @@ const Rooms: React.FC = () => {
   // Pro Kategorie nur ein repräsentatives Zimmer anzeigen
   const filteredRooms = activeTab === 'all' 
     ? [
-        rooms.find(room => room.category === 'economy'),
+        rooms.find(room => room.category === 'comfort'),
         rooms.find(room => room.category === 'deluxe'),
         rooms.find(room => room.category === 'premium-suite'),
         rooms.find(room => room.category === 'premium-family')
