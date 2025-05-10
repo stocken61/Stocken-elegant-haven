@@ -97,7 +97,7 @@ const RoomDetail: React.FC = () => {
                 </div>
                 <div className="text-center">
                   <FontAwesomeIcon icon="bed" className="text-primary-light text-2xl mb-2" />
-                  <p className="font-medium">{room.bed}</p>
+                  <p className="font-medium whitespace-nowrap">{room.bed}</p>
                   <p className="text-sm text-neutral-dark">Betttyp</p>
                 </div>
                 <div className="text-center">
