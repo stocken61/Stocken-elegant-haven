@@ -66,8 +66,8 @@ const Home: React.FC = () => {
               <div className="text-primary text-3xl mb-2">
                 <FontAwesomeIcon icon="coffee" />
               </div>
-              <h3 className="font-semibold mb-1">Exklusives Frühstück</h3>
-              <p className="text-sm text-neutral-dark">À la carte, weil wir Individualität schätzen</p>
+              <h3 className="font-semibold mb-1">Exklusives Frühstücksangebot</h3>
+              <p className="text-sm text-neutral-dark">À la carte, gegen Aufpreis buchbar</p>
             </div>
             
             <div className="p-4">

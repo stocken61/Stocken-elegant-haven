@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
     name: 'Markus S.',
     location: 'Deutschland',
     rating: 5,
-    comment: 'Ein wunderbares Hotel mit atemberaubender Aussicht und hervorragendem Service. Das Zimmer war geräumig und komfortabel, das Frühstück ausgezeichnet. Wir kommen definitiv wieder!'
+    comment: 'Ein wunderbares Hotel mit atemberaubender Aussicht und hervorragendem Service. Das Zimmer war geräumig und komfortabel, das Restaurant hervorragend. Wir kommen definitiv wieder!'
   },
   {
     id: 2,
@@ -47,6 +47,6 @@ export const testimonials: Testimonial[] = [
     name: 'Sophia T.',
     location: 'Italien',
     rating: 5,
-    comment: 'Eine Oase der Ruhe inmitten der Schweizer Alpen. Das Personal kümmerte sich um jedes Detail und machte unseren Aufenthalt unvergesslich. Das Frühstück mit Blick auf die Berge war ein Highlight.'
+    comment: 'Eine Oase der Ruhe in St. Gallen. Das Personal kümmerte sich um jedes Detail und machte unseren Aufenthalt unvergesslich. Das Abendessen im Hotelrestaurant mit Blick auf die Stadt war ein Highlight.'
   }
 ];
