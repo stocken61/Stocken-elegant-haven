@@ -80,10 +80,6 @@ const Rooms: React.FC = () => {
               </TabsList>
               
               <div className="mt-8">
-                <p className="text-neutral-dark mb-4 text-center">
-                  {filteredRooms.length} Zimmer {activeTab !== 'all' ? `in der Kategorie ${roomCategories.find(c => c.id === activeTab)?.name}` : ''} gefunden
-                </p>
-                
                 <div className={`container mx-auto flex justify-center ${
                     activeTab === 'all' ? 'w-full' : ''
                   }`}>
