@@ -10,7 +10,7 @@ const Restaurant: React.FC = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            Restaurant Bergblick
+            Restaurant Pontera
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Genießen Sie traditionelle Schweizer Küche mit modernem Touch und atemberaubendem Ausblick.
@@ -23,14 +23,14 @@ const Restaurant: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <img src="/assets/restaurant.webp" alt="Restaurant Bergblick" className="rounded-lg shadow-lg" />
+              <img src="/assets/restaurant.webp" alt="Restaurant Pontera" className="rounded-lg shadow-lg" />
             </div>
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
                 Kulinarische Erlebnisse im Stocken
               </h2>
               <p className="text-lg text-neutral-dark mb-4">
-                Unser Restaurant "Bergblick" ist ein kulinarisches Highlight, das traditionelle Schweizer Gerichte mit modernen Einflüssen verbindet. In gemütlicher Atmosphäre und mit Panoramablick auf die Alpen genießen Sie eine erstklassige Küche, die auf frischen, saisonalen und lokalen Zutaten basiert.
+                Unser Restaurant "Pontera" ist ein kulinarisches Highlight, das traditionelle Schweizer Gerichte mit modernen Einflüssen verbindet. In gemütlicher Atmosphäre und mit Panoramablick auf die Alpen genießen Sie eine erstklassige Küche, die auf frischen, saisonalen und lokalen Zutaten basiert.
               </p>
               <p className="text-lg text-neutral-dark mb-6">
                 Unser leidenschaftliches Küchenteam unter der Leitung von Küchenchefin Sophie Berger kreiert Gerichte, die sowohl authentisch als auch innovativ sind und Ihnen ein unvergessliches Geschmackserlebnis bieten.
