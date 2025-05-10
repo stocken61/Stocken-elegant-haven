@@ -19,7 +19,7 @@ export const rooms: Room[] = [
   {
     id: 'comfort-room-1',
     category: 'comfort',
-    name: 'Comfort',
+    name: 'Comfort Zimmer',
     shortDescription: 'Unser Comfort Zimmer mit 18 m²',
     description: 'Unser gemütliches Comfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
     extendedDescription: 'Das Comfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
@@ -50,7 +50,7 @@ export const rooms: Room[] = [
   {
     id: 'comfort-room-2',
     category: 'comfort',
-    name: 'Comfort',
+    name: 'Comfort Zimmer',
     shortDescription: 'Unser Comfort Zimmer mit 18 m²',
     description: 'Unser gemütliches Comfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
     extendedDescription: 'Das Comfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
@@ -80,7 +80,7 @@ export const rooms: Room[] = [
   {
     id: 'comfort-room-3',
     category: 'comfort',
-    name: 'Comfort',
+    name: 'Comfort Zimmer',
     shortDescription: 'Unser Comfort Zimmer mit 18 m²',
     description: 'Unser gemütliches Comfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
     extendedDescription: 'Das Comfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
@@ -112,7 +112,7 @@ export const rooms: Room[] = [
   {
     id: 'deluxe-room-1',
     category: 'deluxe',
-    name: 'Deluxe',
+    name: 'Deluxe Zimmer',
     shortDescription: 'Unser Deluxe Zimmer mit 23 m²',
     description: 'Unser Deluxe Zimmer bietet alles für einen angenehmen Aufenthalt mit hochwertigem Komfort und 23 m² Wohnfläche.',
     extendedDescription: 'Das Deluxe Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das luxuriöse Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt oder Umgebung.',
@@ -144,7 +144,7 @@ export const rooms: Room[] = [
   {
     id: 'deluxe-room-2',
     category: 'deluxe',
-    name: 'Deluxe',
+    name: 'Deluxe Zimmer',
     shortDescription: 'Unser Deluxe Zimmer mit 23 m²',
     description: 'Unser Deluxe Zimmer bietet alles für einen angenehmen Aufenthalt mit hochwertigem Komfort und 23 m² Wohnfläche.',
     extendedDescription: 'Das Deluxe Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das luxuriöse Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt oder Umgebung.',
@@ -176,7 +176,7 @@ export const rooms: Room[] = [
   {
     id: 'deluxe-room-3',
     category: 'deluxe',
-    name: 'Deluxe',
+    name: 'Deluxe Zimmer',
     shortDescription: 'Unser Deluxe Zimmer mit 23 m²',
     description: 'Unser Deluxe Zimmer bietet alles für einen angenehmen Aufenthalt mit hochwertigem Komfort und 23 m² Wohnfläche.',
     extendedDescription: 'Das Deluxe Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das luxuriöse Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt oder Umgebung.',
@@ -210,7 +210,7 @@ export const rooms: Room[] = [
   {
     id: 'premium-suite',
     category: 'premium-suite',
-    name: 'Premium',
+    name: 'Premium Suite',
     shortDescription: 'Unsere Premium Suite mit 28 m²',
     description: 'Unsere Premium Suite bietet gehobenen Komfort auf 28 m² mit Doppelbett und einem zusätzlichen Schlafsofa für bis zu 3 Personen.',
     extendedDescription: 'Die geräumige Premium Suite besticht durch ihr elegantes Design und den zusätzlichen Wohnbereich. Das hochwertige Doppelbett und das bequeme Schlafsofa bieten Platz für bis zu 3 Personen. Genießen Sie den zusätzlichen Platz und die exklusiven Annehmlichkeiten.',
@@ -246,7 +246,7 @@ export const rooms: Room[] = [
   {
     id: 'premium-family-suite',
     category: 'premium-family',
-    name: 'Familien',
+    name: 'Familien Suite',
     shortDescription: 'Unsere Familien Suite mit 49 m²',
     description: 'Die Premium Familien Suite ist unsere geräumigste Unterkunft mit zwei separaten Doppelbetten und einem Schlafsofa, ideal für Familien oder kleine Gruppen.',
     extendedDescription: 'Die Premium Familien Suite bietet großzügigen Platz für die ganze Familie oder kleine Gruppen. Mit zwei Doppelbetten und einem zusätzlichen Schlafsofa ist sie ideal für bis zu 6 Personen. Die Suite verfügt über einen separaten Wohnbereich und ein großzügiges Badezimmer mit Badewanne und Dusche.',
