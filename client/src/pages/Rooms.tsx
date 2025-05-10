@@ -14,7 +14,7 @@ const Rooms: React.FC = () => {
     { id: 'comfort', name: 'Comfort' },
     { id: 'deluxe', name: 'Deluxe' },
     { id: 'premium-suite', name: 'Premium Suite' },
-    { id: 'premium-family', name: 'Family Suite' }
+    { id: 'premium-family', name: 'Familien Suite' }
   ];
   
   const [activeTab, setActiveTab] = useState('all');
