@@ -15,12 +15,12 @@ export interface Room {
 }
 
 export const rooms: Room[] = [
-  // Economy Zimmer (3 Zimmer, 18 m²)
+  // Comfort Zimmer (3 Zimmer, 18 m²)
   {
     id: 'economy-room-1',
     category: 'economy',
-    name: 'Economy',
-    shortDescription: 'Unser Economy mit 18 m² - komfortables Doppelbett für 2 Personen.',
+    name: 'Comfort',
+    shortDescription: 'Unser Comfort mit 18 m² - komfortables Doppelbett für 2 Personen.',
     description: 'Unser gemütliches Economy Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
     extendedDescription: 'Das Economy Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
     price: 150,
