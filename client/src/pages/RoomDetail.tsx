@@ -32,12 +32,14 @@ const RoomDetail: React.FC = () => {
           <div className="lg:w-7/12">
             <div className="mb-8">
               <div className="mb-4">
-                <img 
-                  src={room.images[0]} 
-                  alt={`${room.name} Hauptansicht`} 
-                  className="w-full h-auto rounded-lg cursor-pointer"
-                  onClick={() => openLightbox(0)}
-                />
+                <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                  <img 
+                    src={room.images[0]} 
+                    alt={`${room.name} Hauptansicht`} 
+                    className="w-full h-full object-cover cursor-pointer"
+                    onClick={() => openLightbox(0)}
+                  />
+                </div>
               </div>
               <div className="grid grid-cols-4 gap-2">
                 {room.images.slice(0, 4).map((image, index) => (
