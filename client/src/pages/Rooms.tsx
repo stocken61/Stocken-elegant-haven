@@ -11,7 +11,7 @@ import { rooms, Room } from '@/data/rooms';
 const Rooms: React.FC = () => {
   const roomCategories = [
     { id: 'all', name: 'Alle Zimmer' },
-    { id: 'economy', name: 'Economy' },
+    { id: 'comfort', name: 'Comfort' },
     { id: 'deluxe', name: 'Deluxe' },
     { id: 'premium-suite', name: 'Premium' },
     { id: 'premium-family', name: 'Family' }
