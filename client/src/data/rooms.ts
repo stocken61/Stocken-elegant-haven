@@ -15,14 +15,14 @@ export interface Room {
 }
 
 export const rooms: Room[] = [
-  // Comfort Zimmer (3 Zimmer, 18 m²)
+  // Komfort Zimmer (3 Zimmer, 18 m²)
   {
     id: 'comfort-room-1',
     category: 'comfort',
-    name: 'Comfort Zimmer',
-    shortDescription: 'Unser Comfort Zimmer mit 18 m²',
-    description: 'Unser gemütliches Comfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
-    extendedDescription: 'Das Comfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
+    name: 'Komfort Zimmer',
+    shortDescription: 'Unser Komfort Zimmer mit 18 m²',
+    description: 'Unser gemütliches Komfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
+    extendedDescription: 'Das Komfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
     price: 150,
     capacity: 2,
     size: 18,
@@ -50,10 +50,10 @@ export const rooms: Room[] = [
   {
     id: 'comfort-room-2',
     category: 'comfort',
-    name: 'Comfort Zimmer',
-    shortDescription: 'Unser Comfort Zimmer mit 18 m²',
-    description: 'Unser gemütliches Comfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
-    extendedDescription: 'Das Comfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
+    name: 'Komfort Zimmer',
+    shortDescription: 'Unser Komfort Zimmer mit 18 m²',
+    description: 'Unser gemütliches Komfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
+    extendedDescription: 'Das Komfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
     price: 150,
     capacity: 2,
     size: 18,
@@ -80,10 +80,10 @@ export const rooms: Room[] = [
   {
     id: 'comfort-room-3',
     category: 'comfort',
-    name: 'Comfort Zimmer',
-    shortDescription: 'Unser Comfort Zimmer mit 18 m²',
-    description: 'Unser gemütliches Comfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
-    extendedDescription: 'Das Comfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
+    name: 'Komfort Zimmer',
+    shortDescription: 'Unser Komfort Zimmer mit 18 m²',
+    description: 'Unser gemütliches Komfort Zimmer bietet Ihnen alles, was Sie für einen angenehmen Aufenthalt benötigen.',
+    extendedDescription: 'Das Komfort Zimmer ist mit hochwertigen Materialien ausgestattet und verbindet traditionelles Schweizer Design mit modernem Komfort. Das komfortable Doppelbett verspricht erholsamen Schlaf nach einem Tag in der Stadt.',
     price: 150,
     capacity: 2,
     size: 18,
