@@ -63,7 +63,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
           </div>
         </div>
         
-        <div className="mt-4 grid grid-cols-5 gap-2">
+        <div className="mt-4 grid grid-cols-3 sm:grid-cols-5 gap-2">
           {images.map((image, index) => (
             <div 
               key={index}

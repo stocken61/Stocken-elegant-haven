@@ -28,8 +28,8 @@ const RoomDetail: React.FC = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-start gap-12">
-          <div className="lg:w-7/12">
+        <div className="flex flex-col lg:flex-row items-start gap-8 md:gap-12">
+          <div className="w-full lg:w-7/12">
             <div className="mb-8">
               <div className="mb-4">
                 <div className="aspect-[4/3] overflow-hidden rounded-lg">
@@ -112,7 +112,7 @@ const RoomDetail: React.FC = () => {
           </div>
           
           {/* Booking Sidebar */}
-          <div className="lg:w-5/12 bg-neutral-light p-6 rounded-lg shadow-sm" id="booking">
+          <div className="w-full lg:w-5/12 bg-neutral-light p-6 rounded-lg shadow-sm" id="booking">
             <h3 className="text-2xl font-serif font-bold text-neutral-dark mb-6">
               Verfügbarkeit prüfen
             </h3>
