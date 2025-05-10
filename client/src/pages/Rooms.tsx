@@ -114,22 +114,16 @@ const Rooms: React.FC = () => {
             Hotelausstattung
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <h3 className="text-xl font-medium border-b border-neutral pb-4 mb-4">Inklusivleistungen</h3>
               <ul className="space-y-2">
-                <li className="flex items-center">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Reichhaltiges Frühstücksbuffet</span>
-                </li>
+
                 <li className="flex items-center">
                   <span className="text-primary mr-2">✓</span>
                   <span>Kostenloses WLAN</span>
                 </li>
-                <li className="flex items-center">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Zugang zum Wellnessbereich</span>
-                </li>
+
                 <li className="flex items-center">
                   <span className="text-primary mr-2">✓</span>
                   <span>Tägliche Zimmerreinigung</span>
@@ -138,33 +132,6 @@ const Rooms: React.FC = () => {
                   <span className="text-primary mr-2">✓</span>
                   <span>Gepäckaufbewahrung</span>
                 </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-xl font-medium border-b border-neutral pb-4 mb-4">Wellness & Spa</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Finnische Sauna</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Dampfbad</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Ruhebereich</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Massageanwendungen*</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Kosmetikbehandlungen*</span>
-                </li>
-                <li className="text-xs text-neutral-dark mt-4">*Gegen Aufpreis</li>
               </ul>
             </div>
             
