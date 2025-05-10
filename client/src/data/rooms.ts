@@ -217,7 +217,7 @@ export const rooms: Room[] = [
     price: 230,
     capacity: 3,
     size: 28,
-    bed: 'Doppelbett plus Schlafsofa',
+    bed: 'Doppelbett + Schlafsofa',
     view: 'Stadt und Umgebung',
     images: [
       '/assets/premium-suite/bett3.png',
@@ -253,7 +253,7 @@ export const rooms: Room[] = [
     price: 290,
     capacity: 6,
     size: 49,
-    bed: '2 Doppelbetten plus Schlafsofa',
+    bed: '2 Doppelbetten + Schlafsofa',
     view: 'Stadt und Umgebung',
     images: [
       '/assets/premium-family-suite/family_room.png',
