@@ -12,25 +12,37 @@ import Restaurant from "@/pages/Restaurant";
 import Contact from "@/pages/Contact";
 import Legal from "@/pages/Legal";
 import NotFound from "@/pages/not-found";
+import { useEffect } from "react";
+
+function ScrollToTop() {
+  const [location] = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  
+  return null;
+}
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/rooms" component={Rooms} />
-      <Route path="/room/:id" component={RoomDetail} />
-      <Route path="/restaurant" component={Restaurant} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/legal/:type" component={Legal} />
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/rooms" component={Rooms} />
+        <Route path="/room/:id" component={RoomDetail} />
+        <Route path="/restaurant" component={Restaurant} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/legal/:type" component={Legal} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 
 function App() {
-  const [location] = useLocation();
-  
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
