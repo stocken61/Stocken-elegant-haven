@@ -37,7 +37,7 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
           </div>
           <div className="flex items-center text-xs text-neutral-dark ml-2">
             <FontAwesomeIcon icon="bed" className="mr-1" />
-            <span className="text-[10px] sm:text-xs">{room.bed}</span>
+            <span className="text-[10px] sm:text-xs whitespace-nowrap">{room.bed}</span>
           </div>
         </div>
         <div className="flex gap-1 mt-1">

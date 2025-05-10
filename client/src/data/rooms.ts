@@ -246,7 +246,7 @@ export const rooms: Room[] = [
   {
     id: 'premium-family-suite',
     category: 'premium-family',
-    name: 'Family',
+    name: 'Familien',
     shortDescription: 'Unsere Familien Suite mit 49 m²',
     description: 'Die Premium Familien Suite ist unsere geräumigste Unterkunft mit zwei separaten Doppelbetten und einem Schlafsofa, ideal für Familien oder kleine Gruppen.',
     extendedDescription: 'Die Premium Familien Suite bietet großzügigen Platz für die ganze Familie oder kleine Gruppen. Mit zwei Doppelbetten und einem zusätzlichen Schlafsofa ist sie ideal für bis zu 6 Personen. Die Suite verfügt über einen separaten Wohnbereich und ein großzügiges Badezimmer mit Badewanne und Dusche.',
