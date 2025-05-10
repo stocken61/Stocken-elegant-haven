@@ -176,8 +176,8 @@ const BookingForm: React.FC<BookingFormProps> = ({ roomId, roomPrice = 0 }) => {
           <p className="text-sm text-neutral-dark">
             Oder rufen Sie uns direkt an:
           </p>
-          <a href="tel:+41441234567" className="text-primary font-medium hover:underline">
-            +41 44 123 45 67
+          <a href="tel:+41793000161" className="text-primary font-medium hover:underline">
+            +41 79 300 01 61
           </a>
         </div>
         
@@ -191,7 +191,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ roomId, roomPrice = 0 }) => {
               </div>
               <div className="flex justify-between">
                 <span>Frühstück inkl.</span>
-                <span className="font-medium">Ja</span>
+                <span className="font-medium">Nein</span>
               </div>
               <div className="flex justify-between">
                 <span>Kurtaxe pro Person/Nacht</span>
@@ -204,7 +204,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ roomId, roomPrice = 0 }) => {
               <span className="text-primary-dark">{roomPrice} CHF</span>
             </div>
             <p className="text-sm text-neutral-dark mt-1">
-              *Preis pro Nacht inkl. Frühstück, exkl. Kurtaxe
+              *Preis pro Nacht, exkl. Frühstück und Kurtaxe
             </p>
           </div>
         )}
