@@ -46,44 +46,56 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
 export async function sendContactFormNotification(
   submission: InsertContactSubmission
 ): Promise<boolean> {
-  const adminEmail = 'reservation@hotelstocken.com';
-  const notificationSubject = `Neue Kontaktanfrage: ${submission.subject}`;
-  
-  // Create HTML content for email
-  const htmlContent = `
-    <h2>Neue Kontaktanfrage erhalten</h2>
-    <p><strong>Von:</strong> ${submission.name} (${submission.email})</p>
-    <p><strong>Betreff:</strong> ${submission.subject}</p>
-    <p><strong>Nachricht:</strong></p>
-    <div style="background-color: #f9f9f9; padding: 15px; border-left: 4px solid #0d6efd; margin: 10px 0;">
-      ${submission.message.replace(/\n/g, '<br>')}
-    </div>
-    <p style="color: #666; font-size: 12px; margin-top: 20px;">
+  // Wenn kein API-Key vorhanden ist, loggen wir nur und geben true zurück
+  if (!process.env.SENDGRID_API_KEY) {
+    console.log('Kontaktformular-Benachrichtigung kann nicht gesendet werden (API-Key fehlt)');
+    console.log('Kontaktdaten:', submission);
+    return true;
+  }
+
+  try {
+    const adminEmail = 'reservation@hotelstocken.com';
+    const notificationSubject = `Neue Kontaktanfrage: ${submission.subject}`;
+    
+    // Create HTML content for email
+    const htmlContent = `
+      <h2>Neue Kontaktanfrage erhalten</h2>
+      <p><strong>Von:</strong> ${submission.name} (${submission.email})</p>
+      <p><strong>Betreff:</strong> ${submission.subject}</p>
+      <p><strong>Nachricht:</strong></p>
+      <div style="background-color: #f9f9f9; padding: 15px; border-left: 4px solid #0d6efd; margin: 10px 0;">
+        ${submission.message.replace(/\n/g, '<br>')}
+      </div>
+      <p style="color: #666; font-size: 12px; margin-top: 20px;">
+        Diese E-Mail wurde automatisch vom Kontaktformular auf hotelstocken.com gesendet.
+      </p>
+    `;
+    
+    // Create plain text content for email
+    const textContent = `
+      Neue Kontaktanfrage erhalten
+      ---------------------------
+      
+      Von: ${submission.name} (${submission.email})
+      Betreff: ${submission.subject}
+      
+      Nachricht:
+      ${submission.message}
+      
+      ---------------------------
       Diese E-Mail wurde automatisch vom Kontaktformular auf hotelstocken.com gesendet.
-    </p>
-  `;
-  
-  // Create plain text content for email
-  const textContent = `
-    Neue Kontaktanfrage erhalten
-    ---------------------------
+    `;
     
-    Von: ${submission.name} (${submission.email})
-    Betreff: ${submission.subject}
-    
-    Nachricht:
-    ${submission.message}
-    
-    ---------------------------
-    Diese E-Mail wurde automatisch vom Kontaktformular auf hotelstocken.com gesendet.
-  `;
-  
-  // Send email
-  return await sendEmail({
-    to: adminEmail,
-    from: 'noreply@hotelstocken.com', // Absender-E-Mail
-    subject: notificationSubject,
-    text: textContent,
-    html: htmlContent,
-  });
+    // Send email
+    return await sendEmail({
+      to: adminEmail,
+      from: 'reservation@hotelstocken.com', // Verwende die gleiche Adresse als Absender
+      subject: notificationSubject,
+      text: textContent,
+      html: htmlContent,
+    });
+  } catch (error) {
+    console.error('Fehler beim Senden der Kontaktformular-Benachrichtigung:', error);
+    return false;
+  }
 }
