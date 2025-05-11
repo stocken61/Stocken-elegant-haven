@@ -76,150 +76,102 @@ const Restaurant: React.FC = () => {
           </h2>
           
           <div className="max-w-4xl mx-auto">
-            {/* Menu Category: Starters */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-serif border-b border-primary-light pb-2 mb-6">
-                Vorspeisen
+            {/* Menu Category: Breakfast */}
+            <div className="mb-14 bg-secondary-lightest p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-serif border-b border-primary-light pb-2 mb-6 text-center">
+                Pontus Breakfast Menü
               </h3>
               
-              <div className="space-y-6">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Alpenkräutersalat</h4>
-                    <p className="text-neutral-dark">
-                      Frische Blattsalate mit hausgemachtem Kräuterdressing, Alpkäse-Croutons und gerösteten Nüssen
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    16 CHF
-                  </span>
-                </div>
+              <div className="text-center mb-6">
+                <span className="text-primary-dark font-bold text-2xl mb-1 block">
+                  CHF 69.– pro Person
+                </span>
+                <p className="text-neutral-dark italic">Kinder bis 14 Jahre kostenlos</p>
+              </div>
+              
+              <div className="mb-10">
+                <h4 className="text-xl font-medium flex items-center mb-4">
+                  <span className="text-primary-dark mr-2">🍳</span>
+                  Wählen Sie 3 warme Speisen:
+                </h4>
                 
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Bergtaler Rindscarpaccio</h4>
-                    <p className="text-neutral-dark">
-                      Hauchdünn geschnittenes Schweizer Rindfleisch mit Trüffelöl, Rucola und Parmesan
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    24 CHF
-                  </span>
-                </div>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6 ml-6">
+                  <li className="text-neutral-dark">Kuymak im Kupferpfännchen</li>
+                  <li className="text-neutral-dark">Spiegelei mit Sucuk oder vegetarisch</li>
+                  <li className="text-neutral-dark">Rührei mit frischen Kräutern</li>
+                  <li className="text-neutral-dark">Tomate-Mozzarella mit Olivenöl & Basilikum</li>
+                  <li className="text-neutral-dark">Spinat-Zwiebel-Champignon-Pfanne</li>
+                  <li className="text-neutral-dark">Menemen (türkisches Rührei mit Tomaten & Peperoni)</li>
+                </ul>
                 
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Hausgemachte Berghütten-Suppe</h4>
-                    <p className="text-neutral-dark">
-                      Cremige Kartoffelsuppe mit Bergkräutern, gerösteten Pilzen und Crème fraîche
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    14 CHF
-                  </span>
+                <div className="bg-white p-4 rounded-md">
+                  <p className="font-medium mb-3">Alle Pfannengerichte sind auch einzeln erhältlich:</p>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                    <li className="flex justify-between text-neutral-dark">
+                      <span>Kuymak</span>
+                      <span className="font-medium">CHF 22.–</span>
+                    </li>
+                    <li className="flex justify-between text-neutral-dark">
+                      <span>Spiegelei mit Sucuk</span>
+                      <span className="font-medium">CHF 18.–</span>
+                    </li>
+                    <li className="flex justify-between text-neutral-dark">
+                      <span>Rührei mit Kräutern</span>
+                      <span className="font-medium">CHF 17.–</span>
+                    </li>
+                    <li className="flex justify-between text-neutral-dark">
+                      <span>Tomate-Mozzarella</span>
+                      <span className="font-medium">CHF 16.–</span>
+                    </li>
+                    <li className="flex justify-between text-neutral-dark">
+                      <span>Spinat-Zwiebel-Champignon-Pfanne</span>
+                      <span className="font-medium">CHF 18.–</span>
+                    </li>
+                    <li className="flex justify-between text-neutral-dark">
+                      <span>Menemen</span>
+                      <span className="font-medium">CHF 18.–</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            
-            {/* Menu Category: Main Courses */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-serif border-b border-primary-light pb-2 mb-6">
-                Hauptgerichte
-              </h3>
               
-              <div className="space-y-6">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Schweizer Käsefondue</h4>
-                    <p className="text-neutral-dark">
-                      Traditionelles Käsefondue mit Gruyère und Vacherin, serviert mit Brot, Kartoffeln und Gemüse
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    32 CHF
-                  </span>
-                </div>
-                
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Alpweiden-Lammrücken</h4>
-                    <p className="text-neutral-dark">
-                      Saftig gebratener Lammrücken mit Kräuterkruste, Bergkartoffeln und saisonalem Gemüse
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    42 CHF
-                  </span>
-                </div>
-                
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Schweizer Forelle</h4>
-                    <p className="text-neutral-dark">
-                      Gebratene Forelle aus lokalen Gewässern mit Mandelbutter, Wildkräutern und hausgemachtem Kartoffelpüree
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    36 CHF
-                  </span>
-                </div>
-                
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Bergkräuter-Risotto (vegetarisch)</h4>
-                    <p className="text-neutral-dark">
-                      Cremiges Risotto mit Alpenkräutern, saisonalen Pilzen und gehobeltem Alpkäse
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    28 CHF
-                  </span>
-                </div>
+              <div className="mb-10">
+                <h4 className="text-xl font-medium flex items-center mb-4">
+                  <span className="text-primary-dark mr-2">🧀</span>
+                  Tischplatte zum Teilen
+                </h4>
+                <p className="mb-4 italic">Angerichtet in Schälchen auf Olivenholz:</p>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                  <li className="text-neutral-dark">Ausgewählte Oliven (schwarz & grün)</li>
+                  <li className="text-neutral-dark">Beyaz Peynir, Kasar & lokaler Schnittkäse</li>
+                  <li className="text-neutral-dark">Honig mit Wabenstück</li>
+                  <li className="text-neutral-dark">Hausgemachte Marmelade (Feige, Aprikose)</li>
+                  <li className="text-neutral-dark">Butter, Tahin & Pekmez</li>
+                  <li className="text-neutral-dark">Frisches Brot, Simit, Fladenbrot</li>
+                </ul>
               </div>
-            </div>
-            
-            {/* Menu Category: Desserts */}
-            <div>
-              <h3 className="text-2xl font-serif border-b border-primary-light pb-2 mb-6">
-                Desserts
-              </h3>
               
-              <div className="space-y-6">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Apfelstrudel</h4>
-                    <p className="text-neutral-dark">
-                      Hausgemachter Apfelstrudel mit Vanillesoße und Walnusseis
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    14 CHF
-                  </span>
-                </div>
-                
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Schokoladen-Fondant</h4>
-                    <p className="text-neutral-dark">
-                      Warmer Schokoladenkuchen mit flüssigem Kern, serviert mit Himbeersorbet
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    16 CHF
-                  </span>
-                </div>
-                
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="text-lg font-medium">Käseauswahl</h4>
-                    <p className="text-neutral-dark">
-                      Selektion von regionalen Schweizer Käsesorten, serviert mit Feigensenf und Früchtebrot
-                    </p>
-                  </div>
-                  <span className="text-primary-dark font-medium whitespace-nowrap ml-4">
-                    18 CHF
-                  </span>
-                </div>
+              <div className="mb-10">
+                <h4 className="text-xl font-medium flex items-center mb-4">
+                  <span className="text-primary-dark mr-2">🍵</span>
+                  Getränke inklusive:
+                </h4>
+                <ul className="ml-6">
+                  <li className="text-neutral-dark mb-2">Türkischer Tee in Silberkannen</li>
+                  <li className="text-neutral-dark mb-2">Frisch gepresster Orangensaft</li>
+                  <li className="text-neutral-dark">Wasser mit Zitrone & Minze</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h4 className="text-xl font-medium flex items-center mb-4">
+                  <span className="text-primary-dark mr-2">☕️</span>
+                  Zum Abschluss:
+                </h4>
+                <ul className="ml-6">
+                  <li className="text-neutral-dark mb-2">Türkischer Kaffee auf Wunsch</li>
+                  <li className="text-neutral-dark">Kleine süße Überraschung (z. B. Baklava oder Lokum)</li>
+                </ul>
               </div>
             </div>
           </div>
