@@ -24,7 +24,7 @@ const Restaurant: React.FC = () => {
           <div className="mb-12">
             <div className="max-w-4xl mx-auto">
               <img 
-                src="/assets/Restaurant.PNG" 
+                src="/Restaurant.PNG" 
                 alt="Restaurant Pontera Innenraum" 
                 className="w-full h-auto rounded-lg shadow-lg mx-auto object-cover max-h-[500px]" 
               />
