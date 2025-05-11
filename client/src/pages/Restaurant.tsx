@@ -22,7 +22,13 @@ const Restaurant: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <img src="/assets/Restaurant.PNG" alt="Restaurant Pontera Innenraum" className="w-full h-auto rounded-lg shadow-lg mx-auto" />
+            <div className="max-w-4xl mx-auto">
+              <img 
+                src="/assets/Restaurant.PNG" 
+                alt="Restaurant Pontera Innenraum" 
+                className="w-full h-auto rounded-lg shadow-lg mx-auto object-cover max-h-[500px]" 
+              />
+            </div>
           </div>
           <div className="mt-8">
             <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 text-center">
