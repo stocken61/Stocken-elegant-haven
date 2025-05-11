@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-xl mb-3">Kontaktdaten</h3>
                   <p className="text-neutral-dark mb-1">Tel: +41 79 300 01 61</p>
-                  <p className="text-neutral-dark">E-Mail: info@hotelstocken.com</p>
+                  <p className="text-neutral-dark">E-Mail: reservation@hotelstocken.com</p>
                 </div>
               </div>
               
