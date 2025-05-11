@@ -247,9 +247,9 @@ const Restaurant: React.FC = () => {
             </p>
             
             <div className="flex flex-col md:flex-row justify-center gap-4">
-              <a href="tel:+41441234567" className="inline-flex items-center justify-center bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300">
+              <a href="tel:+41793000161" className="inline-flex items-center justify-center bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300">
                 <FontAwesomeIcon icon="phone-alt" className="mr-2" />
-                <span>+41 44 123 45 67</span>
+                <span>+41 79 300 01 61</span>
               </a>
               <a href="mailto:restaurant@stocken.ch" className="inline-flex items-center justify-center bg-secondary-dark hover:bg-secondary text-white py-3 px-6 rounded-md transition duration-300">
                 <FontAwesomeIcon icon="envelope" className="mr-2" />
@@ -285,7 +285,7 @@ const Restaurant: React.FC = () => {
                   <div>
                     <h3 className="font-medium">Kapazität</h3>
                     <p className="text-neutral-dark">
-                      Bis zu 60 Personen im Hauptrestaurant, bis zu 25 Personen im privaten Speiseraum
+                      Bis zu 25 Personen im Restaurant
                     </p>
                   </div>
                 </div>
