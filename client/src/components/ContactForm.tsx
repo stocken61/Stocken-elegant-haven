@@ -67,7 +67,14 @@ const ContactForm: React.FC = () => {
         variant: 'default',
       });
       
-      form.reset();
+      // Formular zurücksetzen und Erfolgsmeldung anzeigen
+      form.reset(defaultValues);
+      setFormSubmitted(true);
+      
+      // Nach 5 Sekunden die Erfolgsmeldung ausblenden
+      setTimeout(() => {
+        setFormSubmitted(false);
+      }, 5000);
     } catch (error) {
       toast({
         title: 'Fehler',
@@ -79,6 +86,16 @@ const ContactForm: React.FC = () => {
   
   return (
     <Form {...form}>
+      {formSubmitted && (
+        <Alert className="mb-6 bg-green-50 border border-green-100 text-green-800">
+          <CheckCircle2 className="h-5 w-5 text-green-600" />
+          <AlertTitle className="text-green-800 font-medium">Nachricht erfolgreich gesendet!</AlertTitle>
+          <AlertDescription className="text-green-700">
+            Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden.
+          </AlertDescription>
+        </Alert>
+      )}
+      
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         <FormField
           control={form.control}
