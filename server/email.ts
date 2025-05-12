@@ -93,6 +93,8 @@ export async function sendContactFormNotification(
   }
 
   try {
+    // Verwende die Brevo-Login-E-Mail als Absender (verifizierte Adresse)
+    const senderEmail = process.env.BREVO_SMTP_USER || '';
     const adminEmail = 'reservation@hotelstocken.com';
     const notificationSubject = `Neue Kontaktanfrage: ${submission.subject}`;
     
@@ -125,10 +127,13 @@ export async function sendContactFormNotification(
       Diese E-Mail wurde automatisch vom Kontaktformular auf hotelstocken.com gesendet.
     `;
     
-    // E-Mail senden
+    // E-Mail senden mit der verifizierten Absender-E-Mail
     return await sendEmail({
       to: adminEmail,
-      from: 'reservation@hotelstocken.com', // Absender-E-Mail
+      from: {
+        name: 'Hotel Stocken',
+        address: senderEmail
+      },
       subject: notificationSubject,
       text: textContent,
       html: htmlContent,
