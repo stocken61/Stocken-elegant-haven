@@ -219,62 +219,52 @@ const Restaurant: React.FC = () => {
       {/* Private Events Section */}
       <section className="py-20 bg-neutral-light">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
-                Private Events & Feiern
-              </h2>
-              <p className="text-lg text-neutral-dark mb-4">
-                Unser Restaurant bietet den perfekten Rahmen für Ihre privaten Feiern und Firmenveranstaltungen. Von Geburtstagen und Jubiläen bis hin zu Geschäftsessen und Teamevents – wir sorgen für ein unvergessliches Erlebnis.
-              </p>
-              <p className="text-lg text-neutral-dark mb-6">
-                Unser Event-Team hilft Ihnen gerne bei der Planung und Umsetzung Ihrer Veranstaltung. Wir können Menüs nach Ihren Wünschen anpassen und bieten verschiedene Räumlichkeiten für unterschiedliche Gruppengrößen.
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <FontAwesomeIcon icon="users" className="text-primary-light mt-1 mr-3" />
-                  <div>
-                    <h3 className="font-medium">Kapazität</h3>
-                    <p className="text-neutral-dark">
-                      Bis zu 25 Personen im Restaurant
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <FontAwesomeIcon icon="glass-cheers" className="text-primary-light mt-1 mr-3" />
-                  <div>
-                    <h3 className="font-medium">Anlässe</h3>
-                    <p className="text-neutral-dark">
-                      Hochzeiten, Geburtstage, Jubiläen, Firmenfeiern, Weihnachtsfeiern
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <FontAwesomeIcon icon="envelope" className="text-primary-light mt-1 mr-3" />
-                  <div>
-                    <h3 className="font-medium">Anfragen</h3>
-                    <p className="text-neutral-dark">
-                      Bitte kontaktieren Sie uns unter{' '}
-                      <a 
-                        href="mailto:event@hotelstocken.com" 
-                        className="text-primary hover:text-primary-dark transition-colors inline-flex items-center"
-                      >
-                        event@hotelstocken.com
-                        <FontAwesomeIcon icon="external-link-alt" className="ml-1 text-xs" />
-                      </a>{' '}
-                      für weitere Informationen
-                    </p>
-                  </div>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
+              Private Events & Feiern
+            </h2>
+            <p className="text-lg text-neutral-dark mb-4">
+              Unser Restaurant bietet den perfekten Rahmen für Ihre privaten Feiern und Firmenveranstaltungen. Von Geburtstagen und Jubiläen bis hin zu Geschäftsessen und Teamevents – wir sorgen für ein unvergessliches Erlebnis.
+            </p>
+            <p className="text-lg text-neutral-dark mb-6">
+              Unser Event-Team hilft Ihnen gerne bei der Planung und Umsetzung Ihrer Veranstaltung. Wir können Menüs nach Ihren Wünschen anpassen und bieten verschiedene Räumlichkeiten für unterschiedliche Gruppengrößen.
+            </p>
+            
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <FontAwesomeIcon icon="users" className="text-primary-light mt-1 mr-3" />
+                <div>
+                  <h3 className="font-medium">Kapazität</h3>
+                  <p className="text-neutral-dark">
+                    Bis zu 25 Personen im Restaurant
+                  </p>
                 </div>
               </div>
-            </div>
-            <div className="lg:w-1/2">
-              <div className="grid grid-cols-2 gap-4">
-                <img src="/assets/restaurant.webp" alt="Private Dining" className="rounded-lg shadow-md" />
-                <img src="/assets/room_main.webp" alt="Event Setup" className="rounded-lg shadow-md" />
-                <img src="/assets/room_main.webp" alt="Banquet Setup" className="rounded-lg shadow-md" />
-                <img src="/assets/restaurant.webp" alt="Celebration" className="rounded-lg shadow-md" />
+              <div className="flex items-start">
+                <FontAwesomeIcon icon="utensils" className="text-primary-light mt-1 mr-3" />
+                <div>
+                  <h3 className="font-medium">Anlässe</h3>
+                  <p className="text-neutral-dark">
+                    Hochzeiten, Geburtstage, Jubiläen, Firmenfeiern, Weihnachtsfeiern
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <FontAwesomeIcon icon="envelope" className="text-primary-light mt-1 mr-3" />
+                <div>
+                  <h3 className="font-medium">Anfragen</h3>
+                  <p className="text-neutral-dark">
+                    Bitte kontaktieren Sie uns unter{' '}
+                    <a 
+                      href="mailto:event@hotelstocken.com" 
+                      className="text-primary hover:text-primary-dark transition-colors inline-flex items-center"
+                    >
+                      event@hotelstocken.com
+                      <FontAwesomeIcon icon="arrow-right" className="ml-1 text-xs" />
+                    </a>{' '}
+                    für weitere Informationen
+                  </p>
+                </div>
               </div>
             </div>
           </div>
