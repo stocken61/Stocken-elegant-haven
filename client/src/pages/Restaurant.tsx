@@ -255,7 +255,15 @@ const Restaurant: React.FC = () => {
                   <div>
                     <h3 className="font-medium">Anfragen</h3>
                     <p className="text-neutral-dark">
-                      Bitte kontaktieren Sie uns unter events@stocken.ch für weitere Informationen
+                      Bitte kontaktieren Sie uns unter{' '}
+                      <a 
+                        href="mailto:event@hotelstocken.com" 
+                        className="text-primary hover:text-primary-dark transition-colors inline-flex items-center"
+                      >
+                        event@hotelstocken.com
+                        <FontAwesomeIcon icon="external-link-alt" className="ml-1 text-xs" />
+                      </a>{' '}
+                      für weitere Informationen
                     </p>
                   </div>
                 </div>
