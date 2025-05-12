@@ -2,8 +2,8 @@ import nodemailer from 'nodemailer';
 import { InsertContactSubmission } from '@shared/schema';
 
 // Brevo SMTP-Einstellungen
-const BREVO_HOST = 'smtp.brevo.com';  // Hauptserver für Brevo SMTP
-const BREVO_PORT = 587;               // TLS Port für die meisten SMTP-Server
+const BREVO_HOST = 'smtp-relay.brevo.com';  // SMTP-Relay-Server für Brevo
+const BREVO_PORT = 587;                    // TLS Port für die meisten SMTP-Server
 
 /**
  * Konfiguriert den E-Mail-Transporter mit Brevo SMTP-Einstellungen
