@@ -20,10 +20,15 @@ function getTransporter() {
   return nodemailer.createTransport({
     host: BREVO_HOST,
     port: BREVO_PORT,
-    secure: false, // true für 465, false für andere Ports
+    secure: false, // false für TLS (STARTTLS)
+    requireTLS: true, // Erzwinge TLS-Nutzung
     auth: {
       user: process.env.BREVO_SMTP_USER || '',
       pass: process.env.BREVO_SMTP_PASSWORD || '',
+    },
+    tls: {
+      // Akzeptiere selbstsignierte Zertifikate
+      rejectUnauthorized: false
     },
     debug: true, // Debug-Modus aktivieren
   });
