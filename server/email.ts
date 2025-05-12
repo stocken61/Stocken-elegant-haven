@@ -31,7 +31,7 @@ function getTransporter() {
 
 export interface EmailParams {
   to: string;
-  from: string;
+  from: string | { name: string; address: string };
   subject: string;
   text?: string;
   html?: string;
@@ -93,8 +93,8 @@ export async function sendContactFormNotification(
   }
 
   try {
-    // Verwende die Brevo-Login-E-Mail als Absender (verifizierte Adresse)
-    const senderEmail = process.env.BREVO_SMTP_USER || '';
+    // Verwende die verifizierte Absenderadresse für Brevo
+    const senderEmail = 'contact@hotelstocken.com';
     const adminEmail = 'reservation@hotelstocken.com';
     const notificationSubject = `Neue Kontaktanfrage: ${submission.subject}`;
     
