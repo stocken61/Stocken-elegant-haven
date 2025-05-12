@@ -15,8 +15,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Store contact submission
       const submission = await storage.createContactSubmission(data);
       
-      // Beim Einsatz auf dem produktiven Server würde hier eine E-Mail gesendet werden
-      // In der Entwicklungsumgebung loggen wir nur die Daten
+      // Versuche eine E-Mail-Benachrichtigung zu senden
+      try {
+        const emailResult = await sendContactFormNotification(data);
+        if (emailResult) {
+          console.log("✓ E-Mail-Benachrichtigung erfolgreich gesendet");
+        } else {
+          console.log("✗ E-Mail-Benachrichtigung konnte nicht gesendet werden");
+        }
+      } catch (emailError) {
+        console.error("Fehler beim Senden der E-Mail-Benachrichtigung:", emailError);
+      }
+      
+      // Logge die Kontaktformular-Daten
       console.log("Contact form submission received:", {
         name: data.name,
         email: data.email,

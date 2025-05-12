@@ -2,13 +2,21 @@ import nodemailer from 'nodemailer';
 import { InsertContactSubmission } from '@shared/schema';
 
 // Brevo SMTP-Einstellungen
-const BREVO_HOST = 'smtp-relay.brevo.com';
+const BREVO_HOST = 'smtp-relay.sendinblue.com';
 const BREVO_PORT = 587;
 
 /**
  * Konfiguriert den E-Mail-Transporter mit Brevo SMTP-Einstellungen
  */
 function getTransporter() {
+  // Debug-Informationen für die SMTP-Konfiguration ausgeben
+  console.log("SMTP Konfiguration:", {
+    host: BREVO_HOST,
+    port: BREVO_PORT,
+    user: process.env.BREVO_SMTP_USER ? process.env.BREVO_SMTP_USER.substring(0, 3) + "..." : "undefined",
+    passLength: process.env.BREVO_SMTP_PASSWORD ? process.env.BREVO_SMTP_PASSWORD.length : 0
+  });
+
   return nodemailer.createTransport({
     host: BREVO_HOST,
     port: BREVO_PORT,
@@ -17,6 +25,7 @@ function getTransporter() {
       user: process.env.BREVO_SMTP_USER || '',
       pass: process.env.BREVO_SMTP_PASSWORD || '',
     },
+    debug: true, // Debug-Modus aktivieren
   });
 }
 
