@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import { InsertContactSubmission } from '@shared/schema';
 
 // Brevo SMTP-Einstellungen
-const BREVO_HOST = 'smtp-relay.sendinblue.com';
+const BREVO_HOST = 'smtp-relay.brevo.com';
 const BREVO_PORT = 587;
 
 /**
@@ -50,14 +50,26 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
   try {
     const transporter = getTransporter();
 
-    // E-Mail senden
-    const info = await transporter.sendMail({
-      from: params.from,
+    // Optionen für das Senden der E-Mail
+    const mailOptions = {
+      from: {
+        name: 'Hotel Stocken',
+        address: params.from
+      },
       to: params.to,
       subject: params.subject,
       text: params.text,
       html: params.html,
+    };
+
+    console.log('Sende E-Mail mit folgenden Optionen:', {
+      from: mailOptions.from,
+      to: mailOptions.to,
+      subject: mailOptions.subject,
     });
+
+    // E-Mail senden
+    const info = await transporter.sendMail(mailOptions);
 
     console.log('E-Mail erfolgreich gesendet:', info.messageId);
     return true;
