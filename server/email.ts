@@ -1,15 +1,23 @@
-import { MailService } from '@sendgrid/mail';
+import nodemailer from 'nodemailer';
 import { InsertContactSubmission } from '@shared/schema';
 
-// Prüfen, ob der API-Key gesetzt ist
-if (!process.env.SENDGRID_API_KEY) {
-  console.error("SENDGRID_API_KEY environment variable must be set");
-}
+// Brevo SMTP-Einstellungen
+const BREVO_HOST = 'smtp-relay.brevo.com';
+const BREVO_PORT = 587;
 
-// SendGrid Mail-Service initialisieren
-const mailService = new MailService();
-if (process.env.SENDGRID_API_KEY) {
-  mailService.setApiKey(process.env.SENDGRID_API_KEY);
+/**
+ * Konfiguriert den E-Mail-Transporter mit Brevo SMTP-Einstellungen
+ */
+function getTransporter() {
+  return nodemailer.createTransport({
+    host: BREVO_HOST,
+    port: BREVO_PORT,
+    secure: false, // true für 465, false für andere Ports
+    auth: {
+      user: process.env.BREVO_SMTP_USER || '',
+      pass: process.env.BREVO_SMTP_PASSWORD || '',
+    },
+  });
 }
 
 export interface EmailParams {
@@ -21,34 +29,44 @@ export interface EmailParams {
 }
 
 /**
- * Sends an email notification using SendGrid
+ * Sendet eine E-Mail über den Brevo SMTP-Server
  */
 export async function sendEmail(params: EmailParams): Promise<boolean> {
+  // Überprüfen, ob Brevo-Zugangsdaten vorhanden sind
+  if (!process.env.BREVO_SMTP_USER || !process.env.BREVO_SMTP_PASSWORD) {
+    console.log('E-Mail konnte nicht gesendet werden: Brevo SMTP-Zugangsdaten fehlen');
+    return false;
+  }
+
   try {
-    await mailService.send({
-      to: params.to,
+    const transporter = getTransporter();
+
+    // E-Mail senden
+    const info = await transporter.sendMail({
       from: params.from,
+      to: params.to,
       subject: params.subject,
       text: params.text,
       html: params.html,
     });
-    console.log('Email sent successfully');
+
+    console.log('E-Mail erfolgreich gesendet:', info.messageId);
     return true;
   } catch (error) {
-    console.error('SendGrid email error:', error);
+    console.error('Fehler beim Senden der E-Mail:', error);
     return false;
   }
 }
 
 /**
- * Prepares and sends a contact form submission notification email
+ * Bereitet eine Kontaktformular-Benachrichtigung vor und sendet sie
  */
 export async function sendContactFormNotification(
   submission: InsertContactSubmission
 ): Promise<boolean> {
-  // Wenn kein API-Key vorhanden ist, loggen wir nur und geben true zurück
-  if (!process.env.SENDGRID_API_KEY) {
-    console.log('Kontaktformular-Benachrichtigung kann nicht gesendet werden (API-Key fehlt)');
+  // Wenn Brevo-Zugangsdaten fehlen, loggen wir nur und geben true zurück
+  if (!process.env.BREVO_SMTP_USER || !process.env.BREVO_SMTP_PASSWORD) {
+    console.log('Kontaktformular-Benachrichtigung kann nicht gesendet werden (Brevo-Zugangsdaten fehlen)');
     console.log('Kontaktdaten:', submission);
     return true;
   }
@@ -57,13 +75,13 @@ export async function sendContactFormNotification(
     const adminEmail = 'reservation@hotelstocken.com';
     const notificationSubject = `Neue Kontaktanfrage: ${submission.subject}`;
     
-    // Create HTML content for email
+    // HTML-Inhalt für die E-Mail erstellen
     const htmlContent = `
       <h2>Neue Kontaktanfrage erhalten</h2>
       <p><strong>Von:</strong> ${submission.name} (${submission.email})</p>
       <p><strong>Betreff:</strong> ${submission.subject}</p>
       <p><strong>Nachricht:</strong></p>
-      <div style="background-color: #f9f9f9; padding: 15px; border-left: 4px solid #0d6efd; margin: 10px 0;">
+      <div style="background-color: #f9f9f9; padding: 15px; border-left: 4px solid #8B5A2B; margin: 10px 0;">
         ${submission.message.replace(/\n/g, '<br>')}
       </div>
       <p style="color: #666; font-size: 12px; margin-top: 20px;">
@@ -71,7 +89,7 @@ export async function sendContactFormNotification(
       </p>
     `;
     
-    // Create plain text content for email
+    // Text-Inhalt für die E-Mail erstellen
     const textContent = `
       Neue Kontaktanfrage erhalten
       ---------------------------
@@ -86,10 +104,10 @@ export async function sendContactFormNotification(
       Diese E-Mail wurde automatisch vom Kontaktformular auf hotelstocken.com gesendet.
     `;
     
-    // Send email
+    // E-Mail senden
     return await sendEmail({
       to: adminEmail,
-      from: 'reservation@hotelstocken.com', // Verwende die gleiche Adresse als Absender
+      from: 'reservation@hotelstocken.com', // Absender-E-Mail
       subject: notificationSubject,
       text: textContent,
       html: htmlContent,
