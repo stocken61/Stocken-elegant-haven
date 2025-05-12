@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -24,6 +24,8 @@ import {
 } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { apiRequest } from '@/lib/queryClient';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { CheckCircle2 } from 'lucide-react';
 
 // Contact form schema
 const contactFormSchema = z.object({
@@ -40,6 +42,7 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const ContactForm: React.FC = () => {
   const { toast } = useToast();
+  const [formSubmitted, setFormSubmitted] = useState(false);
   
   // Default form values
   const defaultValues: Partial<ContactFormValues> = {

@@ -37,6 +37,7 @@ function getTransporter() {
 export interface EmailParams {
   to: string;
   from: string | { name: string; address: string };
+  replyTo?: string; // Hinzugefügt: replyTo für Antwort-Adresse
   subject: string;
   text?: string;
   html?: string;
@@ -69,11 +70,17 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
     } else if (typeof params.from === 'object') {
       mailOptions.from = params.from;
     }
+    
+    // Füge replyTo hinzu, wenn angegeben
+    if (params.replyTo) {
+      mailOptions.replyTo = params.replyTo;
+    }
 
     console.log('Sende E-Mail mit folgenden Optionen:', {
       from: mailOptions.from,
       to: mailOptions.to,
       subject: mailOptions.subject,
+      replyTo: mailOptions.replyTo || 'nicht gesetzt',
     });
 
     // E-Mail senden
@@ -142,6 +149,7 @@ export async function sendContactFormNotification(
         name: 'Hotel Stocken',
         address: senderEmail
       },
+      replyTo: submission.email, // Dynamisches setzen der Antwort-Adresse
       subject: notificationSubject,
       text: textContent,
       html: htmlContent,
