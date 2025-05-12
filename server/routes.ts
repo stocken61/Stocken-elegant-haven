@@ -15,27 +15,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Store contact submission
       const submission = await storage.createContactSubmission(data);
       
-      // Versuche eine E-Mail-Benachrichtigung zu senden
-      try {
-        const emailResult = await sendContactFormNotification(data);
-        if (emailResult) {
-          console.log("✓ E-Mail-Benachrichtigung erfolgreich gesendet");
-        } else {
-          console.log("✗ E-Mail-Benachrichtigung konnte nicht gesendet werden");
-        }
-      } catch (emailError) {
-        console.error("Fehler beim Senden der E-Mail-Benachrichtigung:", emailError);
-      }
-      
-      // Logge die Kontaktformular-Daten
-      console.log("Contact form submission received:", {
+      // Ausführliche Protokollierung der Kontaktformular-Daten
+      console.log("Neue Kontaktanfrage erhalten:", {
+        id: submission.id,
+        datum: new Date().toISOString(),
         name: data.name,
         email: data.email,
-        subject: data.subject,
-        message: data.message.substring(0, 50) + (data.message.length > 50 ? "..." : "")
+        betreff: data.subject,
+        nachricht: data.message
       });
       
-      // Return success
+      console.log(`
+      ===== NEUE KONTAKTANFRAGE =====
+      Datum: ${new Date().toLocaleString()}
+      Von: ${data.name} (${data.email})
+      Betreff: ${data.subject}
+      
+      Nachricht:
+      ${data.message}
+      ===============================
+      `);
+      
+      // Return success with user-friendly message
       res.json({ 
         success: true, 
         message: "Vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.", 
