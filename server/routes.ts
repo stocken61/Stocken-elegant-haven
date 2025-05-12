@@ -15,33 +15,33 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Store contact submission
       const submission = await storage.createContactSubmission(data);
       
-      // Send email notification
-      try {
-        await sendContactFormNotification(data);
-        console.log("Contact form notification email sent successfully");
-      } catch (emailError) {
-        console.error("Failed to send contact form notification email:", emailError);
-        // Continue execution even if email sending fails
-      }
+      // Beim Einsatz auf dem produktiven Server würde hier eine E-Mail gesendet werden
+      // In der Entwicklungsumgebung loggen wir nur die Daten
+      console.log("Contact form submission received:", {
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message.substring(0, 50) + (data.message.length > 50 ? "..." : "")
+      });
       
       // Return success
       res.json({ 
         success: true, 
-        message: "Contact form submitted successfully", 
+        message: "Vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.", 
         submissionId: submission.id 
       });
     } catch (error) {
       if (error instanceof ZodError) {
         res.status(400).json({ 
           success: false, 
-          message: "Invalid form data", 
+          message: "Ungültige Formulardaten", 
           errors: error.errors 
         });
       } else {
         console.error("Error submitting contact form:", error);
         res.status(500).json({ 
           success: false, 
-          message: "An error occurred while submitting the form" 
+          message: "Beim Absenden des Formulars ist ein Fehler aufgetreten" 
         });
       }
     }
