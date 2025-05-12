@@ -67,8 +67,16 @@ const ContactForm: React.FC = () => {
         variant: 'default',
       });
       
-      // Formular zurücksetzen und Erfolgsmeldung anzeigen
-      form.reset(defaultValues);
+      // Formular komplett zurücksetzen (leeren)
+      form.reset({
+        name: '',
+        email: '',
+        subject: defaultValues.subject,
+        message: '',
+        privacy: false,
+      });
+      
+      // Erfolgsanzeige einblenden
       setFormSubmitted(true);
       
       // Nach 5 Sekunden die Erfolgsmeldung ausblenden
