@@ -51,16 +51,19 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
     const transporter = getTransporter();
 
     // Optionen für das Senden der E-Mail
-    const mailOptions = {
-      from: {
-        name: 'Hotel Stocken',
-        address: params.from
-      },
+    const mailOptions: any = {
       to: params.to,
       subject: params.subject,
       text: params.text,
       html: params.html,
     };
+
+    // Formatiere den Absender korrekt
+    if (typeof params.from === 'string') {
+      mailOptions.from = params.from;
+    } else if (typeof params.from === 'object') {
+      mailOptions.from = params.from;
+    }
 
     console.log('Sende E-Mail mit folgenden Optionen:', {
       from: mailOptions.from,
