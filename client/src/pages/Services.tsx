@@ -30,7 +30,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/attractions/stiftsbibliothek.webp"
+                  src="https://images.unsplash.com/photo-1626763035562-6eda155ba9c4?q=80&w=2070&auto=format&fit=crop"
                   alt="Stiftsbibliothek St. Gallen" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -51,7 +51,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/attractions/drei-weieren.png"
+                  src="https://images.unsplash.com/photo-1629646526635-eef7fd2a489d?q=80&w=2070&auto=format&fit=crop"
                   alt="Drei Weiern" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -72,7 +72,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/attractions/textilmuseum.jpg"
+                  src="https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?q=80&w=2015&auto=format&fit=crop"
                   alt="Textilmuseum" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
