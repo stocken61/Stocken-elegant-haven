@@ -1,0 +1,37 @@
+Großartig – das ist ein echtes Alleinstellungsmerkmal! Ein **Black Sea-Fondue** (z. B. mit Pontischem Käse, Maismehl, Butter, vielleicht inspiriert von „Kuymak“ oder „Muhlama“) ist nicht nur originell, sondern auch ein starkes kulturelles Signal. Damit bringst du eine **authentische, warme Spezialität** in ein hochwertiges Setting – und hebst dich komplett von klassischen Fondue-Angeboten ab.
+
+---
+
+### ✅ Überarbeiteter Text mit „Black Sea-Fondue“ als zentrales Highlight:
+
+> **Im Restaurant „Pontera“ erwartet Sie ein ganzheitliches Genusskonzept – jenseits klassischer Essenszeiten.**
+> Inspiriert von levantinischer, mediterraner und insbesondere **pontischer Küche** servieren wir kreative, liebevoll zubereitete Gerichte – frisch, stilvoll und ganztägig verfügbar.
+>
+> Unser **kulinarisches Highlight**: das **Black Sea-Fondue** – eine warme Spezialität aus der Schwarzmeerregion, mit geschmolzenem Käse, Butter und Maismehl, nach traditionellem Rezept in Kupferpfannen serviert.
+> Begleitet wird dieses Erlebnis von **hausgemachten Teesorten**, sorgfältig in **Kupferkannen** aufgegossen, sowie alkoholfreien Signature-Cocktails.
+>
+> Dieses neuartige Genusskonzept ist eine **Rarität in der Schweiz** – jetzt **erstmals in St. Gallen** erlebbar.
+
+---
+
+### ✨ Claim / Unterzeile (optional):
+
+> *Pontera – das erste Black Sea-Fondue-Erlebnis der Schweiz.*
+
+---
+
+### ✅ Prompt für Replit Agent (aktualisiert):
+
+> Bitte ersetze den aktuellen Text im Restaurant-Abschnitt durch den folgenden, angepassten Text:
+>
+> ---
+>
+> **Im Restaurant „Pontera“ erwartet Sie ein ganzheitliches Genusskonzept – jenseits klassischer Essenszeiten.**
+> Inspiriert von levantinischer, mediterraner und insbesondere **pontischer Küche** servieren wir kreative, liebevoll zubereitete Gerichte – frisch, stilvoll und ganztägig verfügbar.
+>
+> Unser **kulinarisches Highlight**: das **Black Sea-Fondue** – eine warme Spezialität aus der Schwarzmeerregion, mit geschmolzenem Käse, Butter und Maismehl, nach traditionellem Rezept in Kupferpfannen serviert.
+> Begleitet wird dieses Erlebnis von **hausgemachten Teesorten**, sorgfältig in **Kupferkannen** aufgegossen, sowie alkoholfreien Signature-Cocktails.
+>
+> ## Dieses neuartige Genusskonzept ist eine **Rarität in der Schweiz** – jetzt **erstmals in St. Gallen** erlebbar.
+
+Möchtest du auch eine visuelle Inszenierung dieses Black Sea-Fondues als Hero-Bild oder Menükarte?

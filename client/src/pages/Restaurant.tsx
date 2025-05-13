@@ -36,17 +36,20 @@ const Restaurant: React.FC = () => {
               Kulinarische Erlebnisse im Stocken
             </h2>
             <p className="text-lg text-neutral-dark mb-4 text-center max-w-4xl mx-auto">
-              Im Restaurant „Pontera" erwartet Sie ein ganzheitliches Genusskonzept – jenseits klassischer Essenszeiten.
-              Inspiriert von levantinischer, mediterraner und insbesondere pontischer Küche servieren wir kreative, liebevoll zubereitete Gerichte – frisch, stilvoll und ganztägig verfügbar.
+              <strong>Im Restaurant „Pontera" erwartet Sie ein ganzheitliches Genusskonzept – jenseits klassischer Essenszeiten.</strong>
+              Inspiriert von levantinischer, mediterraner und insbesondere <strong>pontischer Küche</strong> servieren wir kreative, liebevoll zubereitete Gerichte – frisch, stilvoll und ganztägig verfügbar.
             </p>
             <p className="text-lg text-neutral-dark mb-4 text-center max-w-4xl mx-auto">
-              Unser kulinarisches Highlight: das Black Sea-Fondue – eine warme Spezialität aus der Schwarzmeerregion, mit geschmolzenem Käse, Butter und Maismehl, nach traditionellem Rezept in Kupferpfannen serviert.
+              Unser <strong>kulinarisches Highlight</strong>: das <strong>Black Sea-Fondue</strong> – eine warme Spezialität aus der Schwarzmeerregion, mit geschmolzenem Käse, Butter und Maismehl, nach traditionellem Rezept in Kupferpfannen serviert.
             </p>
             <p className="text-lg text-neutral-dark mb-4 text-center max-w-4xl mx-auto">
-              Begleitet wird dieses Erlebnis von hausgemachten Teesorten, sorgfältig in Kupferkannen aufgegossen, sowie alkoholfreien Signature-Cocktails.
+              Begleitet wird dieses Erlebnis von <strong>hausgemachten Teesorten</strong>, sorgfältig in <strong>Kupferkannen</strong> aufgegossen, sowie alkoholfreien Signature-Cocktails.
             </p>
-            <p className="text-lg text-neutral-dark mb-6 text-center max-w-4xl mx-auto">
-              Dieses neuartige Genusskonzept ist eine Rarität in der Schweiz – jetzt erstmals in St. Gallen erlebbar.
+            <p className="text-lg text-neutral-dark mb-6 text-center max-w-4xl mx-auto font-medium">
+              Dieses neuartige Genusskonzept ist eine <strong>Rarität in der Schweiz</strong> – jetzt <strong>erstmals in St. Gallen</strong> erlebbar.
+            </p>
+            <p className="text-lg italic text-primary mb-8 text-center max-w-4xl mx-auto font-serif">
+              Pontera – das erste Black Sea-Fondue-Erlebnis der Schweiz.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4 max-w-4xl mx-auto">
