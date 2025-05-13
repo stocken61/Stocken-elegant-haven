@@ -59,6 +59,9 @@ const Header: React.FC = () => {
             <Link href="/restaurant" className={`nav-link text-sm lg:text-base ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
               Restaurant
             </Link>
+            <Link href="/services" className={`nav-link text-sm lg:text-base ${isActive('/services') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
+              Services
+            </Link>
             <Link href="/contact" className={`nav-link text-sm lg:text-base ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
               Kontakt
             </Link>
@@ -124,6 +127,13 @@ const Header: React.FC = () => {
             onClick={closeMenu}
           >
             Restaurant
+          </Link>
+          <Link 
+            href="/services"
+            className={`block ${isActive('/services') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
+            onClick={closeMenu}
+          >
+            Services
           </Link>
           <Link 
             href="/contact"
