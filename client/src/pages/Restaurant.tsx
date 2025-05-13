@@ -13,7 +13,7 @@ const Restaurant: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
             Restaurant Pontera
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto font-serif italic">
             „Where Suisse Design meets Türkisch Taste"
           </p>
         </div>
