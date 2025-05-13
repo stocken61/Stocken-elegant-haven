@@ -14,7 +14,7 @@ const Restaurant: React.FC = () => {
             Restaurant Pontera
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Where Suisse Design meets Türkisch Taste
+            „Where Suisse Design meets Türkisch Taste"
           </p>
         </div>
       </section>
