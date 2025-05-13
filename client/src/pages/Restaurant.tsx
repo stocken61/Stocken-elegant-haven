@@ -33,7 +33,7 @@ const Restaurant: React.FC = () => {
           </div>
           <div className="mt-8">
             <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6 text-center">
-              Kulinarische Erlebnisse im Stocken
+              Pontera – das erste All-Day-Genusskonzept mit Teekultur in Kupfer
             </h2>
             <p className="text-lg text-neutral-dark mb-4 text-center max-w-4xl mx-auto">
               <strong>Im Restaurant „Pontera" erwartet Sie ein ganzheitliches Genusskonzept – jenseits klassischer Essenszeiten.</strong>
