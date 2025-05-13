@@ -51,7 +51,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src={dreiWeierenImage}
+                  src="/assets/attractions/drei-weieren.png"
                   alt="Drei Weiern" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -112,7 +112,7 @@ const Services: React.FC = () => {
             
             <div className="p-6 rounded-lg shadow-md text-center">
               <div className="text-primary text-4xl mb-4">
-                <FontAwesomeIcon icon="concierge-bell" />
+                <FontAwesomeIcon icon="phone" />
               </div>
               <h3 className="text-xl font-bold mb-2 text-heading-gray">Concierge-Service</h3>
               <p className="text-neutral-dark">
