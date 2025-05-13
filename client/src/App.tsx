@@ -9,6 +9,7 @@ import About from "@/pages/About";
 import Rooms from "@/pages/Rooms";
 import RoomDetail from "@/pages/RoomDetail";
 import Restaurant from "@/pages/Restaurant";
+import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
 import Legal from "@/pages/Legal";
 import NotFound from "@/pages/not-found";
@@ -34,6 +35,7 @@ function Router() {
         <Route path="/rooms" component={Rooms} />
         <Route path="/room/:id" component={RoomDetail} />
         <Route path="/restaurant" component={Restaurant} />
+        <Route path="/services" component={Services} />
         <Route path="/contact" component={Contact} />
         <Route path="/legal/:type" component={Legal} />
         <Route component={NotFound} />
