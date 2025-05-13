@@ -306,7 +306,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://maps.app.goo.gl/BRTFLVZKgfdcbJcZ7"
+                    href="https://www.google.com/maps/place/Kräzernstraße+10,+9014+St.+Gallen"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
