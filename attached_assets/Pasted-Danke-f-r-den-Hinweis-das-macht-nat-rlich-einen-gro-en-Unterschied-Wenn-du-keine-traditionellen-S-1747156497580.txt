@@ -1,0 +1,41 @@
+Danke für den Hinweis – das macht natürlich einen großen Unterschied! Wenn du keine traditionellen Schweizer Gerichte anbietest, sondern z. B. ein kreatives, modernes oder regional-mediterranes Konzept verfolgst (wie dein „Pontus“-Frühstücks- & Brunchstil), dann sollte der Text das widerspiegeln.
+
+---
+
+### **Neuer, authentischer Textvorschlag für dein Restaurant „Pontera“:**
+
+> **Im Restaurant „Pontera“ erleben Sie ganztägig ein kulinarisches Konzept, das sich vom klassischen Frühstück löst und in neue Genussräume führt.**
+> Unsere Gerichte sind inspiriert von mediterranen, levantinischen und pontischen Einflüssen – frisch zubereitet, modern interpretiert und stilvoll serviert.
+>
+> Statt fester Essenszeiten bieten wir Ihnen ein **ganzheitliches Frühstücks- und Brunch-Erlebnis**, das sich mühelos in den Nachmittag und Abend erweitert – begleitet von ausgewählten Weinen, hausgemachten Spezialitäten und einer warmen, offenen Atmosphäre.
+
+---
+
+### **Alternative Überschrift:**
+
+* **„Frühstück neu gedacht – ganztägig & geschmackvoll“**
+* **„Pontera – das All-Day-Brunch-Erlebnis“**
+* **„Kulinarik ohne Uhrzeit – willkommen im Pontera“**
+
+---
+
+### Optionaler Zusatzsatz:
+
+> *Unsere Küche ist ganztägig geöffnet – ganz gleich, ob Sie frühstücken, brunchen oder den Abend entspannt ausklingen lassen möchten.*
+
+---
+
+### Prompt für Replit-Agenten (angepasst):
+
+> Bitte ersetze den bestehenden Text im Restaurant-Abschnitt durch folgenden, der besser zum Konzept passt:
+>
+> ---
+>
+> **Im Restaurant „Pontera“ erleben Sie ganztägig ein kulinarisches Konzept, das sich vom klassischen Frühstück löst und in neue Genussräume führt.**
+> Unsere Gerichte sind inspiriert von mediterranen, levantinischen und pontischen Einflüssen – frisch zubereitet, modern interpretiert und stilvoll serviert.
+>
+> Statt fester Essenszeiten bieten wir Ihnen ein **ganzheitliches Frühstücks- und Brunch-Erlebnis**, das sich mühelos in den Nachmittag und Abend erweitert – begleitet von ausgewählten Weinen, hausgemachten Spezialitäten und einer warmen, offenen Atmosphäre.
+> *Unsere Küche ist ganztägig geöffnet – ganz gleich, ob Sie frühstücken, brunchen oder den Abend entspannt ausklingen lassen möchten.*
+> -------------------------------------------------------------------------------------------------------------------------------------
+
+Möchtest du dazu auch ein Logo, grafisches Symbol oder visuelle Linie für das Restaurant "Pontera"?
