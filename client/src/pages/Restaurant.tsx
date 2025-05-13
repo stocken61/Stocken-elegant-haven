@@ -203,9 +203,9 @@ const Restaurant: React.FC = () => {
                 <FontAwesomeIcon icon="phone-alt" className="mr-2" />
                 <span>+41 79 300 01 61</span>
               </a>
-              <a href="mailto:restaurant@stocken.ch" className="inline-flex items-center justify-center bg-secondary-dark hover:bg-secondary text-white py-3 px-6 rounded-md transition duration-300">
+              <a href="mailto:restaurant@pontera.ch" className="inline-flex items-center justify-center bg-secondary-dark hover:bg-secondary text-white py-3 px-6 rounded-md transition duration-300">
                 <FontAwesomeIcon icon="envelope" className="mr-2" />
-                <span>restaurant@stocken.ch</span>
+                <span>restaurant@pontera.ch</span>
               </a>
             </div>
             
