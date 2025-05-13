@@ -306,7 +306,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://maps.app.goo.gl/W6aGW5c3p47nAuGR8"
+                    href="https://maps.app.goo.gl/BRTFLVZKgfdcbJcZ7"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
