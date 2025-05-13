@@ -52,27 +52,19 @@ const Restaurant: React.FC = () => {
               Pontera – das erste Black Sea-Fondue-Erlebnis der Schweiz.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4 max-w-4xl mx-auto">
-              <div className="border-l-4 border-primary-light pl-4">
-                <h3 className="font-medium text-xl mb-2">Frühstück</h3>
-                <p className="text-neutral-dark">07:00 - 10:30 Uhr</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-6 max-w-3xl mx-auto">
+              <div className="border-b-2 border-primary-light pb-4 text-center">
+                <h3 className="font-medium text-xl mb-3">All-Day Brunch</h3>
+                <p className="text-neutral-dark text-lg">08:00–22:00 Uhr</p>
               </div>
-              <div className="border-l-4 border-primary-light pl-4">
-                <h3 className="font-medium text-xl mb-2">Mittagessen</h3>
-                <p className="text-neutral-dark">12:00 - 14:00 Uhr</p>
-              </div>
-              <div className="border-l-4 border-primary-light pl-4">
-                <h3 className="font-medium text-xl mb-2">Abendessen</h3>
-                <p className="text-neutral-dark">18:00 - 22:00 Uhr</p>
-              </div>
-              <div className="border-l-4 border-primary-light pl-4">
-                <h3 className="font-medium text-xl mb-2">Bar</h3>
-                <p className="text-neutral-dark">14:00 - 24:00 Uhr</p>
+              <div className="border-b-2 border-primary-light pb-4 text-center">
+                <h3 className="font-medium text-xl mb-3">Teekultur & Cocktails</h3>
+                <p className="text-neutral-dark text-lg">14:00–24:00 Uhr</p>
               </div>
             </div>
             
-            <p className="text-sm text-neutral-dark italic text-center mt-4">
-              Wir empfehlen für das Abendessen eine Reservierung.
+            <p className="text-lg text-neutral-dark italic text-center max-w-3xl mx-auto mb-8">
+              Kein klassisches Frühstück, kein formelles Dinner – sondern ganztägiger Genuss mit Seele.
             </p>
           </div>
         </div>
