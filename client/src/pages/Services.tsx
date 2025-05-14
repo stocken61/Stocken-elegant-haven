@@ -1,5 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import stiftsBibliothekImg from '../assets/attractions/stiftsbibliothek.webp';
+import dreiWeierenImg from '../assets/attractions/dreiweieren.png';
+import textilmuseumImg from '../assets/attractions/textilmuseum.jpg';
 
 const Services: React.FC = () => {
   return (
@@ -30,7 +33,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/attractions/stiftsbibliothek-aktuell.webp"
+                  src={stiftsBibliothekImg}
                   alt="Stiftsbibliothek St. Gallen" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -51,7 +54,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/attractions/drei-weieren-aktuell.png"
+                  src={dreiWeierenImg}
                   alt="Drei Weiern" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -72,7 +75,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/assets/attractions/textilmuseum-aktuell.jpg"
+                  src={textilmuseumImg}
                   alt="Textilmuseum" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
