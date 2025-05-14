@@ -30,7 +30,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1626763035562-6eda155ba9c4?q=80&w=2070&auto=format&fit=crop"
+                  src="/assets/attractions/stiftsbibliothek-aktuell.webp"
                   alt="Stiftsbibliothek St. Gallen" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -72,7 +72,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?q=80&w=2015&auto=format&fit=crop"
+                  src="/assets/attractions/textilmuseum-aktuell.jpg"
                   alt="Textilmuseum" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
