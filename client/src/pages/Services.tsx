@@ -51,7 +51,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1629646526635-eef7fd2a489d?q=80&w=2070&auto=format&fit=crop"
+                  src="/assets/attractions/drei-weieren-aktuell.png"
                   alt="Drei Weiern" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
