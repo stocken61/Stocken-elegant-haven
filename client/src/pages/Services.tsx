@@ -173,7 +173,7 @@ const Services: React.FC = () => {
                 <div>
                   <h3 className="text-xl font-medium mb-2">Mit dem Auto</h3>
                   <p className="text-neutral-dark">
-                    Das Hotel ist über die Autobahn A1 gut erreichbar. Kostenpflichtige Parkplätze stehen zur Verfügung.
+                    Das Hotel ist über die Autobahn A1 gut erreichbar. Kostenfreie Parkplätze stehen zur Verfügung.
                   </p>
                 </div>
               </div>
