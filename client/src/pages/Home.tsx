@@ -103,7 +103,7 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2 p-6">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/assets/reception_desk.webp" 
+                  src="/images/reception.png" 
                   alt="Hotel Empfangsbereich - Moderne Rezeption mit Mooswand" 
                   className="w-full h-auto object-cover"
                 />
