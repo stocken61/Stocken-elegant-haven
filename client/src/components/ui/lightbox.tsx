@@ -53,12 +53,13 @@ export const Lightbox: React.FC<LightboxProps> = ({
           <X className="h-6 w-6" />
         </Button>
         
-        <div className="flex items-center justify-center h-[70vh]">
-          <div className="relative max-w-full max-h-full overflow-hidden">
+        <div className="flex items-center justify-center h-[70vh] w-full">
+          <div className="relative w-full h-full flex items-center justify-center">
             <img 
               src={images[currentIndex]} 
               alt={`${alt} - slide ${currentIndex + 1}`} 
-              className="max-h-full max-w-full object-contain"
+              className="max-h-[calc(70vh-32px)] max-w-full object-contain mx-auto"
+              style={{ objectFit: 'contain' }}
             />
           </div>
         </div>
