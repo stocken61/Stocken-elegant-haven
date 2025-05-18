@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import heroImage from '@assets/hero_main.png';
+import ReceptionImage from '@/components/ReceptionImage';
 
 const Home: React.FC = () => {
   // Entfernen wir die Abhängigkeit von externen Datenquellen
@@ -102,11 +103,7 @@ const Home: React.FC = () => {
             </div>
             <div className="lg:w-1/2 p-6">
               <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/reception.png" 
-                  alt="Hotel Empfangsbereich - Moderne Rezeption mit Mooswand" 
-                  className="w-full h-auto object-cover"
-                />
+                <ReceptionImage />
               </div>
             </div>
           </div>
