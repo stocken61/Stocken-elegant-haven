@@ -105,8 +105,8 @@ const Home: React.FC = () => {
                 <img 
                   src="/reception_desk_new.jpg" 
                   alt="Hotel Empfangsbereich - Moderne Rezeption mit Mooswand" 
-                  className="w-full h-full object-contain"
-                  style={{ objectPosition: 'center center', padding: '5px' }}
+                  className="w-full h-full object-cover rounded-lg"
+                  style={{ objectPosition: 'center 35%', objectFit: 'cover' }}
                 />
               </div>
             </div>
