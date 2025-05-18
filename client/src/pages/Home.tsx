@@ -101,11 +101,12 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <div className="lg:w-1/2 p-6">
-              <div className="aspect-square overflow-hidden shadow-lg">
+              <div className="aspect-square overflow-hidden shadow-lg rounded-lg">
                 <img 
                   src="/reception_desk_new.jpg" 
                   alt="Hotel Empfangsbereich - Moderne Rezeption mit Mooswand" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
+                  style={{ objectPosition: 'center center', padding: '5px' }}
                 />
               </div>
             </div>
