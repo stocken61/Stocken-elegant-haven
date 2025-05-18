@@ -105,7 +105,8 @@ const Home: React.FC = () => {
                 <img 
                   src="/reception_desk_new.jpg" 
                   alt="Hotel Empfangsbereich - Moderne Rezeption mit Mooswand" 
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto max-h-[400px] object-contain"
+                  style={{ maxWidth: '100%', objectFit: 'contain' }}
                 />
               </div>
             </div>
