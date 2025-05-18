@@ -102,22 +102,11 @@ const Home: React.FC = () => {
             </div>
             <div className="lg:w-1/2 p-6">
               <div className="rounded-lg overflow-hidden shadow-lg">
-                <div className="w-full h-64 md:h-80 bg-[#f5f0e6] rounded-lg relative overflow-hidden border border-primary shadow-lg">
-                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-[#d4bc8b] flex items-center justify-center">
-                    <div className="text-center">
-                      <h3 className="text-3xl font-bold text-[#1e5631]">stocken</h3>
-                      <p className="text-lg text-[#1e5631]">by Pontera</p>
-                    </div>
-                  </div>
-                  <div className="absolute top-0 left-0 w-full h-1/2 flex justify-between p-4">
-                    <div className="w-2/5 h-full bg-[#2e7d32] rounded-md flex items-center justify-center">
-                      <div className="w-4/5 h-4/5 bg-[#388e3c] rounded-md"></div>
-                    </div>
-                    <div className="w-2/5 h-full bg-[#2e7d32] rounded-md flex items-center justify-center">
-                      <div className="w-4/5 h-4/5 bg-[#388e3c] rounded-md"></div>
-                    </div>
-                  </div>
-                </div>
+                <img 
+                  src="/assets/reception.png" 
+                  alt="Hotel Empfangsbereich - Moderne Rezeption mit Mooswand" 
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
           </div>
