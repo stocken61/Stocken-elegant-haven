@@ -3,7 +3,7 @@ import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import footerLogo from '@assets/footer_logo_beige.png';
+import footerLogo from '@assets/logo_beige_transparent_highres_optimized.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
