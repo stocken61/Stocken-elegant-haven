@@ -41,7 +41,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-1 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center -my-4 ml-2 md:ml-[-20px]">
-          <img src={logoImage} alt="Stocken Hotel Logo" className="h-36 md:h-44" />
+          <img src={logoImage} alt="Stocken Hotel Logo" className="h-36 md:h-40 lg:h-44 object-contain" />
         </Link>
         
         {/* Desktop Navigation */}
