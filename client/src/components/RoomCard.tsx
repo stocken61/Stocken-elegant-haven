@@ -46,11 +46,14 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
               Details
             </Button>
           </Link>
-          <Link href={`/room/${room.id}#booking`} className="w-1/2">
-            <Button size="sm" className="w-full bg-primary hover:bg-primary-light text-white text-[10px] sm:text-xs py-1 h-7 px-1">
-              Buchen
-            </Button>
-          </Link>
+          <a 
+            href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
+            target="_blank" 
+            rel="noopener" 
+            className="w-1/2 bg-primary hover:bg-primary-light text-white text-[10px] sm:text-xs py-1 h-7 px-1 rounded-md transition-colors flex items-center justify-center book-button"
+          >
+            Buchen
+          </a>
         </div>
       </div>
     </div>
