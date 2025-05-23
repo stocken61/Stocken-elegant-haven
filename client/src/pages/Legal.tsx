@@ -140,12 +140,12 @@ const PrivacyContent: React.FC = () => (
       Verantwortlich für die Datenverarbeitung ist:
     </p>
     <p>
-      Stocken Hotel<br />
-      Bergstrasse 123<br />
-      6340 Baar<br />
+      Boutique Hotel Stocken by Pontera<br />
+      Krätzernstraße 10<br />
+      9014 St. Gallen<br />
       Schweiz<br />
-      Tel: +41 44 123 45 67<br />
-      E-Mail: info@stocken.ch
+      Tel: +41 79 300 01 61<br />
+      E-Mail: datenschutz@hotelstocken.ch
     </p>
     
     <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
@@ -224,8 +224,8 @@ const PrivacyContent: React.FC = () => (
       Bei Fragen zum Datenschutz können Sie sich jederzeit an uns wenden:
     </p>
     <p>
-      E-Mail: datenschutz@stocken.ch<br />
-      Tel: +41 44 123 45 67
+      E-Mail: datenschutz@hotelstocken.ch<br />
+      Tel: +41 79 300 01 61
     </p>
   </>
 );
