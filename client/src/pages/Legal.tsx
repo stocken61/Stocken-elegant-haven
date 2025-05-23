@@ -250,12 +250,14 @@ const ImprintContent: React.FC = () => (
     
     <h2>Handelsregistereintrag</h2>
     <p>
-      Eingetragen im Handelsregister des Kantons Zug<br />
+      Pontera GmbH i.G<br />
+      Eingetragen im Handelsregister des Kantons St. Gallen<br />
       Firmennummer: CHE-123.456.789
     </p>
     
     <h2>Mehrwertsteuernummer</h2>
     <p>
+      Pontera GmbH i.G<br />
       Mehrwertsteuernummer: CHE-123.456.789 MWST
     </p>
     
