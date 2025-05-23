@@ -43,76 +43,73 @@ export const Lightbox: React.FC<LightboxProps> = ({
   }, [handleKeyDown]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
-      <div className="relative max-w-4xl w-full p-4">
-        {/* Mobile Close Button */}
+    <div className="fixed inset-0 z-50 flex flex-col bg-black bg-opacity-90">
+      {/* Close Button - Always at top */}
+      <div className="flex justify-end p-4">
         <button 
           onClick={onClose}
-          className="fixed top-4 right-4 z-50 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center shadow-lg md:hidden"
+          className="bg-white text-black rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
         >
           <X className="h-8 w-8 stroke-2" />
         </button>
-        
-        {/* Desktop Close Button */}
-        <Button 
-          variant="ghost" 
-          className="absolute right-2 top-2 text-white z-20 hover:bg-black/40 bg-black/30 rounded-full p-2 hidden md:block"
-          onClick={onClose}
-        >
-          <X className="h-6 w-6" />
-        </Button>
-        
-        <div className="flex items-center justify-center h-[70vh] w-full">
-          <div className="relative w-full h-full flex items-center justify-center">
+      </div>
+      
+      {/* Main Image */}
+      <div className="flex-1 flex items-center justify-center px-4 pb-4">
+        <div className="relative w-full h-full max-w-4xl">
+          <div className="flex items-center justify-center h-[50vh] md:h-[60vh] w-full mb-4">
             <img 
               src={images[currentIndex]} 
               alt={`${alt} - slide ${currentIndex + 1}`} 
-              className="max-h-[calc(70vh-32px)] max-w-full object-contain mx-auto"
+              className="max-h-full max-w-full object-contain mx-auto"
               style={{ objectFit: 'contain' }}
             />
           </div>
-        </div>
-        
-        <div className="mt-4 grid grid-cols-3 sm:grid-cols-5 gap-2">
-          {images.map((image, index) => (
-            <div 
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`aspect-square overflow-hidden rounded cursor-pointer transition ${
-                index === currentIndex ? 'border-2 border-primary' : 'opacity-70 hover:opacity-100'
-              }`}
+          
+          {/* Thumbnail Grid */}
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+            {images.map((image, index) => (
+              <div 
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`aspect-square overflow-hidden rounded cursor-pointer transition ${
+                  index === currentIndex ? 'border-2 border-primary' : 'opacity-70 hover:opacity-100'
+                }`}
+              >
+                <img 
+                  src={image}
+                  alt={`${alt} thumbnail ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+          
+          {/* Navigation Arrows */}
+          <div className="absolute left-0 top-1/4 flex w-full justify-between px-4">
+            <Button 
+              variant="ghost" 
+              className="text-white hover:bg-black/20 h-12 w-12 rounded-full"
+              onClick={handlePrev}
             >
-              <img 
-                src={image}
-                alt={`${alt} thumbnail ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
+              &lsaquo;
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="text-white hover:bg-black/20 h-12 w-12 rounded-full"
+              onClick={handleNext}
+            >
+              &rsaquo;
+            </Button>
+          </div>
+          
+          {/* Image Counter */}
+          <div className="absolute bottom-0 left-0 w-full flex justify-center mb-20">
+            <div className="bg-black bg-opacity-50 px-4 py-2 rounded-full">
+              <span className="text-white">
+                {currentIndex + 1} / {images.length}
+              </span>
             </div>
-          ))}
-        </div>
-        
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 flex w-full justify-between px-4">
-          <Button 
-            variant="ghost" 
-            className="text-white hover:bg-black/20 h-12 w-12 rounded-full"
-            onClick={handlePrev}
-          >
-            &lsaquo;
-          </Button>
-          <Button 
-            variant="ghost" 
-            className="text-white hover:bg-black/20 h-12 w-12 rounded-full"
-            onClick={handleNext}
-          >
-            &rsaquo;
-          </Button>
-        </div>
-        
-        <div className="absolute bottom-4 left-0 w-full flex justify-center">
-          <div className="bg-black bg-opacity-50 px-4 py-2 rounded-full">
-            <span className="text-white">
-              {currentIndex + 1} / {images.length}
-            </span>
           </div>
         </div>
       </div>
