@@ -236,15 +236,14 @@ const ImprintContent: React.FC = () => (
     
     <h2>Kontaktadresse</h2>
     <p>
-      Stocken Hotel AG<br />
-      Bergstrasse 123<br />
-      6340 Baar<br />
+      Boutique Hotel Stocken by Pontera<br />
+      Krätzernstraße 10<br />
+      9014 St. Gallen<br />
       Schweiz
     </p>
     <p>
-      Tel: +41 44 123 45 67<br />
-      Fax: +41 44 123 45 68<br />
-      E-Mail: info@stocken.ch
+      Tel: +41 79 300 01 61<br />
+      E-Mail: contact@hotelstocken.com
     </p>
     
     <h2>Handelsregistereintrag</h2>
