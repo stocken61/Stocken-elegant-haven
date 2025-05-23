@@ -14,10 +14,10 @@ const About: React.FC = () => {
       >
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-3">
-            Über Stocken
+            {t.about.title}
           </h1>
           <p className="text-xl text-white mx-auto">
-            Entdecken Sie die Geschichte und Philosophie unseres historischen Boutique-Hotels.
+            {t.about.description}
           </p>
         </div>
       </section>

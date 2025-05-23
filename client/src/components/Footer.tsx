@@ -53,57 +53,57 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="md:mb-6 lg:mb-0 lg:pr-4">
-            <h3 className="text-lg md:text-xl lg:text-lg xl:text-xl font-serif font-bold mb-4 md:mb-6">Links</h3>
+            <h3 className="text-lg md:text-xl lg:text-lg xl:text-xl font-serif font-bold mb-4 md:mb-6">{t.footer.links}</h3>
             <ul className="space-y-2 md:space-y-3 text-sm md:text-base lg:text-sm xl:text-base">
               <li>
                 <Link href="/" className="hover:text-secondary-light transition">
-                  Home
+                  {t.nav.home}
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-secondary-light transition">
-                  Über uns
+                  {t.nav.about}
                 </Link>
               </li>
               <li>
                 <Link href="/rooms" className="hover:text-secondary-light transition">
-                  Zimmer
+                  {t.nav.rooms}
                 </Link>
               </li>
               <li>
                 <Link href="/restaurant" className="hover:text-secondary-light transition">
-                  Restaurant
+                  {t.nav.restaurant}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-secondary-light transition">
-                  Services
+                  {t.nav.services}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-secondary-light transition">
-                  Kontakt
+                  {t.nav.contact}
                 </Link>
               </li>
             </ul>
           </div>
           
           <div className="md:col-span-2 lg:col-span-1 lg:max-w-sm">
-            <h3 className="text-lg md:text-xl lg:text-lg xl:text-xl font-serif font-bold mb-4 md:mb-6">Newsletter</h3>
+            <h3 className="text-lg md:text-xl lg:text-lg xl:text-xl font-serif font-bold mb-4 md:mb-6">{t.footer.newsletter.title}</h3>
             <p className="mb-4 text-sm md:text-base lg:text-sm xl:text-base">
-              Abonnieren Sie unseren Newsletter, um über spezielle Angebote und Events informiert zu werden.
+              {t.footer.newsletter.description}
             </p>
             <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
               <Input 
                 type="email" 
-                placeholder="Ihre E-Mail-Adresse" 
+                placeholder={t.footer.newsletter.placeholder}
                 className="w-full p-2 rounded-md focus:outline-none text-neutral-dark text-sm md:text-base lg:text-sm xl:text-base" 
               />
               <Button 
                 type="submit" 
                 className="bg-secondary-dark hover:bg-secondary text-white py-2 px-4 rounded-md transition duration-300 w-full text-sm md:text-base lg:text-sm xl:text-base"
               >
-                Abonnieren
+                {t.footer.newsletter.subscribe}
               </Button>
             </form>
           </div>
@@ -113,17 +113,17 @@ const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center md:space-y-0 space-y-4">
           <p className="text-xs md:text-sm mb-0 order-2 md:order-1 text-center md:text-left">
-            &copy; {currentYear} Stocken Hotel. Alle Rechte vorbehalten.
+            {t.footer.copyright}
           </p>
           <div className="flex space-x-3 md:space-x-4 text-xs md:text-sm order-1 md:order-2">
             <Link href="/legal/terms" className="hover:text-secondary-light transition">
-              AGB
+              {t.footer.legal.terms}
             </Link>
             <Link href="/legal/privacy" className="hover:text-secondary-light transition">
-              Datenschutz
+              {t.footer.legal.privacy}
             </Link>
             <Link href="/legal/imprint" className="hover:text-secondary-light transition">
-              Impressum
+              {t.footer.legal.imprint}
             </Link>
           </div>
         </div>
