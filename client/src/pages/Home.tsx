@@ -32,12 +32,14 @@ const Home: React.FC = () => {
                 Unsere Zimmer
               </Button>
             </Link>
-            <Button 
-              variant="secondary"
-              className="bg-[#8B5A2B] hover:bg-[#7A4A1D] text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto"
+            <a 
+              href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
+              target="_blank" 
+              rel="noopener" 
+              className="bg-[#8B5A2B] hover:bg-[#7A4A1D] text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block book-button"
             >
               Jetzt buchen
-            </Button>
+            </a>
           </div>
         </div>
       </section>
