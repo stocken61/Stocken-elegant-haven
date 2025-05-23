@@ -87,6 +87,11 @@ export interface Translations {
       title: string;
       description: string;
     };
+    wifi: {
+      title: string;
+      description: string;
+    };
+    discoverAll: string;
   };
   
   // Contact Section
@@ -236,7 +241,12 @@ export const translations: Record<Language, Translations> = {
       concierge: {
         title: 'Concierge Service',
         description: 'Persönlicher Service für all Ihre Bedürfnisse.',
-      }
+      },
+      wifi: {
+        title: 'Kostenloses WLAN',
+        description: 'Bleiben Sie mit unserem Highspeed-WLAN verbunden.',
+      },
+      discoverAll: 'Alle Services entdecken'
     },
     contact: {
       title: 'Kontakt',
@@ -376,7 +386,12 @@ export const translations: Record<Language, Translations> = {
       concierge: {
         title: 'Concierge Service',
         description: 'Personal service for all your needs.',
-      }
+      },
+      wifi: {
+        title: 'Free WiFi',
+        description: 'Stay connected with our high-speed WiFi.',
+      },
+      discoverAll: 'Discover All Services'
     },
     contact: {
       title: 'Contact',
@@ -516,7 +531,12 @@ export const translations: Record<Language, Translations> = {
       concierge: {
         title: 'Service de conciergerie',
         description: 'Service personnel pour tous vos besoins.',
-      }
+      },
+      wifi: {
+        title: 'WiFi gratuit',
+        description: 'Restez connecté avec notre WiFi haut débit.',
+      },
+      discoverAll: 'Découvrir tous les services'
     },
     contact: {
       title: 'Contact',

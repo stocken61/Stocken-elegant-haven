@@ -242,7 +242,7 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="map-marker-alt" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Zentrale Lage</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">Zentrale Lage</h3>
               <p className="text-neutral-dark">
                 Perfekt gelegen im Herzen von St. Gallen.
               </p>
@@ -252,7 +252,7 @@ const Home: React.FC = () => {
           <div className="text-center mt-10">
             <Link href="/services">
               <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors">
-                Alle Services entdecken
+                {t.services.discoverAll}
               </Button>
             </Link>
           </div>
