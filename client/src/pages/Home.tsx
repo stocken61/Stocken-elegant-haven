@@ -138,7 +138,7 @@ const Home: React.FC = () => {
                 <p className="text-neutral-dark mb-4">Stilvolle Eleganz auf 23 m²</p>
                 <Link 
                   href="/rooms#deluxe" 
-                  className="text-primary hover:text-primary-dark font-medium transition-colors"
+                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block"
                 >
                   Details ansehen
                 </Link>
@@ -159,7 +159,7 @@ const Home: React.FC = () => {
                 <p className="text-neutral-dark mb-4">Geräumiges Wohnerlebnis mit Sitzecke</p>
                 <Link 
                   href="/rooms#premium-suite" 
-                  className="text-primary hover:text-primary-dark font-medium transition-colors"
+                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block"
                 >
                   Details ansehen
                 </Link>
@@ -180,7 +180,7 @@ const Home: React.FC = () => {
                 <p className="text-neutral-dark mb-4">Großzügiger Raum für die ganze Familie</p>
                 <Link 
                   href="/rooms#premium-family" 
-                  className="text-primary hover:text-primary-dark font-medium transition-colors"
+                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block"
                 >
                   Details ansehen
                 </Link>
