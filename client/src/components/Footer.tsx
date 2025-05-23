@@ -35,19 +35,19 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="md:mb-6 lg:mb-0 lg:pr-4">
-            <h3 className="text-lg md:text-xl lg:text-lg xl:text-xl font-serif font-bold mb-4 md:mb-6">Kontakt</h3>
+            <h3 className="text-lg md:text-xl lg:text-lg xl:text-xl font-serif font-bold mb-4 md:mb-6">{t.contact.title}</h3>
             <ul className="space-y-2 md:space-y-3 text-sm md:text-base lg:text-sm xl:text-base">
               <li className="flex">
                 <FontAwesomeIcon icon="map-marker-alt" className="mt-1 mr-3 text-sm" />
-                <span>Krätzernstraße 10<br />9014 St. Gallen, Schweiz</span>
+                <span>{t.contact.address}</span>
               </li>
               <li className="flex">
                 <FontAwesomeIcon icon="phone-alt" className="mt-1 mr-3 text-sm" />
-                <span>+41 79 300 01 61</span>
+                <span>{t.contact.phone}</span>
               </li>
               <li className="flex">
                 <FontAwesomeIcon icon="envelope" className="mt-1 mr-3 text-sm" />
-                <span>reservation@hotelstocken.com</span>
+                <span>{t.contact.email}</span>
               </li>
             </ul>
           </div>
