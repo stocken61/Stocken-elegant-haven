@@ -157,13 +157,13 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Suite</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">Geräumiges Wohnerlebnis mit Sitzecke</p>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.rooms.categories.premiumSuite}</h3>
+                <p className="text-neutral-dark mb-4 flex-grow">{t.roomDescriptions.premiumSuite.short}</p>
                 <Link 
                   href="/rooms#premium-suite" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  Details ansehen
+                  {t.rooms.details.viewDetails}
                 </Link>
               </div>
             </div>
@@ -178,13 +178,13 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Family Suite</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">Großzügiger Raum für die ganze Familie</p>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.rooms.categories.familySuite}</h3>
+                <p className="text-neutral-dark mb-4 flex-grow">{t.roomDescriptions.familySuite.short}</p>
                 <Link 
                   href="/rooms#premium-family" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  Details ansehen
+                  {t.rooms.details.viewDetails}
                 </Link>
               </div>
             </div>
