@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               <img src={footerLogo} alt="Stocken Hotel Logo" className="h-56" />
             </div>
             <p className="mb-4">
-              Seit 1784 verkörpern wir die Tradition der Schweizer Gastfreundschaft mit modernem Luxus.
+              Wir verkörpern die Tradition der Schweizer Gastfreundschaft mit modernem Luxus.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-secondary-light transition">
