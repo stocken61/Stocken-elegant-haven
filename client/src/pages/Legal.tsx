@@ -266,10 +266,8 @@ const ImprintContent: React.FC = () => (
     
     <h2>Bildnachweis</h2>
     <p>
-      Alle auf dieser Website verwendeten Bilder stammen von:<br />
-      © Stocken Hotel AG<br />
-      © Unsplash<br />
-      © Adobe Stock
+      Alle auf dieser Website verwendeten Bilder stammen aus den folgenden Quellen:<br />
+      © Pontera GmbH (eigene Aufnahmen)
     </p>
   </>
 );
