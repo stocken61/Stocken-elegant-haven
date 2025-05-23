@@ -40,7 +40,7 @@ const Header: React.FC = () => {
     <header className={`bg-white shadow-md sticky top-0 z-50 transition-all ${scrolled ? 'py-0' : 'py-0'}`}>
       <div className="container mx-auto px-1 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center -my-4 ml-[-10px] md:ml-[-20px]">
+        <Link href="/" className="flex items-center -my-4 ml-2 md:ml-[-20px]">
           <img src={logoImage} alt="Stocken Hotel Logo" className="h-36 md:h-44" />
         </Link>
         
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
         
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden text-neutral-dark hover:text-primary"
+          className="md:hidden text-neutral-dark hover:text-primary mr-4"
           onClick={toggleMenu}
           aria-label="Toggle mobile menu"
         >
