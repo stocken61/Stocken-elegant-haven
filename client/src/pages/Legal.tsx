@@ -251,7 +251,7 @@ const ImprintContent: React.FC = () => (
     
     <h2>Geschäftsführung</h2>
     <p>
-      Michael Huber, Hotelmanager
+      Devris Harman, Hotel Manager
     </p>
     
     <h2>Haftungsausschluss</h2>
