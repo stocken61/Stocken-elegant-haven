@@ -114,9 +114,60 @@ const RoomDetail: React.FC = () => {
           {/* Booking Sidebar */}
           <div className="w-full lg:w-5/12 bg-neutral-light p-6 rounded-lg shadow-sm" id="booking">
             <h3 className="text-2xl font-serif font-bold text-neutral-dark mb-6">
-              Verfügbarkeit prüfen
+              Zimmer buchen
             </h3>
-            <BookingForm roomId={room.id} roomPrice={room.price} />
+            
+            <div className="space-y-4">
+              <a 
+                href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
+                target="_blank" 
+                rel="noopener" 
+                className="w-full bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center justify-center font-medium text-lg"
+              >
+                <span>Verfügbarkeit prüfen</span>
+                <FontAwesomeIcon icon="external-link-alt" className="ml-2" />
+              </a>
+              
+              <div className="text-center">
+                <p className="text-neutral-dark mb-3">oder</p>
+                <a 
+                  href="tel:+41793000161" 
+                  className="w-full bg-secondary-dark hover:bg-secondary text-white py-3 px-6 rounded-md transition-colors inline-flex items-center justify-center font-medium text-lg"
+                >
+                  <FontAwesomeIcon icon="phone" className="mr-2" />
+                  <span>Rufen Sie uns direkt an</span>
+                </a>
+                <p className="text-neutral-dark mt-2 font-medium">+41 79 300 01 61</p>
+              </div>
+            </div>
+            
+            {room.price > 0 && (
+              <div className="mt-8 pt-8 border-t border-neutral">
+                <h4 className="text-xl font-semibold mb-4">Preisdetails</h4>
+                <div className="space-y-2 mb-6">
+                  <div className="flex justify-between">
+                    <span>Zimmerpreis pro Nacht</span>
+                    <span className="font-medium">{room.price} CHF</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Frühstück inkl.</span>
+                    <span className="font-medium">Nein</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Kurtaxe pro Person/Nacht</span>
+                    <span className="font-medium">3 CHF</span>
+                  </div>
+                </div>
+                
+                <div className="flex justify-between font-bold text-lg">
+                  <span>Preis ab</span>
+                  <span className="text-primary-dark">{room.price} CHF</span>
+                </div>
+                <p className="text-sm text-neutral-dark mt-1">
+                  *Preis pro Nacht, exkl. Frühstück und Kurtaxe
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
