@@ -245,7 +245,7 @@ const ImprintContent: React.FC = () => (
     </p>
     <p>
       Tel.: +41 79 300 01 61<br />
-      E-Mail: contact@hotelstocken.com
+      E-Mail: info@hotelstocken.ch
     </p>
     
     <h2>Handelsregistereintrag</h2>
