@@ -125,7 +125,7 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Deluxe Zimmer */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col h-full">
               <div className="h-64 overflow-hidden">
                 <img 
                   src="/assets/rooms/deluxe-room.png" 
@@ -133,12 +133,12 @@ const Home: React.FC = () => {
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2 text-heading-gray">Deluxe Zimmer</h3>
-                <p className="text-neutral-dark mb-4">Stilvolle Eleganz auf 23 m²</p>
+                <p className="text-neutral-dark mb-4 flex-grow">Stilvolle Eleganz auf 23 m²</p>
                 <Link 
                   href="/rooms#deluxe" 
-                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block"
+                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
                   Details ansehen
                 </Link>
@@ -146,7 +146,7 @@ const Home: React.FC = () => {
             </div>
             
             {/* Premium Suite */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col h-full">
               <div className="h-64 overflow-hidden">
                 <img 
                   src="/assets/rooms/premium-suite-bed.png" 
@@ -154,12 +154,12 @@ const Home: React.FC = () => {
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Suite</h3>
-                <p className="text-neutral-dark mb-4">Geräumiges Wohnerlebnis mit Sitzecke</p>
+                <p className="text-neutral-dark mb-4 flex-grow">Geräumiges Wohnerlebnis mit Sitzecke</p>
                 <Link 
                   href="/rooms#premium-suite" 
-                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block"
+                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
                   Details ansehen
                 </Link>
@@ -167,7 +167,7 @@ const Home: React.FC = () => {
             </div>
             
             {/* Premium Family Suite */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col h-full">
               <div className="h-64 overflow-hidden">
                 <img 
                   src="/assets/rooms/premium-family-suite-bed.png" 
@@ -175,12 +175,12 @@ const Home: React.FC = () => {
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Family Suite</h3>
-                <p className="text-neutral-dark mb-4">Großzügiger Raum für die ganze Familie</p>
+                <p className="text-neutral-dark mb-4 flex-grow">Großzügiger Raum für die ganze Familie</p>
                 <Link 
                   href="/rooms#premium-family" 
-                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block"
+                  className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
                   Details ansehen
                 </Link>
