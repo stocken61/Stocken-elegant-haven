@@ -12,11 +12,11 @@ const Footer: React.FC = () => {
     <footer className="bg-primary text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div>
-            <div className="h-40 mb-6">
+          <div className="flex flex-col items-start">
+            <div className="mb-3">
               <img src={footerLogo} alt="Stocken Hotel Logo" className="h-36 md:h-44" />
             </div>
-            <p className="mb-4">
+            <p className="mb-3 max-w-xs text-left">
               Wir verkörpern die Tradition der Schweizer Gastfreundschaft mit modernem Luxus.
             </p>
             <div className="flex space-x-4">
