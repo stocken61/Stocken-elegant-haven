@@ -56,7 +56,7 @@ const Legal: React.FC = () => {
 
 const TermsContent: React.FC = () => (
   <>
-    <p className="font-medium">Stand: Mai 2023</p>
+    <p className="font-medium">Stand: Mai 2025</p>
     
     <h2>1. Geltungsbereich</h2>
     <p>
@@ -133,7 +133,7 @@ const TermsContent: React.FC = () => (
 
 const PrivacyContent: React.FC = () => (
   <>
-    <p className="font-medium">Stand: Mai 2023</p>
+    <p className="font-medium">Stand: Mai 2025</p>
     
     <h2>1. Verantwortlicher</h2>
     <p>
@@ -232,6 +232,8 @@ const PrivacyContent: React.FC = () => (
 
 const ImprintContent: React.FC = () => (
   <>
+    <p className="font-medium">Stand: Mai 2025</p>
+    
     <h2>Kontaktadresse</h2>
     <p>
       Stocken Hotel AG<br />
