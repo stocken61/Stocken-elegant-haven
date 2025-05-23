@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
     <footer className="bg-primary text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6 lg:gap-12 xl:gap-16 mb-12">
-          <div className="flex flex-col items-start -ml-2 md:-ml-2 lg:-ml-6 xl:-ml-4 md:mb-6 lg:mb-0">
+          <div className="flex flex-col items-start -ml-2 md:-ml-4 lg:-ml-10 xl:-ml-8 md:mb-6 lg:mb-0">
             <div className="mb-3">
               <img src={footerLogo} alt="Stocken Hotel Logo" className="h-40 md:h-44 lg:h-48 xl:h-52" />
             </div>
