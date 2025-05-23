@@ -47,10 +47,10 @@ export const Lightbox: React.FC<LightboxProps> = ({
       <div className="relative max-w-4xl w-full p-4">
         <Button 
           variant="ghost" 
-          className="absolute right-2 top-2 text-white z-10 hover:bg-black/20 bg-black/30 rounded-full p-2 md:bg-transparent"
+          className="absolute right-4 top-4 text-white z-20 hover:bg-black/40 bg-black/60 rounded-full p-3 md:right-2 md:top-2 md:bg-black/30 md:p-2 border border-white/30"
           onClick={onClose}
         >
-          <X className="h-8 w-8 md:h-6 md:w-6" />
+          <X className="h-6 w-6 md:h-5 md:w-5 stroke-2" />
         </Button>
         
         <div className="flex items-center justify-center h-[70vh] w-full">

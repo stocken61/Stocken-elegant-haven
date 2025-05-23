@@ -52,7 +52,7 @@ const Rooms: React.FC = () => {
             Unsere Zimmer
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Entdecken Sie unsere komfortablen Zimmer und Suiten mit Blick auf die Schweizer Alpen.
+            Entdecken Sie unsere komfortablen Zimmer und Suiten.
           </p>
         </div>
       </section>
