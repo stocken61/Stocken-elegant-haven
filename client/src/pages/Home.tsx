@@ -122,7 +122,7 @@ const Home: React.FC = () => {
       <section className="rooms-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
-            Unsere Zimmer
+            {t.rooms.title}
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -136,13 +136,13 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-heading-gray">Deluxe Zimmer</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">Stilvolle Eleganz auf 23 m²</p>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.rooms.categories.deluxe}</h3>
+                <p className="text-neutral-dark mb-4 flex-grow">{t.roomDescriptions.deluxe.short}</p>
                 <Link 
                   href="/rooms#deluxe" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  Details ansehen
+                  {t.rooms.details.viewDetails}
                 </Link>
               </div>
             </div>
