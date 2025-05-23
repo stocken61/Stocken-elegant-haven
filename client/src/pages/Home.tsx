@@ -204,7 +204,7 @@ const Home: React.FC = () => {
       <section className="services-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
-            Unsere Services
+            {t.services.title}
           </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -212,9 +212,9 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="utensils" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-heading-gray">Restaurant</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.restaurant.title}</h3>
               <p className="text-neutral-dark">
-                Genießen Sie kulinarische Köstlichkeiten in unserem Restaurant.
+                {t.restaurant.description}
               </p>
             </div>
             
@@ -222,9 +222,9 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="coffee" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-heading-gray">Exklusives Frühstück</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.services.breakfast.title}</h3>
               <p className="text-neutral-dark">
-                Genießen Sie ein individuelles À la carte Frühstück.
+                {t.services.breakfast.description}
               </p>
             </div>
             

@@ -75,6 +75,18 @@ export interface Translations {
     parking: string;
     transport: string;
     attractions: string;
+    breakfast: {
+      title: string;
+      description: string;
+    };
+    location: {
+      title: string;
+      description: string;
+    };
+    concierge: {
+      title: string;
+      description: string;
+    };
   };
   
   // Contact Section
@@ -213,6 +225,18 @@ export const translations: Record<Language, Translations> = {
       parking: 'Kostenfreie Parkplätze',
       transport: 'Bus Linie 1 hält direkt vor dem Hotel',
       attractions: 'Sehenswürdigkeiten in St. Gallen',
+      breakfast: {
+        title: 'Exklusives Frühstück',
+        description: 'Genießen Sie ein individuelles À la carte Frühstück.',
+      },
+      location: {
+        title: 'Zentrale Lage',
+        description: 'Perfekt gelegen für Erkundungen in St. Gallen.',
+      },
+      concierge: {
+        title: 'Concierge Service',
+        description: 'Persönlicher Service für all Ihre Bedürfnisse.',
+      }
     },
     contact: {
       title: 'Kontakt',
@@ -341,6 +365,18 @@ export const translations: Record<Language, Translations> = {
       parking: 'Free parking',
       transport: 'Bus line 1 stops directly in front of the hotel',
       attractions: 'Attractions in St. Gallen',
+      breakfast: {
+        title: 'Exclusive Breakfast',
+        description: 'Enjoy an individual à la carte breakfast.',
+      },
+      location: {
+        title: 'Central Location',
+        description: 'Perfectly located for exploring St. Gallen.',
+      },
+      concierge: {
+        title: 'Concierge Service',
+        description: 'Personal service for all your needs.',
+      }
     },
     contact: {
       title: 'Contact',
@@ -469,6 +505,18 @@ export const translations: Record<Language, Translations> = {
       parking: 'Parking gratuit',
       transport: 'La ligne de bus 1 s\'arrête directement devant l\'hôtel',
       attractions: 'Attractions à St-Gall',
+      breakfast: {
+        title: 'Petit-déjeuner exclusif',
+        description: 'Savourez un petit-déjeuner à la carte individuel.',
+      },
+      location: {
+        title: 'Emplacement central',
+        description: 'Parfaitement situé pour explorer St-Gall.',
+      },
+      concierge: {
+        title: 'Service de conciergerie',
+        description: 'Service personnel pour tous vos besoins.',
+      }
     },
     contact: {
       title: 'Contact',
