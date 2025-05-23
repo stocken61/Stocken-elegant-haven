@@ -261,7 +261,7 @@ const ImprintContent: React.FC = () => (
     
     <h2>Urheberrechte</h2>
     <p>
-      Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschließlich der Firma Stocken Hotel AG oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
+      Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschließlich der Firma Pontera GmbH. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
     </p>
     
     <h2>Bildnachweis</h2>
