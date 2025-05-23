@@ -67,14 +67,14 @@ const Rooms: React.FC = () => {
               onValueChange={setActiveTab}
               className="w-full max-w-6xl mx-auto"
             >
-              <TabsList className="flex flex-wrap justify-center gap-1 sm:gap-2 p-1">
+              <TabsList className="flex flex-wrap justify-center gap-0.5 md:gap-1 lg:gap-2 p-1">
                 {roomCategories.map(category => (
                   <TabsTrigger 
                     key={category.id} 
                     value={category.id}
-                    className="flex-1 min-w-0 text-[9px] xs:text-[10px] sm:text-sm lg:text-base px-1 xs:px-2 sm:px-3 py-1.5 sm:py-2 leading-tight"
+                    className="flex-1 min-w-0 text-[8px] xs:text-[9px] md:text-[10px] lg:text-sm xl:text-base px-0.5 xs:px-1 md:px-2 lg:px-3 py-1 md:py-1.5 lg:py-2 leading-tight"
                     style={{ 
-                      fontSize: 'clamp(9px, 2.2vw, 14px)',
+                      fontSize: 'clamp(8px, 1.8vw, 14px)',
                       minWidth: 'max-content'
                     }}
                   >

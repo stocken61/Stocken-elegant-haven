@@ -69,8 +69,8 @@ const Header: React.FC = () => {
         </nav>
         
         {/* Language Toggle and Booking Button */}
-        <div className="hidden md:flex items-center md:space-x-3 lg:space-x-6">
-          <div className="flex space-x-2 text-xs lg:text-sm">
+        <div className="hidden md:flex items-center md:space-x-2 lg:space-x-6 md:ml-4 lg:ml-0">
+          <div className="flex space-x-1 md:space-x-2 text-xs lg:text-sm">
             <a href="#" className="font-medium text-primary">DE</a>
             <a href="#" className="text-neutral-dark hover:text-primary transition">EN</a>
             <a href="#" className="text-neutral-dark hover:text-primary transition">FR</a>
@@ -80,10 +80,10 @@ const Header: React.FC = () => {
             href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
             target="_blank" 
             rel="noopener" 
-            className="bg-primary hover:bg-primary-light text-white text-xs lg:text-sm py-1 h-8 px-3 rounded-md transition-colors inline-flex items-center book-button"
+            className="bg-primary hover:bg-primary-light text-white text-xs lg:text-sm py-1 h-8 px-2 lg:px-3 rounded-md transition-colors inline-flex items-center book-button"
           >
             <span>Buchen</span>
-            <FontAwesomeIcon icon="arrow-right" className="ml-2 text-xs" />
+            <FontAwesomeIcon icon="arrow-right" className="ml-1 lg:ml-2 text-xs" />
           </a>
         </div>
         
