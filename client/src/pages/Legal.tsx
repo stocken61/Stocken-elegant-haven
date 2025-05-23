@@ -140,7 +140,7 @@ const PrivacyContent: React.FC = () => (
       Verantwortlich für die Datenverarbeitung ist:
     </p>
     <p>
-      Pontera GmbH<br />
+      Pontera GmbH i.G<br />
       handelnd unter dem Namen „Boutique Hotel Stocken by Pontera"<br />
       Krätzernstraße 10<br />
       9014 St. Gallen<br />
@@ -237,7 +237,7 @@ const ImprintContent: React.FC = () => (
     
     <h2>Kontaktadresse</h2>
     <p>
-      Pontera GmbH<br />
+      Pontera GmbH i.G<br />
       handelnd unter dem Namen „Boutique Hotel Stocken by Pontera"<br />
       Krätzernstraße 10<br />
       9014 St. Gallen<br />
