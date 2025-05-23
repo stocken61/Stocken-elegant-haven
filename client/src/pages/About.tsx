@@ -92,68 +92,7 @@ const About: React.FC = () => {
         </div>
       </section>
       
-      {/* Team Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-4 text-center">
-            Unser Team
-          </h2>
-          <p className="text-lg text-neutral-dark text-center max-w-3xl mx-auto mb-10">
-            Hinter dem Stocken Hotel steht ein engagiertes Team von Fachleuten, die sich der Exzellenz und dem Service verschrieben haben.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Team Member 1 */}
-            <div className="text-center">
-              <div className="w-40 h-40 mx-auto bg-neutral-light rounded-full mb-4 flex items-center justify-center">
-                <span className="text-4xl font-serif text-primary">MH</span>
-              </div>
-              <h3 className="text-xl font-medium mb-1">Michael Huber</h3>
-              <p className="text-neutral-dark mb-3">Hotelmanager</p>
-              <p className="text-sm text-neutral-dark">
-                Seit mehr als 15 Jahren in der Hotellerie tätig, bringt Michael seine umfassende Erfahrung und Leidenschaft für exzellenten Service ein.
-              </p>
-            </div>
-            
-            {/* Team Member 2 */}
-            <div className="text-center">
-              <div className="w-40 h-40 mx-auto bg-neutral-light rounded-full mb-4 flex items-center justify-center">
-                <span className="text-4xl font-serif text-primary">SB</span>
-              </div>
-              <h3 className="text-xl font-medium mb-1">Sophie Berger</h3>
-              <p className="text-neutral-dark mb-3">Küchenchefin</p>
-              <p className="text-sm text-neutral-dark">
-                Mit ihrem innovativen Ansatz für traditionelle Schweizer Küche sorgt Sophie für unvergessliche kulinarische Erlebnisse.
-              </p>
-            </div>
-            
-            {/* Team Member 3 */}
-            <div className="text-center">
-              <div className="w-40 h-40 mx-auto bg-neutral-light rounded-full mb-4 flex items-center justify-center">
-                <span className="text-4xl font-serif text-primary">LW</span>
-              </div>
-              <h3 className="text-xl font-medium mb-1">Lukas Weber</h3>
-              <p className="text-neutral-dark mb-3">Concierge</p>
-              <p className="text-sm text-neutral-dark">
-                Als Einheimischer kennt Lukas die Region wie seine Westentasche und teilt gerne seine Insider-Tipps mit unseren Gästen.
-              </p>
-            </div>
-            
-            {/* Team Member 4 */}
-            <div className="text-center">
-              <div className="w-40 h-40 mx-auto bg-neutral-light rounded-full mb-4 flex items-center justify-center">
-                <span className="text-4xl font-serif text-primary">AM</span>
-              </div>
-              <h3 className="text-xl font-medium mb-1">Anna Müller</h3>
-              <p className="text-neutral-dark mb-3">Event-Managerin</p>
-              <p className="text-sm text-neutral-dark">
-                Anna organisiert unvergessliche Veranstaltungen und sorgt dafür, dass jedes Detail perfekt ist.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
+
       {/* Location Section */}
       <section className="py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
