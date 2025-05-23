@@ -76,13 +76,15 @@ const Header: React.FC = () => {
             <a href="#" className="text-neutral-dark hover:text-primary transition">FR</a>
           </div>
           
-          <Button 
-            variant="default" 
-            className="bg-primary hover:bg-primary-light text-white text-xs lg:text-sm py-1 h-8 px-3"
+          <a 
+            href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
+            target="_blank" 
+            rel="noopener" 
+            className="bg-primary hover:bg-primary-light text-white text-xs lg:text-sm py-1 h-8 px-3 rounded-md transition-colors inline-flex items-center book-button"
           >
             <span>Buchen</span>
             <FontAwesomeIcon icon="arrow-right" className="ml-2 text-xs" />
-          </Button>
+          </a>
         </div>
         
         {/* Mobile Menu Toggle */}
@@ -152,11 +154,15 @@ const Header: React.FC = () => {
             </div>
           </div>
           
-          <Button 
-            className="block bg-primary hover:bg-primary-light text-white py-3 px-4 rounded-md transition duration-300 text-center mt-4 w-full"
+          <a 
+            href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
+            target="_blank" 
+            rel="noopener" 
+            className="block bg-primary hover:bg-primary-light text-white py-3 px-4 rounded-md transition duration-300 text-center mt-4 w-full book-button"
+            onClick={closeMenu}
           >
             Buchen
-          </Button>
+          </a>
         </div>
       </nav>
     </header>
