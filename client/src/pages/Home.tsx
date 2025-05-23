@@ -101,7 +101,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <div className="lg:w-1/2 p-6">
-              <div className="aspect-square overflow-hidden shadow-lg rounded-lg max-w-sm md:max-w-xs lg:max-w-md mx-auto">
+              <div className="aspect-square overflow-hidden shadow-lg rounded-lg max-w-sm md:max-w-sm lg:max-w-md mx-auto">
                 <img 
                   src="/reception_desk_new.jpg" 
                   alt="Hotel Empfangsbereich - Moderne Rezeption mit Mooswand" 
