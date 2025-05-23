@@ -51,7 +51,8 @@ const Header: React.FC = () => {
               Home
             </Link>
             <Link href="/about" className={`nav-link text-sm lg:text-base ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Über uns
+              <span className="md:hidden lg:inline">Über uns</span>
+              <span className="hidden md:inline lg:hidden">Über&nbsp;uns</span>
             </Link>
             <Link href="/rooms" className={`nav-link text-sm lg:text-base ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
               Zimmer
@@ -69,7 +70,7 @@ const Header: React.FC = () => {
         </nav>
         
         {/* Language Toggle and Booking Button */}
-        <div className="hidden md:flex items-center md:space-x-2 lg:space-x-6 md:ml-4 lg:ml-0">
+        <div className="hidden md:flex items-center md:space-x-2 lg:space-x-6 md:ml-8 lg:ml-0">
           <div className="flex space-x-1 md:space-x-2 text-xs lg:text-sm">
             <a href="#" className="font-medium text-primary">DE</a>
             <a href="#" className="text-neutral-dark hover:text-primary transition">EN</a>
