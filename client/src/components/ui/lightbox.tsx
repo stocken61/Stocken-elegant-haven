@@ -45,12 +45,21 @@ export const Lightbox: React.FC<LightboxProps> = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
       <div className="relative max-w-4xl w-full p-4">
+        {/* Mobile Close Button */}
+        <button 
+          onClick={onClose}
+          className="fixed top-4 right-4 z-50 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center shadow-lg md:hidden"
+        >
+          <X className="h-8 w-8 stroke-2" />
+        </button>
+        
+        {/* Desktop Close Button */}
         <Button 
           variant="ghost" 
-          className="absolute right-4 top-4 text-white z-20 hover:bg-black/40 bg-black/60 rounded-full p-3 md:right-2 md:top-2 md:bg-black/30 md:p-2 border border-white/30"
+          className="absolute right-2 top-2 text-white z-20 hover:bg-black/40 bg-black/30 rounded-full p-2 hidden md:block"
           onClick={onClose}
         >
-          <X className="h-6 w-6 md:h-5 md:w-5 stroke-2" />
+          <X className="h-6 w-6" />
         </Button>
         
         <div className="flex items-center justify-center h-[70vh] w-full">
