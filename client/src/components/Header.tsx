@@ -9,6 +9,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [location] = useLocation();
   const [scrolled, setScrolled] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -49,23 +50,23 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex md:pl-6 lg:pl-0">
           <div className="flex space-x-6 md:space-x-8 lg:space-x-10">
             <Link href="/" className={`nav-link text-sm lg:text-base ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Home
+              {t.nav.home}
             </Link>
             <Link href="/about" className={`nav-link text-sm lg:text-base ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              <span className="md:hidden lg:inline">Über uns</span>
-              <span className="hidden md:inline lg:hidden">Über&nbsp;uns</span>
+              <span className="md:hidden lg:inline">{t.nav.about}</span>
+              <span className="hidden md:inline lg:hidden">{t.nav.about.replace(' ', '\u00A0')}</span>
             </Link>
             <Link href="/rooms" className={`nav-link text-sm lg:text-base ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Zimmer
+              {t.nav.rooms}
             </Link>
             <Link href="/restaurant" className={`nav-link text-sm lg:text-base ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Restaurant
+              {t.nav.restaurant}
             </Link>
             <Link href="/services" className={`nav-link text-sm lg:text-base ${isActive('/services') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Services
+              {t.nav.services}
             </Link>
             <Link href="/contact" className={`nav-link text-sm lg:text-base ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'}`}>
-              Kontakt
+              {t.nav.contact}
             </Link>
           </div>
         </nav>
@@ -73,9 +74,24 @@ const Header: React.FC = () => {
         {/* Language Toggle and Booking Button */}
         <div className="hidden md:flex items-center md:space-x-2 lg:space-x-6 md:ml-8 lg:ml-0">
           <div className="flex space-x-1 md:space-x-2 text-xs lg:text-sm">
-            <a href="#" className="font-medium text-primary">DE</a>
-            <a href="#" className="text-neutral-dark hover:text-primary transition">EN</a>
-            <a href="#" className="text-neutral-dark hover:text-primary transition">FR</a>
+            <button 
+              onClick={() => setLanguage('de')} 
+              className={`${language === 'de' ? 'font-medium text-primary' : 'text-neutral-dark hover:text-primary transition'}`}
+            >
+              DE
+            </button>
+            <button 
+              onClick={() => setLanguage('en')} 
+              className={`${language === 'en' ? 'font-medium text-primary' : 'text-neutral-dark hover:text-primary transition'}`}
+            >
+              EN
+            </button>
+            <button 
+              onClick={() => setLanguage('fr')} 
+              className={`${language === 'fr' ? 'font-medium text-primary' : 'text-neutral-dark hover:text-primary transition'}`}
+            >
+              FR
+            </button>
           </div>
           
           <a 
@@ -84,7 +100,7 @@ const Header: React.FC = () => {
             rel="noopener" 
             className="bg-primary hover:bg-primary-light text-white text-xs lg:text-sm py-1 h-8 px-2 lg:px-3 rounded-md transition-colors inline-flex items-center book-button"
           >
-            <span>Buchen</span>
+            <span>{t.nav.book}</span>
             <FontAwesomeIcon icon="arrow-right" className="ml-1 lg:ml-2 text-xs" />
           </a>
         </div>
@@ -109,50 +125,65 @@ const Header: React.FC = () => {
             className={`block ${isActive('/') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
             onClick={closeMenu}
           >
-            Home
+            {t.nav.home}
           </Link>
           <Link 
             href="/about"
             className={`block ${isActive('/about') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
             onClick={closeMenu}
           >
-            Über uns
+            {t.nav.about}
           </Link>
           <Link 
             href="/rooms"
             className={`block ${isActive('/rooms') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
             onClick={closeMenu}
           >
-            Zimmer
+            {t.nav.rooms}
           </Link>
           <Link 
             href="/restaurant"
             className={`block ${isActive('/restaurant') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
             onClick={closeMenu}
           >
-            Restaurant
+            {t.nav.restaurant}
           </Link>
           <Link 
             href="/services"
             className={`block ${isActive('/services') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
             onClick={closeMenu}
           >
-            Services
+            {t.nav.services}
           </Link>
           <Link 
             href="/contact"
             className={`block ${isActive('/contact') ? 'text-primary font-medium' : 'text-neutral-dark hover:text-primary transition duration-300'} py-2`}
             onClick={closeMenu}
           >
-            Kontakt
+            {t.nav.contact}
           </Link>
           
           <div className="pt-3 border-t border-neutral">
             <p className="text-sm text-neutral-dark mb-2">Sprache:</p>
             <div className="flex space-x-4 text-sm">
-              <a href="#" className="font-medium text-primary">DE</a>
-              <a href="#" className="text-neutral-dark hover:text-primary transition">EN</a>
-              <a href="#" className="text-neutral-dark hover:text-primary transition">FR</a>
+              <button 
+                onClick={() => setLanguage('de')} 
+                className={`${language === 'de' ? 'font-medium text-primary' : 'text-neutral-dark hover:text-primary transition'}`}
+              >
+                DE
+              </button>
+              <button 
+                onClick={() => setLanguage('en')} 
+                className={`${language === 'en' ? 'font-medium text-primary' : 'text-neutral-dark hover:text-primary transition'}`}
+              >
+                EN
+              </button>
+              <button 
+                onClick={() => setLanguage('fr')} 
+                className={`${language === 'fr' ? 'font-medium text-primary' : 'text-neutral-dark hover:text-primary transition'}`}
+              >
+                FR
+              </button>
             </div>
           </div>
           
@@ -163,7 +194,7 @@ const Header: React.FC = () => {
             className="block bg-primary hover:bg-primary-light text-white py-3 px-4 rounded-md transition duration-300 text-center mt-4 w-full book-button"
             onClick={closeMenu}
           >
-            Buchen
+{t.nav.book}
           </a>
         </div>
       </nav>
