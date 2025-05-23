@@ -16,10 +16,10 @@ const Footer: React.FC = () => {
             <div className="mb-3">
               <img src={footerLogo} alt="Stocken Hotel Logo" className="h-40 md:h-52" />
             </div>
-            <p className="mb-3 max-w-xs text-left">
+            <p className="mb-3 max-w-xs text-left ml-4 md:ml-0 lg:ml-0">
               Wir verkörpern die Tradition der Schweizer Gastfreundschaft mit modernem Luxus.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 ml-4 md:ml-0 lg:ml-0">
               <a href="#" className="text-white hover:text-secondary-light transition">
                 <FontAwesomeIcon icon={['fab', 'facebook-f']} />
               </a>
