@@ -19,6 +19,37 @@ export interface Translations {
     cta: string;
   };
   
+  // Home Page
+  home: {
+    hero: {
+      title: string;
+      subtitle: string;
+      ourRooms: string;
+      bookNow: string;
+    };
+    benefits: {
+      title: string;
+      items: {
+        location: string;
+        comfort: string;
+        service: string;
+        dining: string;
+      };
+    };
+    services: {
+      title: string;
+      restaurant: string;
+      breakfast: string;
+      wifi: string;
+      location: string;
+    };
+    location: {
+      title: string;
+      viewLocation: string;
+      call: string;
+    };
+  };
+  
   // About Section
   about: {
     title: string;
@@ -164,6 +195,35 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Erleben Sie moderne Schweizer Gastfreundschaft in St. Gallen',
       cta: 'Jetzt buchen',
     },
+    home: {
+      hero: {
+        title: 'Willkommen im Boutique Hotel Stocken',
+        subtitle: 'Ihr modernes Boutique-Hotel im Herzen von St. Gallen',
+        ourRooms: 'Unsere Zimmer',
+        bookNow: 'Jetzt buchen',
+      },
+      benefits: {
+        title: 'Warum uns wählen?',
+        items: {
+          location: 'Zentrale Lage in St. Gallen',
+          comfort: 'Moderne & komfortable Zimmer',
+          service: 'Persönlicher Service',
+          dining: 'Restaurant Pontera',
+        },
+      },
+      services: {
+        title: 'Unsere Services',
+        restaurant: 'Genießen Sie kulinarische Köstlichkeiten in unserem Restaurant.',
+        breakfast: 'Genießen Sie ein individuelles À la carte Frühstück.',
+        wifi: 'Bleiben Sie mit unserem Highspeed-WLAN verbunden.',
+        location: 'Perfekt gelegen im Herzen von St. Gallen.',
+      },
+      location: {
+        title: 'Boutique Hotel Stocken',
+        viewLocation: 'Standort ansehen',
+        call: 'Anrufen',
+      },
+    },
     about: {
       title: 'Über uns',
       description: 'Das Boutique Hotel Stocken by Pontera verbindet traditionelle Schweizer Gastfreundschaft mit modernem Luxus. In unserem stilvollen Hotel in St. Gallen erwartet Sie ein einzigartiges Erlebnis.',
@@ -291,6 +351,35 @@ export const translations: Record<Language, Translations> = {
       title: 'Welcome to Boutique Hotel Stocken by Pontera',
       subtitle: 'Experience modern Swiss hospitality in St. Gallen',
       cta: 'Book Now',
+    },
+    home: {
+      hero: {
+        title: 'Welcome to Boutique Hotel Stocken',
+        subtitle: 'Your modern boutique hotel in the heart of St. Gallen',
+        ourRooms: 'Our Rooms',
+        bookNow: 'Book Now',
+      },
+      benefits: {
+        title: 'Why Choose Us?',
+        items: {
+          location: 'Central location in St. Gallen',
+          comfort: 'Modern & comfortable rooms',
+          service: 'Personal service',
+          dining: 'Restaurant Pontera',
+        },
+      },
+      services: {
+        title: 'Our Services',
+        restaurant: 'Enjoy culinary delights in our restaurant.',
+        breakfast: 'Enjoy an individual à la carte breakfast.',
+        wifi: 'Stay connected with our high-speed WiFi.',
+        location: 'Perfectly located in the heart of St. Gallen.',
+      },
+      location: {
+        title: 'Boutique Hotel Stocken',
+        viewLocation: 'View Location',
+        call: 'Call',
+      },
     },
     about: {
       title: 'About Us',
