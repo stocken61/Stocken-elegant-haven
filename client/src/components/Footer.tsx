@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 md:space-y-3 text-sm md:text-base lg:text-sm xl:text-base">
               <li className="flex">
                 <FontAwesomeIcon icon="map-marker-alt" className="mt-1 mr-3 text-sm" />
-                <span>Krätzernstraße 10<br />9014 St. Gallen, Schweiz</span>
+                <span>Kräzernstrasse 10<br />9014 St. Gallen, Schweiz</span>
               </li>
               <li className="flex">
                 <FontAwesomeIcon icon="phone-alt" className="mt-1 mr-3 text-sm" />

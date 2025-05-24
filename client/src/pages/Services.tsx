@@ -183,7 +183,7 @@ const Services: React.FC = () => {
                 <div>
                   <h3 className="text-xl font-medium mb-2">Adresse</h3>
                   <p className="text-neutral-dark">
-                    Krätzernstraße 10, 9014 St. Gallen, Schweiz
+                    Kräzernstrasse 10, 9014 St. Gallen, Schweiz
                   </p>
                 </div>
               </div>

@@ -298,7 +298,7 @@ const Home: React.FC = () => {
                 <div className="mb-8 text-center space-y-4">
                   <p className="flex items-center justify-center">
                     <FontAwesomeIcon icon="map-marker-alt" className="text-primary mr-2" />
-                    <span>Krätzernstraße 10, 9014 St. Gallen, Schweiz</span>
+                    <span>Kräzernstrasse 10, 9014 St. Gallen, Schweiz</span>
                   </p>
                   <p className="flex items-center justify-center">
                     <FontAwesomeIcon icon="phone" className="text-primary mr-2" />
@@ -311,7 +311,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://www.google.com/maps/place/Kräzernstraße+10,+9014+St.+Gallen"
+                    href="https://www.google.com/maps/place/Kräzernstrasse+10,+9014+St.+Gallen"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
