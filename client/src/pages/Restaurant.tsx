@@ -1,11 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useLanguage } from '@/i18n/LanguageContext';
 import RestaurantImg from '../assets/restaurant-image.png';
 
 const Restaurant: React.FC = () => {
-  const { t } = useLanguage();
-  
   return (
     <>
       {/* Hero Section */}

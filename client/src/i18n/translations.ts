@@ -28,36 +28,11 @@ export interface Translations {
       comfort: string;
       service: string;
     };
-    history: {
-      title: string;
-      paragraph1: string;
-      paragraph2: string;
-      paragraph3: string;
-    };
-    philosophy: {
-      title: string;
-      description: string;
-    };
-    features: {
-      sustainability: {
-        title: string;
-        description: string;
-      };
-      cuisine: {
-        title: string;
-        description: string;
-      };
-      atmosphere: {
-        title: string;
-        description: string;
-      };
-    };
   };
   
   // Rooms Section
   rooms: {
     title: string;
-    allRooms: string;
     categories: {
       comfort: string;
       deluxe: string;
@@ -97,45 +72,14 @@ export interface Translations {
   // Services Section
   services: {
     title: string;
-    subtitle: string;
     parking: string;
     transport: string;
     attractions: string;
-    stiftsbibliothek: {
-      title: string;
-      description: string;
-    };
-    dreiweieren: {
-      title: string;
-      description: string;
-    };
-    textilmuseum: {
-      title: string;
-      description: string;
-    };
-    breakfast: {
-      title: string;
-      description: string;
-    };
-    location: {
-      title: string;
-      description: string;
-    };
-    concierge: {
-      title: string;
-      description: string;
-    };
-    wifi: {
-      title: string;
-      description: string;
-    };
-    discoverAll: string;
   };
   
   // Contact Section
   contact: {
     title: string;
-    subtitle: string;
     address: string;
     phone: string;
     email: string;
@@ -228,34 +172,9 @@ export const translations: Record<Language, Translations> = {
         comfort: 'Stilvolle & komfortable Zimmer',
         service: 'Persönlicher Service',
       },
-      history: {
-        title: 'Unsere Geschichte',
-        paragraph1: 'Das Boutique Hotel Stocken vereint Geschichte und Gegenwart auf einzigartige Weise. Unser traditionsreiches Gebäude stammt aus dem Jahr 1784 und wurde mit großer Sorgfalt restauriert, um seinen historischen Charme zu bewahren. Gleichzeitig haben wir es mit zeitgemäßem Design und modernstem Komfort ausgestattet.',
-        paragraph2: 'Die Geschichte unseres Hauses beginnt im 18. Jahrhundert – heute schreiben wir sie mit einer neuen Vision weiter: einen Ort zu schaffen, der die kulturelle Tiefe und architektonische Schönheit von St. Gallen würdigt und zugleich ein stilvolles Zuhause für Reisende von heute bietet.',
-        paragraph3: 'Jedes Detail – von der Fassade bis zur Einrichtung – erzählt von unserer Leidenschaft für Qualität, Gastfreundschaft und Ästhetik.',
-      },
-      philosophy: {
-        title: 'Unsere Philosophie',
-        description: 'Wir glauben an authentische Schweizer Gastfreundschaft, nachhaltige Praktiken und die Schaffung unvergesslicher Erlebnisse für unsere Gäste.',
-      },
-      features: {
-        sustainability: {
-          title: 'Nachhaltigkeit',
-          description: 'Wir setzen auf erneuerbare Energien, lokale Produkte und abfallreduzierende Maßnahmen, um unseren ökologischen Fußabdruck zu minimieren.',
-        },
-        cuisine: {
-          title: 'Exklusive Küche',
-          description: 'Unsere Küche verbindet Qualität, Authentizität und ausgewählte Zutaten. Inspiriert von der Schwarzmeerregion und verfeinert mit Schweizer Handwerkskunst, servieren wir Spezialitäten in stilvoller Atmosphäre – exklusiv, ehrlich und handgemacht.',
-        },
-        atmosphere: {
-          title: 'Familiäre Atmosphäre',
-          description: 'Als Familienbetrieb schaffen wir eine warme, persönliche Umgebung, in der sich jeder Gast willkommen und wertgeschätzt fühlt.',
-        },
-      },
     },
     rooms: {
       title: 'Unsere Zimmer',
-      allRooms: 'Alle Zimmer',
       categories: {
         comfort: 'Komfort',
         deluxe: 'Deluxe',
@@ -291,43 +210,12 @@ export const translations: Record<Language, Translations> = {
     },
     services: {
       title: 'Services',
-      subtitle: 'St. Gallen bietet zahlreiche Sehenswürdigkeiten und Aktivitäten. Hier sind einige Highlights in der Nähe unseres Hotels:',
       parking: 'Kostenfreie Parkplätze',
       transport: 'Bus Linie 1 hält direkt vor dem Hotel',
       attractions: 'Sehenswürdigkeiten in St. Gallen',
-      stiftsbibliothek: {
-        title: 'Stiftsbibliothek St. Gallen',
-        description: 'Eine der ältesten Bibliotheken der Welt und UNESCO-Weltkulturerbe mit kostbaren Handschriften und Büchern.',
-      },
-      dreiweieren: {
-        title: 'Drei Weieren',
-        description: 'Beliebtes Naherholungsgebiet mit Badeseen, Restaurants und herrlichem Blick über St. Gallen.',
-      },
-      textilmuseum: {
-        title: 'Textilmuseum St. Gallen',
-        description: 'Entdecken Sie die reiche Textiltradition St. Gallens mit exquisiten Stickereien und historischen Exponaten.',
-      },
-      breakfast: {
-        title: 'Exklusives Frühstück',
-        description: 'Genießen Sie ein individuelles À la carte Frühstück.',
-      },
-      location: {
-        title: 'Zentrale Lage',
-        description: 'Perfekt gelegen für Erkundungen in St. Gallen.',
-      },
-      concierge: {
-        title: 'Concierge Service',
-        description: 'Persönlicher Service für all Ihre Bedürfnisse.',
-      },
-      wifi: {
-        title: 'Kostenloses WLAN',
-        description: 'Bleiben Sie mit unserem Highspeed-WLAN verbunden.',
-      },
-      discoverAll: 'Alle Services entdecken'
     },
     contact: {
       title: 'Kontakt',
-      subtitle: 'Wir freuen uns auf Ihre Anfrage und stehen Ihnen für Fragen und Informationen zur Verfügung.',
       address: 'Krätzernstraße 10, 9014 St. Gallen, Schweiz',
       phone: '+41 79 300 01 61',
       email: 'reservation@hotelstocken.com',
@@ -412,34 +300,9 @@ export const translations: Record<Language, Translations> = {
         comfort: 'Stylish & comfortable rooms',
         service: 'Personal service',
       },
-      history: {
-        title: 'Our History',
-        paragraph1: 'Boutique Hotel Stocken uniquely combines history and present. Our traditional building dates from 1784 and has been carefully restored to preserve its historic charm while being equipped with contemporary design and modern comfort.',
-        paragraph2: 'The history of our house begins in the 18th century – today we continue writing it with a new vision: to create a place that honors the cultural depth and architectural beauty of St. Gallen while offering a stylish home for today\'s travelers.',
-        paragraph3: 'Every detail – from the facade to the furnishings – tells of our passion for quality, hospitality and aesthetics.',
-      },
-      philosophy: {
-        title: 'Our Philosophy',
-        description: 'We believe in authentic Swiss hospitality, sustainable practices and creating unforgettable experiences for our guests.',
-      },
-      features: {
-        sustainability: {
-          title: 'Sustainability',
-          description: 'We focus on renewable energy, local products and waste-reducing measures to minimize our ecological footprint.',
-        },
-        cuisine: {
-          title: 'Exclusive Cuisine',
-          description: 'Our kitchen combines quality, authenticity and selected ingredients. Inspired by the Black Sea region and refined with Swiss craftsmanship, we serve specialties in a stylish atmosphere – exclusive, honest and handmade.',
-        },
-        atmosphere: {
-          title: 'Family Atmosphere',
-          description: 'As a family business, we create a warm, personal environment where every guest feels welcome and valued.',
-        },
-      },
     },
     rooms: {
       title: 'Our Rooms',
-      allRooms: 'All Rooms',
       categories: {
         comfort: 'Comfort',
         deluxe: 'Deluxe',
@@ -474,44 +337,13 @@ export const translations: Record<Language, Translations> = {
       events: 'event@hotelstocken.com',
     },
     services: {
-      title: 'Discover St. Gallen',
-      subtitle: 'St. Gallen offers numerous attractions and activities. Here are some highlights near our hotel:',
+      title: 'Services',
       parking: 'Free parking',
       transport: 'Bus line 1 stops directly in front of the hotel',
       attractions: 'Attractions in St. Gallen',
-      stiftsbibliothek: {
-        title: 'Abbey Library of St. Gallen',
-        description: 'One of the oldest libraries in the world and UNESCO World Heritage site with precious manuscripts and books.',
-      },
-      dreiweieren: {
-        title: 'Drei Weieren',
-        description: 'Popular recreational area with swimming lakes, restaurants and magnificent views over St. Gallen.',
-      },
-      textilmuseum: {
-        title: 'Textile Museum St. Gallen',
-        description: 'Discover the rich textile tradition of St. Gallen with exquisite embroideries and historical exhibits.',
-      },
-      breakfast: {
-        title: 'Exclusive Breakfast',
-        description: 'Enjoy an individual à la carte breakfast.',
-      },
-      location: {
-        title: 'Central Location',
-        description: 'Perfectly located for exploring St. Gallen.',
-      },
-      concierge: {
-        title: 'Concierge Service',
-        description: 'Personal service for all your needs.',
-      },
-      wifi: {
-        title: 'Free WiFi',
-        description: 'Stay connected with our high-speed WiFi.',
-      },
-      discoverAll: 'Discover All Services'
     },
     contact: {
       title: 'Contact',
-      subtitle: 'We look forward to your inquiry and are available for questions and information.',
       address: 'Krätzernstraße 10, 9014 St. Gallen, Switzerland',
       phone: '+41 79 300 01 61',
       email: 'reservation@hotelstocken.com',
@@ -596,34 +428,9 @@ export const translations: Record<Language, Translations> = {
         comfort: 'Chambres élégantes et confortables',
         service: 'Service personnel',
       },
-      history: {
-        title: 'Notre Histoire',
-        paragraph1: 'Le Boutique Hotel Stocken unit de manière unique l\'histoire et le présent. Notre bâtiment traditionnel date de 1784 et a été soigneusement restauré pour préserver son charme historique tout en étant équipé d\'un design contemporain et d\'un confort moderne.',
-        paragraph2: 'L\'histoire de notre maison commence au 18ème siècle – aujourd\'hui nous la continuons avec une nouvelle vision : créer un lieu qui honore la profondeur culturelle et la beauté architecturale de St-Gall tout en offrant un foyer élégant aux voyageurs d\'aujourd\'hui.',
-        paragraph3: 'Chaque détail – de la façade à l\'ameublement – raconte notre passion pour la qualité, l\'hospitalité et l\'esthétique.',
-      },
-      philosophy: {
-        title: 'Notre Philosophie',
-        description: 'Nous croyons en une hospitalité suisse authentique, des pratiques durables et la création d\'expériences inoubliables pour nos clients.',
-      },
-      features: {
-        sustainability: {
-          title: 'Durabilité',
-          description: 'Nous misons sur les énergies renouvelables, les produits locaux et les mesures de réduction des déchets pour minimiser notre empreinte écologique.',
-        },
-        cuisine: {
-          title: 'Cuisine Exclusive',
-          description: 'Notre cuisine combine qualité, authenticité et ingrédients sélectionnés. Inspirée de la région de la mer Noire et raffinée avec l\'artisanat suisse, nous servons des spécialités dans une atmosphère élégante – exclusif, honnête et fait main.',
-        },
-        atmosphere: {
-          title: 'Atmosphère Familiale',
-          description: 'En tant qu\'entreprise familiale, nous créons un environnement chaleureux et personnel où chaque client se sent le bienvenu et apprécié.',
-        },
-      },
     },
     rooms: {
       title: 'Nos Chambres',
-      allRooms: 'Toutes les chambres',
       categories: {
         comfort: 'Confort',
         deluxe: 'Deluxe',
@@ -658,44 +465,13 @@ export const translations: Record<Language, Translations> = {
       events: 'event@hotelstocken.com',
     },
     services: {
-      title: 'Découvrir St-Gall',
-      subtitle: 'St-Gall offre de nombreuses attractions et activités. Voici quelques points forts près de notre hôtel:',
+      title: 'Services',
       parking: 'Parking gratuit',
       transport: 'La ligne de bus 1 s\'arrête directement devant l\'hôtel',
       attractions: 'Attractions à St-Gall',
-      stiftsbibliothek: {
-        title: 'Bibliothèque de l\'Abbaye de St-Gall',
-        description: 'Une des plus anciennes bibliothèques du monde et site du patrimoine mondial de l\'UNESCO avec des manuscrits et livres précieux.',
-      },
-      dreiweieren: {
-        title: 'Drei Weieren',
-        description: 'Zone de loisirs populaire avec lacs de baignade, restaurants et vues magnifiques sur St-Gall.',
-      },
-      textilmuseum: {
-        title: 'Musée du Textile St-Gall',
-        description: 'Découvrez la riche tradition textile de St-Gall avec des broderies exquises et des expositions historiques.',
-      },
-      breakfast: {
-        title: 'Petit-déjeuner exclusif',
-        description: 'Savourez un petit-déjeuner à la carte individuel.',
-      },
-      location: {
-        title: 'Emplacement central',
-        description: 'Parfaitement situé pour explorer St-Gall.',
-      },
-      concierge: {
-        title: 'Service de conciergerie',
-        description: 'Service personnel pour tous vos besoins.',
-      },
-      wifi: {
-        title: 'WiFi gratuit',
-        description: 'Restez connecté avec notre WiFi haut débit.',
-      },
-      discoverAll: 'Découvrir tous les services'
     },
     contact: {
       title: 'Contact',
-      subtitle: 'Nous nous réjouissons de votre demande et sommes à votre disposition pour toute question et information.',
       address: 'Krätzernstraße 10, 9014 St-Gall, Suisse',
       phone: '+41 79 300 01 61',
       email: 'reservation@hotelstocken.com',

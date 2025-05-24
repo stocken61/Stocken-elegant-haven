@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
-import { useLanguage } from '@/i18n/LanguageContext';
 import heroImage from '@assets/hero_main.png';
 
 const Home: React.FC = () => {
-  const { t } = useLanguage();
-  
+  // Entfernen wir die Abhängigkeit von externen Datenquellen
   return (
     <>
       {/* Hero Section */}
@@ -23,15 +21,15 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="hero-content text-center py-12 absolute inset-0 flex flex-col items-center justify-start pt-12 md:pt-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
-            Willkommen im Boutique Hotel Stocken by Pontera
+            Willkommen im Boutique Hotel Stocken
           </h1>
           <p className="text-xl text-white mb-6">
-            Erleben Sie moderne Schweizer Gastfreundschaft in St. Gallen
+            Ihr modernes Boutique-Hotel im Herzen von St. Gallen
           </p>
           <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 mt-8">
             <Link href="/rooms">
               <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto">
-                {t.nav.rooms}
+                Unsere Zimmer
               </Button>
             </Link>
             <a 
@@ -40,7 +38,7 @@ const Home: React.FC = () => {
               rel="noopener" 
               className="bg-[#8B5A2B] hover:bg-[#7A4A1D] text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block book-button"
             >
-{t.hero.cta}
+              Jetzt buchen
             </a>
           </div>
         </div>
@@ -54,7 +52,7 @@ const Home: React.FC = () => {
               <div className="text-primary text-3xl mb-2">
                 <FontAwesomeIcon icon="map-marker-alt" />
               </div>
-              <h3 className="font-semibold mb-1">{t.about.highlights.location}</h3>
+              <h3 className="font-semibold mb-1">Perfekte Lage</h3>
               <p className="text-sm text-neutral-dark">Im Herzen von St. Gallen</p>
             </div>
             
@@ -122,7 +120,7 @@ const Home: React.FC = () => {
       <section className="rooms-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
-            {t.rooms.title}
+            Unsere Zimmer
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -136,13 +134,13 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.rooms.categories.deluxe}</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">{t.roomDescriptions.deluxe.short}</p>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">Deluxe Zimmer</h3>
+                <p className="text-neutral-dark mb-4 flex-grow">Stilvolle Eleganz auf 23 m²</p>
                 <Link 
                   href="/rooms#deluxe" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  {t.rooms.details.viewDetails}
+                  Details ansehen
                 </Link>
               </div>
             </div>
@@ -157,13 +155,13 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.rooms.categories.premiumSuite}</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">{t.roomDescriptions.premiumSuite.short}</p>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Suite</h3>
+                <p className="text-neutral-dark mb-4 flex-grow">Geräumiges Wohnerlebnis mit Sitzecke</p>
                 <Link 
                   href="/rooms#premium-suite" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  {t.rooms.details.viewDetails}
+                  Details ansehen
                 </Link>
               </div>
             </div>
@@ -178,13 +176,13 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.rooms.categories.familySuite}</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">{t.roomDescriptions.familySuite.short}</p>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Family Suite</h3>
+                <p className="text-neutral-dark mb-4 flex-grow">Großzügiger Raum für die ganze Familie</p>
                 <Link 
                   href="/rooms#premium-family" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  {t.rooms.details.viewDetails}
+                  Details ansehen
                 </Link>
               </div>
             </div>
@@ -204,7 +202,7 @@ const Home: React.FC = () => {
       <section className="services-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
-            {t.services.title}
+            Unsere Services
           </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -212,9 +210,9 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="utensils" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.restaurant.title}</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">Restaurant</h3>
               <p className="text-neutral-dark">
-                {t.restaurant.description}
+                Genießen Sie kulinarische Köstlichkeiten in unserem Restaurant.
               </p>
             </div>
             
@@ -222,9 +220,9 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="coffee" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.services.breakfast.title}</h3>
+              <h3 className="text-xl font-bold mb-2 text-heading-gray">Exklusives Frühstück</h3>
               <p className="text-neutral-dark">
-                {t.services.breakfast.description}
+                Genießen Sie ein individuelles À la carte Frühstück.
               </p>
             </div>
             
@@ -242,7 +240,7 @@ const Home: React.FC = () => {
               <div className="text-primary text-4xl mb-4">
                 <FontAwesomeIcon icon="map-marker-alt" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-heading-gray">Zentrale Lage</h3>
+              <h3 className="text-xl font-bold mb-2">Zentrale Lage</h3>
               <p className="text-neutral-dark">
                 Perfekt gelegen im Herzen von St. Gallen.
               </p>
@@ -252,7 +250,7 @@ const Home: React.FC = () => {
           <div className="text-center mt-10">
             <Link href="/services">
               <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors">
-                {t.services.discoverAll}
+                Alle Services entdecken
               </Button>
             </Link>
           </div>

@@ -7,17 +7,14 @@ import {
   TabsTrigger 
 } from "@/components/ui/tabs";
 import { rooms, Room } from '@/data/rooms';
-import { useLanguage } from '@/i18n/LanguageContext';
 
 const Rooms: React.FC = () => {
-  const { t } = useLanguage();
-  
   const roomCategories = [
-    { id: 'all', name: t.rooms.allRooms },
-    { id: 'comfort', name: t.rooms.categories.comfort },
-    { id: 'deluxe', name: t.rooms.categories.deluxe },
-    { id: 'premium-suite', name: t.rooms.categories.premiumSuite },
-    { id: 'premium-family', name: t.rooms.categories.familySuite }
+    { id: 'all', name: 'Alle Zimmer' },
+    { id: 'comfort', name: 'Komfort' },
+    { id: 'deluxe', name: 'Deluxe' },
+    { id: 'premium-suite', name: 'Premium Suite' },
+    { id: 'premium-family', name: 'Familien Suite' }
   ];
   
   const [activeTab, setActiveTab] = useState('all');
@@ -52,7 +49,7 @@ const Rooms: React.FC = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            {t.rooms.title}
+            Unsere Zimmer
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Entdecken Sie unsere komfortablen Zimmer und Suiten.

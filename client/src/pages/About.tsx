@@ -1,11 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useLanguage } from '@/i18n/LanguageContext';
 import stockenFacade from '../assets/stocken-facade-square.jpg';
 
 const About: React.FC = () => {
-  const { t } = useLanguage();
-  
   return (
     <>
       {/* Hero Section */}
@@ -14,10 +11,10 @@ const About: React.FC = () => {
       >
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-3">
-            {t.about.title}
+            Über Stocken
           </h1>
           <p className="text-xl text-white mx-auto">
-            {t.about.description}
+            Entdecken Sie die Geschichte und Philosophie unseres historischen Boutique-Hotels.
           </p>
         </div>
       </section>
@@ -33,16 +30,16 @@ const About: React.FC = () => {
             </div>
             <div className="lg:w-7/12 p-4">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
-                {t.about.history.title}
+                Unsere Geschichte
               </h2>
               <p className="text-lg text-neutral-dark mb-4">
-                {t.about.history.paragraph1}
+                Das Boutique Hotel Stocken vereint Geschichte und Gegenwart auf einzigartige Weise. Unser traditionsreiches Gebäude stammt aus dem Jahr 1784 und wurde mit großer Sorgfalt restauriert, um seinen historischen Charme zu bewahren. Gleichzeitig haben wir es mit zeitgemäßem Design und modernstem Komfort ausgestattet.
               </p>
               <p className="text-lg text-neutral-dark mb-4">
-                {t.about.history.paragraph2}
+                Die Geschichte unseres Hauses beginnt im 18. Jahrhundert – heute schreiben wir sie mit einer neuen Vision weiter: einen Ort zu schaffen, der die kulturelle Tiefe und architektonische Schönheit von St. Gallen würdigt und zugleich ein stilvolles Zuhause für Reisende von heute bietet.
               </p>
               <p className="text-lg text-neutral-dark">
-                {t.about.history.paragraph3}
+                Jedes Detail – von der Fassade bis zur Einrichtung – erzählt von unserer Leidenschaft für Qualität, Gastfreundschaft und Ästhetik.
               </p>
             </div>
           </div>
@@ -54,10 +51,10 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-4">
-              {t.about.philosophy.title}
+              Unsere Philosophie
             </h2>
             <p className="text-lg text-neutral-dark">
-              {t.about.philosophy.description}
+              Wir glauben an authentische Schweizer Gastfreundschaft, nachhaltige Praktiken und die Schaffung unvergesslicher Erlebnisse für unsere Gäste.
             </p>
           </div>
           
@@ -66,9 +63,9 @@ const About: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-light rounded-full text-white mb-6">
                 <FontAwesomeIcon icon="leaf" className="text-2xl" />
               </div>
-              <h3 className="text-xl font-serif font-bold mb-4">{t.about.features.sustainability.title}</h3>
+              <h3 className="text-xl font-serif font-bold mb-4">Nachhaltigkeit</h3>
               <p className="text-neutral-dark">
-                {t.about.features.sustainability.description}
+                Wir setzen auf erneuerbare Energien, lokale Produkte und abfallreduzierende Maßnahmen, um unseren ökologischen Fußabdruck zu minimieren.
               </p>
             </div>
             
@@ -76,9 +73,9 @@ const About: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-light rounded-full text-white mb-6">
                 <FontAwesomeIcon icon="utensils" className="text-2xl" />
               </div>
-              <h3 className="text-xl font-serif font-bold mb-4">{t.about.features.cuisine.title}</h3>
+              <h3 className="text-xl font-serif font-bold mb-4">Exklusive Küche</h3>
               <p className="text-neutral-dark">
-                {t.about.features.cuisine.description}
+                Unsere Küche verbindet Qualität, Authentizität und ausgewählte Zutaten. Inspiriert von der Schwarzmeerregion und verfeinert mit Schweizer Handwerkskunst, servieren wir Spezialitäten in stilvoller Atmosphäre – exklusiv, ehrlich und handgemacht.
               </p>
             </div>
             
@@ -86,9 +83,9 @@ const About: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-light rounded-full text-white mb-6">
                 <FontAwesomeIcon icon="users" className="text-2xl" />
               </div>
-              <h3 className="text-xl font-serif font-bold mb-4">{t.about.features.atmosphere.title}</h3>
+              <h3 className="text-xl font-serif font-bold mb-4">Familiäre Atmosphäre</h3>
               <p className="text-neutral-dark">
-                {t.about.features.atmosphere.description}
+                Wir legen Wert auf persönlichen Service und schaffen eine warme, einladende Atmosphäre, in der sich unsere Gäste wie zu Hause fühlen.
               </p>
             </div>
           </div>

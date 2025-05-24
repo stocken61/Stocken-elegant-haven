@@ -1,11 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useLanguage } from '@/i18n/LanguageContext';
 import ContactForm from '@/components/ContactForm';
 
 const Contact: React.FC = () => {
-  const { t } = useLanguage();
-  
   return (
     <>
       {/* Hero Section */}

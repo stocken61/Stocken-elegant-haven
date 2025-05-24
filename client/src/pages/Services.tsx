@@ -1,13 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useLanguage } from '@/i18n/LanguageContext';
 import stiftsBibliothekImg from '../assets/attractions/stiftsbibliothek.webp';
 import dreiWeierenImg from '../assets/attractions/dreiweieren.png';
 import textilmuseumImg from '../assets/attractions/textilmuseum.jpg';
 
 const Services: React.FC = () => {
-  const { t } = useLanguage();
-  
   return (
     <>
       {/* Header Section */}
