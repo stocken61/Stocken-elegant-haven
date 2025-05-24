@@ -35,6 +35,25 @@ export interface Translations {
         service: string;
         dining: string;
       };
+      breakfast: {
+        title: string;
+        description: string;
+      };
+      wifi: {
+        title: string;
+        description: string;
+      };
+    };
+    rooms: {
+      title: string;
+      comfort: string;
+      deluxe: string;
+      premium: string;
+    };
+    contact: {
+      title: string;
+      subtitle: string;
+      getInTouch: string;
     };
     services: {
       title: string;
@@ -55,6 +74,7 @@ export interface Translations {
   about: {
     title: string;
     description: string;
+    learnMore: string;
     highlights: {
       location: string;
       comfort: string;
@@ -211,6 +231,25 @@ export const translations: Record<Language, Translations> = {
           service: 'Persönlicher Service',
           dining: 'Restaurant Pontera',
         },
+        breakfast: {
+          title: 'Exklusives Frühstücksangebot',
+          description: 'À la carte, gegen Aufpreis buchbar',
+        },
+        wifi: {
+          title: 'Kostenloses WLAN',
+          description: 'Highspeed-Internet im ganzen Hotel',
+        },
+      },
+      rooms: {
+        title: 'Unsere Zimmer',
+        comfort: 'Komfort Doppelzimmer',
+        deluxe: 'Deluxe Doppelzimmer', 
+        premium: 'Premium Suite',
+      },
+      contact: {
+        title: 'Kontaktieren Sie uns',
+        subtitle: 'Haben Sie Fragen? Wir helfen Ihnen gerne weiter.',
+        getInTouch: 'Kontakt aufnehmen',
       },
       services: {
         title: 'Unsere Services',
