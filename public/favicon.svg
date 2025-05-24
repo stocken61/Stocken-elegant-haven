@@ -1,29 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Background -->
-  <rect width="64" height="64" fill="#2D5A3D" rx="8"/>
+  <!-- Background mit Hotel-Farben -->
+  <rect width="64" height="64" fill="#2D5A3D" rx="4"/>
   
-  <!-- Hotel Logo - Window Frame -->
-  <g transform="translate(32, 20) scale(0.6)">
-    <!-- Window frame -->
-    <path d="M-16,-12 L16,-12 A4,4 0 0,1 20,-8 L20,8 A4,4 0 0,1 16,12 L-16,12 A4,4 0 0,1 -20,8 L-20,-8 A4,4 0 0,1 -16,-12 Z" 
-          fill="none" stroke="#F5F1E8" stroke-width="2"/>
+  <!-- Hotel Logo - Fenster mit Welle -->
+  <g transform="translate(32, 24) scale(0.8)">
+    <!-- Äußerer Fensterrahmen -->
+    <path d="M-14,-10 L14,-10 Q16,-10 16,-8 L16,8 Q16,10 14,10 L-14,10 Q-16,10 -16,8 L-16,-8 Q-16,-10 -14,-10 Z" 
+          fill="none" stroke="#E5D5B7" stroke-width="1.5"/>
     
-    <!-- Cross divider vertical -->
-    <line x1="0" y1="-12" x2="0" y2="12" stroke="#F5F1E8" stroke-width="2"/>
+    <!-- Vertikaler Rahmen -->
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="#E5D5B7" stroke-width="1.5"/>
     
-    <!-- Cross divider horizontal -->
-    <line x1="-20" y1="0" x2="20" y2="0" stroke="#F5F1E8" stroke-width="2"/>
+    <!-- Horizontaler Rahmen -->
+    <line x1="-16" y1="0" x2="16" y2="0" stroke="#E5D5B7" stroke-width="1.5"/>
     
-    <!-- Wave element in bottom section -->
-    <path d="M-12,4 Q-6,8 0,4 T12,4" fill="none" stroke="#F5F1E8" stroke-width="2"/>
+    <!-- Wellen-Element unten -->
+    <path d="M-10,3 Q-5,7 0,3 Q5,7 10,3" fill="none" stroke="#E5D5B7" stroke-width="1.5" stroke-linecap="round"/>
   </g>
   
-  <!-- Text "S" for Stocken -->
-  <text x="32" y="48" font-family="serif" font-size="14" font-weight="bold" fill="#F5F1E8" text-anchor="middle">S</text>
-  
-  <!-- Small decorative leaf -->
-  <g transform="translate(32, 55) scale(0.4)">
-    <path d="M-3,0 Q0,-3 3,0 Q0,3 -3,0" fill="#F5F1E8"/>
-    <path d="M0,0 Q3,-2 6,0" fill="none" stroke="#F5F1E8" stroke-width="1"/>
+  <!-- Blätter-Dekoration unten -->
+  <g transform="translate(32, 50) scale(0.6)">
+    <path d="M-6,0 Q-3,-4 0,0 Q3,-4 6,0 Q3,2 0,0 Q-3,2 -6,0" fill="#E5D5B7"/>
+    <path d="M-8,1 Q-4,-1 0,1 Q4,-1 8,1" fill="none" stroke="#E5D5B7" stroke-width="1"/>
   </g>
 </svg>
