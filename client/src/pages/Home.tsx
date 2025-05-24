@@ -138,7 +138,7 @@ const Home: React.FC = () => {
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.home.rooms.deluxe}</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">Stilvolle Eleganz auf 23 m²</p>
+                <p className="text-neutral-dark mb-4 flex-grow">{t.home.rooms.deluxeDesc}</p>
                 <Link 
                   href="/rooms#deluxe" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
@@ -159,7 +159,7 @@ const Home: React.FC = () => {
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.home.rooms.premium}</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">Geräumiges Wohnerlebnis mit Sitzecke</p>
+                <p className="text-neutral-dark mb-4 flex-grow">{t.home.rooms.premiumDesc}</p>
                 <Link 
                   href="/rooms#premium-suite" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
@@ -180,12 +180,12 @@ const Home: React.FC = () => {
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Family Suite</h3>
-                <p className="text-neutral-dark mb-4 flex-grow">Großzügiger Raum für die ganze Familie</p>
+                <p className="text-neutral-dark mb-4 flex-grow">{t.home.rooms.familyDesc}</p>
                 <Link 
                   href="/rooms#premium-family" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  Details ansehen
+                  {t.rooms.details.viewDetails}
                 </Link>
               </div>
             </div>

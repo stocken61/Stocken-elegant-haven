@@ -56,7 +56,10 @@ export interface Translations {
       title: string;
       comfort: string;
       deluxe: string;
+      deluxeDesc: string;
       premium: string;
+      premiumDesc: string;
+      familyDesc: string;
     };
     contact: {
       title: string;
@@ -259,8 +262,11 @@ export const translations: Record<Language, Translations> = {
       rooms: {
         title: 'Unsere Zimmer',
         comfort: 'Komfort Doppelzimmer',
-        deluxe: 'Deluxe Doppelzimmer', 
+        deluxe: 'Deluxe Doppelzimmer',
+        deluxeDesc: 'Stilvolle Eleganz auf 23 m²', 
         premium: 'Premium Suite',
+        premiumDesc: 'Geräumiges Wohnerlebnis mit Sitzecke',
+        familyDesc: 'Großzügiger Raum für die ganze Familie',
       },
       contact: {
         title: 'Kontaktieren Sie uns',
@@ -446,7 +452,10 @@ export const translations: Record<Language, Translations> = {
         title: 'Our Rooms',
         comfort: 'Comfort Double Room',
         deluxe: 'Deluxe Double Room',
+        deluxeDesc: 'Stylish elegance on 23 m²',
         premium: 'Premium Suite',
+        premiumDesc: 'Spacious living experience with seating area',
+        familyDesc: 'Generous space for the whole family',
       },
       contact: {
         title: 'Contact Us',
@@ -632,7 +641,10 @@ export const translations: Record<Language, Translations> = {
         title: 'Nos Chambres',
         comfort: 'Chambre Double Confort',
         deluxe: 'Chambre Double Deluxe',
+        deluxeDesc: 'Élégance stylée sur 23 m²',
         premium: 'Suite Premium',
+        premiumDesc: 'Expérience spacieuse avec coin salon',
+        familyDesc: 'Espace généreux pour toute la famille',
       },
       contact: {
         title: 'Contactez-nous',
