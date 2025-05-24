@@ -28,6 +28,30 @@ export interface Translations {
       comfort: string;
       service: string;
     };
+    history: {
+      title: string;
+      paragraph1: string;
+      paragraph2: string;
+      paragraph3: string;
+    };
+    philosophy: {
+      title: string;
+      description: string;
+    };
+    features: {
+      sustainability: {
+        title: string;
+        description: string;
+      };
+      cuisine: {
+        title: string;
+        description: string;
+      };
+      atmosphere: {
+        title: string;
+        description: string;
+      };
+    };
   };
   
   // Rooms Section
@@ -189,6 +213,30 @@ export const translations: Record<Language, Translations> = {
         comfort: 'Stilvolle & komfortable Zimmer',
         service: 'Persönlicher Service',
       },
+      history: {
+        title: 'Unsere Geschichte',
+        paragraph1: 'Das Boutique Hotel Stocken vereint Geschichte und Gegenwart auf einzigartige Weise. Unser traditionsreiches Gebäude stammt aus dem Jahr 1784 und wurde mit großer Sorgfalt restauriert, um seinen historischen Charme zu bewahren. Gleichzeitig haben wir es mit zeitgemäßem Design und modernstem Komfort ausgestattet.',
+        paragraph2: 'Die Geschichte unseres Hauses beginnt im 18. Jahrhundert – heute schreiben wir sie mit einer neuen Vision weiter: einen Ort zu schaffen, der die kulturelle Tiefe und architektonische Schönheit von St. Gallen würdigt und zugleich ein stilvolles Zuhause für Reisende von heute bietet.',
+        paragraph3: 'Jedes Detail – von der Fassade bis zur Einrichtung – erzählt von unserer Leidenschaft für Qualität, Gastfreundschaft und Ästhetik.',
+      },
+      philosophy: {
+        title: 'Unsere Philosophie',
+        description: 'Wir glauben an authentische Schweizer Gastfreundschaft, nachhaltige Praktiken und die Schaffung unvergesslicher Erlebnisse für unsere Gäste.',
+      },
+      features: {
+        sustainability: {
+          title: 'Nachhaltigkeit',
+          description: 'Wir setzen auf erneuerbare Energien, lokale Produkte und abfallreduzierende Maßnahmen, um unseren ökologischen Fußabdruck zu minimieren.',
+        },
+        cuisine: {
+          title: 'Exklusive Küche',
+          description: 'Unsere Küche verbindet Qualität, Authentizität und ausgewählte Zutaten. Inspiriert von der Schwarzmeerregion und verfeinert mit Schweizer Handwerkskunst, servieren wir Spezialitäten in stilvoller Atmosphäre – exklusiv, ehrlich und handgemacht.',
+        },
+        atmosphere: {
+          title: 'Familiäre Atmosphäre',
+          description: 'Als Familienbetrieb schaffen wir eine warme, persönliche Umgebung, in der sich jeder Gast willkommen und wertgeschätzt fühlt.',
+        },
+      },
     },
     rooms: {
       title: 'Unsere Zimmer',
@@ -334,6 +382,30 @@ export const translations: Record<Language, Translations> = {
         comfort: 'Stylish & comfortable rooms',
         service: 'Personal service',
       },
+      history: {
+        title: 'Our History',
+        paragraph1: 'Boutique Hotel Stocken uniquely combines history and present. Our traditional building dates from 1784 and has been carefully restored to preserve its historic charm while being equipped with contemporary design and modern comfort.',
+        paragraph2: 'The history of our house begins in the 18th century – today we continue writing it with a new vision: to create a place that honors the cultural depth and architectural beauty of St. Gallen while offering a stylish home for today\'s travelers.',
+        paragraph3: 'Every detail – from the facade to the furnishings – tells of our passion for quality, hospitality and aesthetics.',
+      },
+      philosophy: {
+        title: 'Our Philosophy',
+        description: 'We believe in authentic Swiss hospitality, sustainable practices and creating unforgettable experiences for our guests.',
+      },
+      features: {
+        sustainability: {
+          title: 'Sustainability',
+          description: 'We focus on renewable energy, local products and waste-reducing measures to minimize our ecological footprint.',
+        },
+        cuisine: {
+          title: 'Exclusive Cuisine',
+          description: 'Our kitchen combines quality, authenticity and selected ingredients. Inspired by the Black Sea region and refined with Swiss craftsmanship, we serve specialties in a stylish atmosphere – exclusive, honest and handmade.',
+        },
+        atmosphere: {
+          title: 'Family Atmosphere',
+          description: 'As a family business, we create a warm, personal environment where every guest feels welcome and valued.',
+        },
+      },
     },
     rooms: {
       title: 'Our Rooms',
@@ -478,6 +550,30 @@ export const translations: Record<Language, Translations> = {
         location: 'Situation parfaite à St-Gall',
         comfort: 'Chambres élégantes et confortables',
         service: 'Service personnel',
+      },
+      history: {
+        title: 'Notre Histoire',
+        paragraph1: 'Le Boutique Hotel Stocken unit de manière unique l\'histoire et le présent. Notre bâtiment traditionnel date de 1784 et a été soigneusement restauré pour préserver son charme historique tout en étant équipé d\'un design contemporain et d\'un confort moderne.',
+        paragraph2: 'L\'histoire de notre maison commence au 18ème siècle – aujourd\'hui nous la continuons avec une nouvelle vision : créer un lieu qui honore la profondeur culturelle et la beauté architecturale de St-Gall tout en offrant un foyer élégant aux voyageurs d\'aujourd\'hui.',
+        paragraph3: 'Chaque détail – de la façade à l\'ameublement – raconte notre passion pour la qualité, l\'hospitalité et l\'esthétique.',
+      },
+      philosophy: {
+        title: 'Notre Philosophie',
+        description: 'Nous croyons en une hospitalité suisse authentique, des pratiques durables et la création d\'expériences inoubliables pour nos clients.',
+      },
+      features: {
+        sustainability: {
+          title: 'Durabilité',
+          description: 'Nous misons sur les énergies renouvelables, les produits locaux et les mesures de réduction des déchets pour minimiser notre empreinte écologique.',
+        },
+        cuisine: {
+          title: 'Cuisine Exclusive',
+          description: 'Notre cuisine combine qualité, authenticité et ingrédients sélectionnés. Inspirée de la région de la mer Noire et raffinée avec l\'artisanat suisse, nous servons des spécialités dans une atmosphère élégante – exclusif, honnête et fait main.',
+        },
+        atmosphere: {
+          title: 'Atmosphère Familiale',
+          description: 'En tant qu\'entreprise familiale, nous créons un environnement chaleureux et personnel où chaque client se sent le bienvenu et apprécié.',
+        },
       },
     },
     rooms: {

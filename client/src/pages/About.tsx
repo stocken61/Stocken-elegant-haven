@@ -33,16 +33,16 @@ const About: React.FC = () => {
             </div>
             <div className="lg:w-7/12 p-4">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
-                Unsere Geschichte
+                {t.about.history.title}
               </h2>
               <p className="text-lg text-neutral-dark mb-4">
-                Das Boutique Hotel Stocken vereint Geschichte und Gegenwart auf einzigartige Weise. Unser traditionsreiches Gebäude stammt aus dem Jahr 1784 und wurde mit großer Sorgfalt restauriert, um seinen historischen Charme zu bewahren. Gleichzeitig haben wir es mit zeitgemäßem Design und modernstem Komfort ausgestattet.
+                {t.about.history.paragraph1}
               </p>
               <p className="text-lg text-neutral-dark mb-4">
-                Die Geschichte unseres Hauses beginnt im 18. Jahrhundert – heute schreiben wir sie mit einer neuen Vision weiter: einen Ort zu schaffen, der die kulturelle Tiefe und architektonische Schönheit von St. Gallen würdigt und zugleich ein stilvolles Zuhause für Reisende von heute bietet.
+                {t.about.history.paragraph2}
               </p>
               <p className="text-lg text-neutral-dark">
-                Jedes Detail – von der Fassade bis zur Einrichtung – erzählt von unserer Leidenschaft für Qualität, Gastfreundschaft und Ästhetik.
+                {t.about.history.paragraph3}
               </p>
             </div>
           </div>
@@ -54,10 +54,10 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-4">
-              Unsere Philosophie
+              {t.about.philosophy.title}
             </h2>
             <p className="text-lg text-neutral-dark">
-              Wir glauben an authentische Schweizer Gastfreundschaft, nachhaltige Praktiken und die Schaffung unvergesslicher Erlebnisse für unsere Gäste.
+              {t.about.philosophy.description}
             </p>
           </div>
           
@@ -66,9 +66,9 @@ const About: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-light rounded-full text-white mb-6">
                 <FontAwesomeIcon icon="leaf" className="text-2xl" />
               </div>
-              <h3 className="text-xl font-serif font-bold mb-4">Nachhaltigkeit</h3>
+              <h3 className="text-xl font-serif font-bold mb-4">{t.about.features.sustainability.title}</h3>
               <p className="text-neutral-dark">
-                Wir setzen auf erneuerbare Energien, lokale Produkte und abfallreduzierende Maßnahmen, um unseren ökologischen Fußabdruck zu minimieren.
+                {t.about.features.sustainability.description}
               </p>
             </div>
             
@@ -76,9 +76,9 @@ const About: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-light rounded-full text-white mb-6">
                 <FontAwesomeIcon icon="utensils" className="text-2xl" />
               </div>
-              <h3 className="text-xl font-serif font-bold mb-4">Exklusive Küche</h3>
+              <h3 className="text-xl font-serif font-bold mb-4">{t.about.features.cuisine.title}</h3>
               <p className="text-neutral-dark">
-                Unsere Küche verbindet Qualität, Authentizität und ausgewählte Zutaten. Inspiriert von der Schwarzmeerregion und verfeinert mit Schweizer Handwerkskunst, servieren wir Spezialitäten in stilvoller Atmosphäre – exklusiv, ehrlich und handgemacht.
+                {t.about.features.cuisine.description}
               </p>
             </div>
             
@@ -86,9 +86,9 @@ const About: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-light rounded-full text-white mb-6">
                 <FontAwesomeIcon icon="users" className="text-2xl" />
               </div>
-              <h3 className="text-xl font-serif font-bold mb-4">Familiäre Atmosphäre</h3>
+              <h3 className="text-xl font-serif font-bold mb-4">{t.about.features.atmosphere.title}</h3>
               <p className="text-neutral-dark">
-                Wir legen Wert auf persönlichen Service und schaffen eine warme, einladende Atmosphäre, in der sich unsere Gäste wie zu Hause fühlen.
+                {t.about.features.atmosphere.description}
               </p>
             </div>
           </div>
