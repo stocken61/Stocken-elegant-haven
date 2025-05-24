@@ -7,14 +7,17 @@ import {
   TabsTrigger 
 } from "@/components/ui/tabs";
 import { rooms, Room } from '@/data/rooms';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const Rooms: React.FC = () => {
+  const { t } = useLanguage();
+  
   const roomCategories = [
-    { id: 'all', name: 'Alle Zimmer' },
-    { id: 'comfort', name: 'Komfort' },
-    { id: 'deluxe', name: 'Deluxe' },
-    { id: 'premium-suite', name: 'Premium Suite' },
-    { id: 'premium-family', name: 'Familien Suite' }
+    { id: 'all', name: t.rooms.allRooms },
+    { id: 'comfort', name: t.rooms.categories.comfort },
+    { id: 'deluxe', name: t.rooms.categories.deluxe },
+    { id: 'premium-suite', name: t.rooms.categories.premiumSuite },
+    { id: 'premium-family', name: t.rooms.categories.familySuite }
   ];
   
   const [activeTab, setActiveTab] = useState('all');

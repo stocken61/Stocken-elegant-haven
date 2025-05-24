@@ -57,6 +57,7 @@ export interface Translations {
   // Rooms Section
   rooms: {
     title: string;
+    allRooms: string;
     categories: {
       comfort: string;
       deluxe: string;
@@ -240,6 +241,7 @@ export const translations: Record<Language, Translations> = {
     },
     rooms: {
       title: 'Unsere Zimmer',
+      allRooms: 'Alle Zimmer',
       categories: {
         comfort: 'Komfort',
         deluxe: 'Deluxe',
@@ -409,6 +411,7 @@ export const translations: Record<Language, Translations> = {
     },
     rooms: {
       title: 'Our Rooms',
+      allRooms: 'All Rooms',
       categories: {
         comfort: 'Comfort',
         deluxe: 'Deluxe',
@@ -578,6 +581,7 @@ export const translations: Record<Language, Translations> = {
     },
     rooms: {
       title: 'Nos Chambres',
+      allRooms: 'Toutes les chambres',
       categories: {
         comfort: 'Confort',
         deluxe: 'Deluxe',
