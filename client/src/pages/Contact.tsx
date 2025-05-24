@@ -1,8 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useLanguage } from '@/i18n/LanguageContext';
 import ContactForm from '@/components/ContactForm';
 
 const Contact: React.FC = () => {
+  const { t } = useLanguage();
+  
   return (
     <>
       {/* Hero Section */}
@@ -11,10 +14,10 @@ const Contact: React.FC = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            Kontakt
+            {t.contact.title}
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Wir freuen uns auf Ihre Anfrage und stehen Ihnen für Fragen und Informationen zur Verfügung.
+            {t.contact.subtitle}
           </p>
         </div>
       </section>
