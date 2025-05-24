@@ -31,7 +31,7 @@ const Home: React.FC = () => {
           <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 mt-8">
             <Link 
               href="/rooms"
-              className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block"
+              className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block min-w-[140px]"
             >
               {t.home.hero.ourRooms}
             </Link>
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
               href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
               target="_blank" 
               rel="noopener" 
-              className="bg-[#8B5A2B] hover:bg-[#7A4A1D] text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block book-button"
+              className="bg-[#8B5A2B] hover:bg-[#7A4A1D] text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block book-button min-w-[140px]"
             >
               {t.home.hero.bookNow}
             </a>
@@ -194,7 +194,7 @@ const Home: React.FC = () => {
           <div className="text-center mt-10">
             <Link href="/rooms">
               <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors text-center">
-                Alle Zimmer ansehen
+                {t.home.rooms.viewAll}
               </Button>
             </Link>
           </div>

@@ -60,6 +60,7 @@ export interface Translations {
       premium: string;
       premiumDesc: string;
       familyDesc: string;
+      viewAll: string;
     };
     contact: {
       title: string;
@@ -267,6 +268,7 @@ export const translations: Record<Language, Translations> = {
         premium: 'Premium Suite',
         premiumDesc: 'Geräumiges Wohnerlebnis mit Sitzecke',
         familyDesc: 'Großzügiger Raum für die ganze Familie',
+        viewAll: 'Alle Zimmer ansehen',
       },
       contact: {
         title: 'Kontaktieren Sie uns',
@@ -456,6 +458,7 @@ export const translations: Record<Language, Translations> = {
         premium: 'Premium Suite',
         premiumDesc: 'Spacious living experience with seating area',
         familyDesc: 'Generous space for the whole family',
+        viewAll: 'View All Rooms',
       },
       contact: {
         title: 'Contact Us',
@@ -645,6 +648,7 @@ export const translations: Record<Language, Translations> = {
         premium: 'Suite Premium',
         premiumDesc: 'Expérience spacieuse avec coin salon',
         familyDesc: 'Espace généreux pour toute la famille',
+        viewAll: 'Voir toutes les chambres',
       },
       contact: {
         title: 'Contactez-nous',
