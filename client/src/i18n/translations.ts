@@ -216,7 +216,7 @@ export const translations: Record<Language, Translations> = {
     },
     contact: {
       title: 'Kontakt',
-      address: 'Krätzernstraße 10, 9014 St. Gallen, Schweiz',
+      address: 'Kräzernstrasse 10, 9014 St. Gallen, Schweiz',
       phone: '+41 79 300 01 61',
       email: 'reservation@hotelstocken.com',
       form: {
@@ -344,7 +344,7 @@ export const translations: Record<Language, Translations> = {
     },
     contact: {
       title: 'Contact',
-      address: 'Krätzernstraße 10, 9014 St. Gallen, Switzerland',
+      address: 'Kräzernstrasse 10, 9014 St. Gallen, Switzerland',
       phone: '+41 79 300 01 61',
       email: 'reservation@hotelstocken.com',
       form: {
@@ -472,7 +472,7 @@ export const translations: Record<Language, Translations> = {
     },
     contact: {
       title: 'Contact',
-      address: 'Krätzernstraße 10, 9014 St-Gall, Suisse',
+      address: 'Kräzernstrasse 10, 9014 St-Gall, Suisse',
       phone: '+41 79 300 01 61',
       email: 'reservation@hotelstocken.com',
       form: {

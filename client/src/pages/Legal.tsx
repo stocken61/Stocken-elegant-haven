@@ -142,7 +142,7 @@ const PrivacyContent: React.FC = () => (
     <p>
       Pontera GmbH i.G<br />
       handelnd unter dem Namen „Boutique Hotel Stocken by Pontera"<br />
-      Krätzernstraße 10<br />
+      Kräzernstrasse 10<br />
       9014 St. Gallen<br />
       Schweiz<br />
       Tel.: +41 79 300 01 61<br />
@@ -239,7 +239,7 @@ const ImprintContent: React.FC = () => (
     <p>
       Pontera GmbH i.G<br />
       handelnd unter dem Namen „Boutique Hotel Stocken by Pontera"<br />
-      Krätzernstraße 10<br />
+      Kräzernstrasse 10<br />
       9014 St. Gallen<br />
       Schweiz
     </p>
