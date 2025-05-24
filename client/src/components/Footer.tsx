@@ -3,10 +3,12 @@ import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { useLanguage } from '@/i18n/LanguageContext';
 import footerLogo from '@assets/logo_beige_transparent_highres_optimized.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-primary text-white pt-16 pb-8">
@@ -17,7 +19,7 @@ const Footer: React.FC = () => {
               <img src={footerLogo} alt="Stocken Hotel Logo" className="h-40 md:h-44 lg:h-48 xl:h-52" />
             </div>
             <p className="mb-3 max-w-xs text-left ml-4 md:ml-0 lg:ml-0 text-sm md:text-base lg:text-sm xl:text-base">
-              Wir verkörpern die Tradition der Schweizer Gastfreundschaft mit modernem Luxus.
+              {t.footer.description}
             </p>
             <div className="flex space-x-4 ml-4 md:ml-0 lg:ml-0">
               <a href="#" className="text-white hover:text-secondary-light transition">

@@ -266,7 +266,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-1/2 p-6">
               <h2 className="text-3xl font-serif font-bold text-neutral-dark mb-6">
-                Kontaktieren Sie uns
+                {t.home.contact.title}
               </h2>
               
               <div className="space-y-4 mb-6">
@@ -288,7 +288,7 @@ const Home: React.FC = () => {
               
               <Link href="/contact">
                 <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors">
-                  Kontakt aufnehmen
+                  {t.home.contact.getInTouch}
                 </Button>
               </Link>
             </div>
