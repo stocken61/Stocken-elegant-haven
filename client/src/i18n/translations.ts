@@ -97,9 +97,22 @@ export interface Translations {
   // Services Section
   services: {
     title: string;
+    subtitle: string;
     parking: string;
     transport: string;
     attractions: string;
+    stiftsbibliothek: {
+      title: string;
+      description: string;
+    };
+    dreiweieren: {
+      title: string;
+      description: string;
+    };
+    textilmuseum: {
+      title: string;
+      description: string;
+    };
     breakfast: {
       title: string;
       description: string;
@@ -276,10 +289,23 @@ export const translations: Record<Language, Translations> = {
       events: 'event@hotelstocken.com',
     },
     services: {
-      title: 'Services',
+      title: 'Entdecken Sie St. Gallen',
+      subtitle: 'St. Gallen bietet zahlreiche Sehenswürdigkeiten und Aktivitäten. Hier sind einige Highlights in der Nähe unseres Hotels:',
       parking: 'Kostenfreie Parkplätze',
       transport: 'Bus Linie 1 hält direkt vor dem Hotel',
       attractions: 'Sehenswürdigkeiten in St. Gallen',
+      stiftsbibliothek: {
+        title: 'Stiftsbibliothek St. Gallen',
+        description: 'Eine der ältesten Bibliotheken der Welt und UNESCO-Weltkulturerbe mit kostbaren Handschriften und Büchern.',
+      },
+      dreiweieren: {
+        title: 'Drei Weieren',
+        description: 'Beliebtes Naherholungsgebiet mit Badeseen, Restaurants und herrlichem Blick über St. Gallen.',
+      },
+      textilmuseum: {
+        title: 'Textilmuseum St. Gallen',
+        description: 'Entdecken Sie die reiche Textiltradition St. Gallens mit exquisiten Stickereien und historischen Exponaten.',
+      },
       breakfast: {
         title: 'Exklusives Frühstück',
         description: 'Genießen Sie ein individuelles À la carte Frühstück.',
@@ -300,6 +326,7 @@ export const translations: Record<Language, Translations> = {
     },
     contact: {
       title: 'Kontakt',
+      subtitle: 'Wir freuen uns auf Ihre Anfrage und stehen Ihnen für Fragen und Informationen zur Verfügung.',
       address: 'Krätzernstraße 10, 9014 St. Gallen, Schweiz',
       phone: '+41 79 300 01 61',
       email: 'reservation@hotelstocken.com',
@@ -470,6 +497,7 @@ export const translations: Record<Language, Translations> = {
     },
     contact: {
       title: 'Contact',
+      subtitle: 'We look forward to your inquiry and are available for questions and information.',
       address: 'Krätzernstraße 10, 9014 St. Gallen, Switzerland',
       phone: '+41 79 300 01 61',
       email: 'reservation@hotelstocken.com',
