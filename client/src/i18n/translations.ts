@@ -509,6 +509,35 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Découvrez l\'hospitalité suisse moderne à St-Gall',
       cta: 'Réserver maintenant',
     },
+    home: {
+      hero: {
+        title: 'Bienvenue au Boutique Hotel Stocken',
+        subtitle: 'Votre hôtel boutique moderne au cœur de St-Gall',
+        ourRooms: 'Nos Chambres',
+        bookNow: 'Réserver',
+      },
+      benefits: {
+        title: 'Pourquoi nous choisir?',
+        items: {
+          location: 'Situation centrale à St-Gall',
+          comfort: 'Chambres modernes et confortables',
+          service: 'Service personnalisé',
+          dining: 'Restaurant Pontera',
+        },
+      },
+      services: {
+        title: 'Nos Services',
+        restaurant: 'Savourez les délices culinaires de notre restaurant.',
+        breakfast: 'Profitez d\'un petit-déjeuner à la carte personnalisé.',
+        wifi: 'Restez connecté avec notre WiFi haut débit.',
+        location: 'Parfaitement situé au cœur de St-Gall.',
+      },
+      location: {
+        title: 'Boutique Hotel Stocken',
+        viewLocation: 'Voir l\'emplacement',
+        call: 'Appeler',
+      },
+    },
     about: {
       title: 'À propos de nous',
       description: 'Le Boutique Hotel Stocken by Pontera allie l\'hospitalité suisse traditionnelle au luxe moderne. Vivez une expérience unique dans notre hôtel élégant de St-Gall.',

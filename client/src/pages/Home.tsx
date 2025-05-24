@@ -23,17 +23,17 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="hero-content text-center py-12 absolute inset-0 flex flex-col items-center justify-start pt-12 md:pt-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
-            {t.hero.title}
+            {t.home.hero.title}
           </h1>
           <p className="text-xl text-white mb-6">
-            {t.hero.subtitle}
+            {t.home.hero.subtitle}
           </p>
           <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 mt-8">
             <Link 
               href="/rooms"
               className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block"
             >
-              {t.nav.rooms}
+              {t.home.hero.ourRooms}
             </Link>
             <a 
               href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
               rel="noopener" 
               className="bg-[#8B5A2B] hover:bg-[#7A4A1D] text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block book-button"
             >
-              {t.nav.book}
+              {t.home.hero.bookNow}
             </a>
           </div>
         </div>
@@ -205,7 +205,7 @@ const Home: React.FC = () => {
       <section className="services-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
-            Unsere Services
+            {t.home.services.title}
           </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -215,7 +215,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-heading-gray">Restaurant</h3>
               <p className="text-neutral-dark">
-                Genießen Sie kulinarische Köstlichkeiten in unserem Restaurant.
+                {t.home.services.restaurant}
               </p>
             </div>
             
@@ -225,7 +225,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-heading-gray">Exklusives Frühstück</h3>
               <p className="text-neutral-dark">
-                Genießen Sie ein individuelles À la carte Frühstück.
+                {t.home.services.breakfast}
               </p>
             </div>
             
@@ -235,7 +235,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-heading-gray">Kostenloses WLAN</h3>
               <p className="text-neutral-dark">
-                Bleiben Sie mit unserem Highspeed-WLAN verbunden.
+                {t.home.services.wifi}
               </p>
             </div>
             
