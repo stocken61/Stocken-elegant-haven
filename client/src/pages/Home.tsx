@@ -245,7 +245,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Zentrale Lage</h3>
               <p className="text-neutral-dark">
-                Perfekt gelegen im Herzen von St. Gallen.
+                {t.home.services.location}
               </p>
             </div>
           </div>
@@ -253,7 +253,7 @@ const Home: React.FC = () => {
           <div className="text-center mt-10">
             <Link href="/services">
               <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors">
-                Alle Services entdecken
+                {t.home.services.discoverAll}
               </Button>
             </Link>
           </div>
@@ -295,7 +295,7 @@ const Home: React.FC = () => {
             
             <div className="lg:w-1/2 p-6">
               <div className="bg-white h-80 rounded-lg shadow-md p-8 flex flex-col items-center justify-center">
-                <h3 className="text-2xl font-serif font-bold text-neutral-dark mb-4">Boutique Hotel Stocken</h3>
+                <h3 className="text-2xl font-serif font-bold text-neutral-dark mb-4">{t.home.location.title}</h3>
                 <div className="mb-8 text-center space-y-4">
                   <p className="flex items-center justify-center">
                     <FontAwesomeIcon icon="map-marker-alt" className="text-primary mr-2" />
@@ -318,14 +318,14 @@ const Home: React.FC = () => {
                     className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
                   >
                     <FontAwesomeIcon icon="map-marker-alt" className="mr-2" />
-                    Standort ansehen
+                    {t.home.location.viewLocation}
                   </a>
                   <a 
                     href="tel:+41793000161"
                     className="bg-secondary hover:bg-secondary-light text-white py-3 px-6 rounded-md transition-colors inline-flex items-center"
                   >
                     <FontAwesomeIcon icon="phone" className="mr-2" />
-                    Anrufen
+                    {t.home.location.call}
                   </a>
                 </div>
               </div>

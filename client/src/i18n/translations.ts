@@ -42,6 +42,7 @@ export interface Translations {
       breakfast: string;
       wifi: string;
       location: string;
+      discoverAll: string;
     };
     location: {
       title: string;
@@ -217,6 +218,7 @@ export const translations: Record<Language, Translations> = {
         breakfast: 'Genießen Sie ein individuelles À la carte Frühstück.',
         wifi: 'Bleiben Sie mit unserem Highspeed-WLAN verbunden.',
         location: 'Perfekt gelegen im Herzen von St. Gallen.',
+        discoverAll: 'Alle Services entdecken',
       },
       location: {
         title: 'Boutique Hotel Stocken',
@@ -374,6 +376,7 @@ export const translations: Record<Language, Translations> = {
         breakfast: 'Enjoy an individual à la carte breakfast.',
         wifi: 'Stay connected with our high-speed WiFi.',
         location: 'Perfectly located in the heart of St. Gallen.',
+        discoverAll: 'Discover All Services',
       },
       location: {
         title: 'Boutique Hotel Stocken',
@@ -531,6 +534,7 @@ export const translations: Record<Language, Translations> = {
         breakfast: 'Profitez d\'un petit-déjeuner à la carte personnalisé.',
         wifi: 'Restez connecté avec notre WiFi haut débit.',
         location: 'Parfaitement situé au cœur de St-Gall.',
+        discoverAll: 'Découvrir tous les services',
       },
       location: {
         title: 'Boutique Hotel Stocken',
