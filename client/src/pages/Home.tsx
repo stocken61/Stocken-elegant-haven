@@ -23,10 +23,10 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="hero-content text-center py-12 absolute inset-0 flex flex-col items-center justify-start pt-12 md:pt-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
-            {t.hero.title}
+            Willkommen im Boutique Hotel Stocken by Pontera
           </h1>
           <p className="text-xl text-white mb-6">
-            {t.hero.subtitle}
+            Erleben Sie moderne Schweizer Gastfreundschaft in St. Gallen
           </p>
           <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 mt-8">
             <Link href="/rooms">
