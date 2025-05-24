@@ -268,6 +268,7 @@ export const translations: Record<Language, Translations> = {
     about: {
       title: 'Über uns',
       description: 'Das Boutique Hotel Stocken by Pontera verbindet traditionelle Schweizer Gastfreundschaft mit modernem Luxus. In unserem stilvollen Hotel in St. Gallen erwartet Sie ein einzigartiges Erlebnis.',
+      learnMore: 'Mehr erfahren',
       highlights: {
         location: 'Perfekte Lage in St. Gallen',
         comfort: 'Stilvolle & komfortable Zimmer',
@@ -408,6 +409,25 @@ export const translations: Record<Language, Translations> = {
           service: 'Personal service',
           dining: 'Restaurant Pontera',
         },
+        breakfast: {
+          title: 'Exclusive Breakfast Offer',
+          description: 'À la carte, bookable for an additional fee',
+        },
+        wifi: {
+          title: 'Free WiFi',
+          description: 'High-speed internet throughout the hotel',
+        },
+      },
+      rooms: {
+        title: 'Our Rooms',
+        comfort: 'Comfort Double Room',
+        deluxe: 'Deluxe Double Room',
+        premium: 'Premium Suite',
+      },
+      contact: {
+        title: 'Contact Us',
+        subtitle: 'Do you have questions? We are happy to help.',
+        getInTouch: 'Get in Touch',
       },
       services: {
         title: 'Our Services',
@@ -426,6 +446,7 @@ export const translations: Record<Language, Translations> = {
     about: {
       title: 'About Us',
       description: 'Boutique Hotel Stocken by Pontera combines traditional Swiss hospitality with modern luxury. Experience a unique stay at our stylish hotel in St. Gallen.',
+      learnMore: 'Learn More',
       highlights: {
         location: 'Perfect location in St. Gallen',
         comfort: 'Stylish & comfortable rooms',
@@ -566,6 +587,25 @@ export const translations: Record<Language, Translations> = {
           service: 'Service personnalisé',
           dining: 'Restaurant Pontera',
         },
+        breakfast: {
+          title: 'Offre de petit-déjeuner exclusive',
+          description: 'À la carte, réservable moyennant supplément',
+        },
+        wifi: {
+          title: 'WiFi gratuit',
+          description: 'Internet haut débit dans tout l\'hôtel',
+        },
+      },
+      rooms: {
+        title: 'Nos Chambres',
+        comfort: 'Chambre Double Confort',
+        deluxe: 'Chambre Double Deluxe',
+        premium: 'Suite Premium',
+      },
+      contact: {
+        title: 'Contactez-nous',
+        subtitle: 'Avez-vous des questions? Nous sommes heureux de vous aider.',
+        getInTouch: 'Nous contacter',
       },
       services: {
         title: 'Nos Services',
