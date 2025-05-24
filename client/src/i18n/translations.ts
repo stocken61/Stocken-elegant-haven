@@ -624,6 +624,7 @@ export const translations: Record<Language, Translations> = {
     about: {
       title: 'À propos de nous',
       description: 'Le Boutique Hotel Stocken by Pontera allie l\'hospitalité suisse traditionnelle au luxe moderne. Vivez une expérience unique dans notre hôtel élégant de St-Gall.',
+      learnMore: 'En savoir plus',
       highlights: {
         location: 'Situation parfaite à St-Gall',
         comfort: 'Chambres élégantes et confortables',

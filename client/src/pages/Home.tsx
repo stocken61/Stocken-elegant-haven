@@ -71,16 +71,16 @@ const Home: React.FC = () => {
               <div className="text-primary text-3xl mb-2">
                 <FontAwesomeIcon icon="coffee" />
               </div>
-              <h3 className="font-semibold mb-1">Exklusives Frühstücksangebot</h3>
-              <p className="text-sm text-neutral-dark">À la carte, gegen Aufpreis buchbar</p>
+              <h3 className="font-semibold mb-1">{t.home.benefits.breakfast.title}</h3>
+              <p className="text-sm text-neutral-dark">{t.home.benefits.breakfast.description}</p>
             </div>
             
             <div className="p-4">
               <div className="text-primary text-3xl mb-2">
                 <FontAwesomeIcon icon="wifi" />
               </div>
-              <h3 className="font-semibold mb-1">Kostenloses WLAN</h3>
-              <p className="text-sm text-neutral-dark">Highspeed-Internet im ganzen Hotel</p>
+              <h3 className="font-semibold mb-1">{t.home.benefits.wifi.title}</h3>
+              <p className="text-sm text-neutral-dark">{t.home.benefits.wifi.description}</p>
             </div>
           </div>
           
@@ -99,10 +99,10 @@ const Home: React.FC = () => {
                 Boutique Hotel Stocken
               </h2>
               <p className="text-lg text-neutral-dark mb-6">
-                Entdecken Sie unser einzigartiges Boutique-Hotel, das modernen Komfort mit stilvollem Design verbindet. Unsere eleganten Flure, klare Architektur und hochwertige Materialien schaffen eine einladende Atmosphäre im Herzen von St. Gallen.
+                {t.about.description}
               </p>
               <Link href="/about" className="text-primary hover:text-primary-dark font-medium transition-colors">
-                Mehr erfahren
+                {t.about.learnMore}
               </Link>
             </div>
             <div className="lg:w-1/2 p-6">
@@ -123,7 +123,7 @@ const Home: React.FC = () => {
       <section className="rooms-preview py-16 bg-neutral-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-bold text-center text-neutral-dark mb-10">
-            Unsere Zimmer
+            {t.home.rooms.title}
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -137,13 +137,13 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-heading-gray">Deluxe Zimmer</h3>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.home.rooms.deluxe}</h3>
                 <p className="text-neutral-dark mb-4 flex-grow">Stilvolle Eleganz auf 23 m²</p>
                 <Link 
                   href="/rooms#deluxe" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  Details ansehen
+                  {t.rooms.details.viewDetails}
                 </Link>
               </div>
             </div>
@@ -158,13 +158,13 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-heading-gray">Premium Suite</h3>
+                <h3 className="text-xl font-bold mb-2 text-heading-gray">{t.home.rooms.premium}</h3>
                 <p className="text-neutral-dark mb-4 flex-grow">Geräumiges Wohnerlebnis mit Sitzecke</p>
                 <Link 
                   href="/rooms#premium-suite" 
                   className="text-primary hover:text-white hover:bg-primary hover:shadow-lg font-medium transition-all duration-300 px-4 py-2 rounded-md inline-block mt-auto"
                 >
-                  Details ansehen
+                  {t.rooms.details.viewDetails}
                 </Link>
               </div>
             </div>
