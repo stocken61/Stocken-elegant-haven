@@ -190,7 +190,7 @@ const Home: React.FC = () => {
           
           <div className="text-center mt-10">
             <Link href="/rooms">
-              <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors">
+              <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition-colors text-center">
                 Alle Zimmer ansehen
               </Button>
             </Link>
