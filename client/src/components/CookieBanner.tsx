@@ -38,7 +38,7 @@ export default function CookieBanner() {
           </p>
           <div className="mt-2">
             <a 
-              href="/datenschutz" 
+              href="/legal/privacy" 
               className="text-primary hover:text-primary-dark text-sm underline"
             >
               Mehr in unserer Datenschutzerklärung
