@@ -27,10 +27,11 @@ const Home: React.FC = () => {
             Ihr modernes Boutique-Hotel im Herzen von St. Gallen
           </p>
           <div className="hero-buttons flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 mt-8">
-            <Link href="/rooms">
-              <Button className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto">
-                Unsere Zimmer
-              </Button>
+            <Link 
+              href="/rooms"
+              className="bg-primary hover:bg-primary-light text-white py-3 px-6 rounded-md transition duration-300 text-center w-full sm:w-auto inline-block"
+            >
+              Unsere Zimmer
             </Link>
             <a 
               href="https://www.booking.com/hotel/ch/boutique-stocken-by-pontera.de.html" 
