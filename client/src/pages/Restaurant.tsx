@@ -1,8 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useLanguage } from '@/i18n/LanguageContext';
 import RestaurantImg from '../assets/restaurant-image.png';
 
 const Restaurant: React.FC = () => {
+  const { t } = useLanguage();
+  
   return (
     <>
       {/* Hero Section */}
@@ -11,10 +14,10 @@ const Restaurant: React.FC = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            Restaurant Pontera
+            {t.restaurant.title}
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto font-serif italic">
-            „Where Suisse Design meets Türkisch Taste"
+            {t.restaurant.subtitle}
           </p>
         </div>
       </section>

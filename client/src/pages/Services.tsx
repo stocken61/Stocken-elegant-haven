@@ -1,17 +1,20 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useLanguage } from '@/i18n/LanguageContext';
 import stiftsBibliothekImg from '../assets/attractions/stiftsbibliothek.webp';
 import dreiWeierenImg from '../assets/attractions/dreiweieren.png';
 import textilmuseumImg from '../assets/attractions/textilmuseum.jpg';
 
 const Services: React.FC = () => {
+  const { t } = useLanguage();
+  
   return (
     <>
       {/* Header Section */}
       <section className="py-12 bg-primary">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            Entdecken Sie St. Gallen
+            {t.services.title}
           </h1>
         </div>
       </section>

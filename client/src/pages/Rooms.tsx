@@ -52,7 +52,7 @@ const Rooms: React.FC = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            Unsere Zimmer
+            {t.rooms.title}
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Entdecken Sie unsere komfortablen Zimmer und Suiten.
