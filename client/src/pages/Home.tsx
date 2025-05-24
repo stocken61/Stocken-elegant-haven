@@ -55,16 +55,16 @@ const Home: React.FC = () => {
               <div className="text-primary text-3xl mb-2">
                 <FontAwesomeIcon icon="map-marker-alt" />
               </div>
-              <h3 className="font-semibold mb-1">Perfekte Lage</h3>
-              <p className="text-sm text-neutral-dark">Im Herzen von St. Gallen</p>
+              <h3 className="font-semibold mb-1">{t.home.benefits.perfectLocation.title}</h3>
+              <p className="text-sm text-neutral-dark">{t.home.benefits.perfectLocation.description}</p>
             </div>
             
             <div className="p-4">
               <div className="text-primary text-3xl mb-2">
                 <FontAwesomeIcon icon="star" />
               </div>
-              <h3 className="font-semibold mb-1">Bester Preis</h3>
-              <p className="text-sm text-neutral-dark">Garantiert bei direkter Buchung</p>
+              <h3 className="font-semibold mb-1">{t.home.benefits.bestPrice.title}</h3>
+              <p className="text-sm text-neutral-dark">{t.home.benefits.bestPrice.description}</p>
             </div>
             
             <div className="p-4">

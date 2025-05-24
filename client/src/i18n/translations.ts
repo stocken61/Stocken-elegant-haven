@@ -35,6 +35,14 @@ export interface Translations {
         service: string;
         dining: string;
       };
+      perfectLocation: {
+        title: string;
+        description: string;
+      };
+      bestPrice: {
+        title: string;
+        description: string;
+      };
       breakfast: {
         title: string;
         description: string;
@@ -231,6 +239,14 @@ export const translations: Record<Language, Translations> = {
           service: 'Persönlicher Service',
           dining: 'Restaurant Pontera',
         },
+        perfectLocation: {
+          title: 'Perfekte Lage',
+          description: 'Im Herzen von St. Gallen',
+        },
+        bestPrice: {
+          title: 'Bester Preis',
+          description: 'Garantiert bei direkter Buchung',
+        },
         breakfast: {
           title: 'Exklusives Frühstücksangebot',
           description: 'À la carte, gegen Aufpreis buchbar',
@@ -409,6 +425,14 @@ export const translations: Record<Language, Translations> = {
           service: 'Personal service',
           dining: 'Restaurant Pontera',
         },
+        perfectLocation: {
+          title: 'Perfect Location',
+          description: 'In the heart of St. Gallen',
+        },
+        bestPrice: {
+          title: 'Best Price',
+          description: 'Guaranteed on direct booking',
+        },
         breakfast: {
           title: 'Exclusive Breakfast Offer',
           description: 'À la carte, bookable for an additional fee',
@@ -586,6 +610,14 @@ export const translations: Record<Language, Translations> = {
           comfort: 'Chambres modernes et confortables',
           service: 'Service personnalisé',
           dining: 'Restaurant Pontera',
+        },
+        perfectLocation: {
+          title: 'Situation parfaite',
+          description: 'Au cœur de St-Gall',
+        },
+        bestPrice: {
+          title: 'Meilleur prix',
+          description: 'Garanti lors de réservation directe',
         },
         breakfast: {
           title: 'Offre de petit-déjeuner exclusive',
