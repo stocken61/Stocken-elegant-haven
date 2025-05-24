@@ -14,10 +14,10 @@ const Contact: React.FC = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            {t.contact.title}
+            Kontakt
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            {t.contact.subtitle}
+            Wir freuen uns auf Ihre Anfrage und stehen Ihnen für Fragen und Informationen zur Verfügung.
           </p>
         </div>
       </section>

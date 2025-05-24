@@ -14,7 +14,7 @@ const Services: React.FC = () => {
       <section className="py-12 bg-primary">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            {t.services.title}
+            Entdecken Sie St. Gallen
           </h1>
         </div>
       </section>

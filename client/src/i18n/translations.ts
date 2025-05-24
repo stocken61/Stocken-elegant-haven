@@ -135,6 +135,7 @@ export interface Translations {
   // Contact Section
   contact: {
     title: string;
+    subtitle: string;
     address: string;
     phone: string;
     email: string;
@@ -289,7 +290,7 @@ export const translations: Record<Language, Translations> = {
       events: 'event@hotelstocken.com',
     },
     services: {
-      title: 'Entdecken Sie St. Gallen',
+      title: 'Services',
       subtitle: 'St. Gallen bietet zahlreiche Sehenswürdigkeiten und Aktivitäten. Hier sind einige Highlights in der Nähe unseres Hotels:',
       parking: 'Kostenfreie Parkplätze',
       transport: 'Bus Linie 1 hält direkt vor dem Hotel',
@@ -473,10 +474,23 @@ export const translations: Record<Language, Translations> = {
       events: 'event@hotelstocken.com',
     },
     services: {
-      title: 'Services',
+      title: 'Discover St. Gallen',
+      subtitle: 'St. Gallen offers numerous attractions and activities. Here are some highlights near our hotel:',
       parking: 'Free parking',
       transport: 'Bus line 1 stops directly in front of the hotel',
       attractions: 'Attractions in St. Gallen',
+      stiftsbibliothek: {
+        title: 'Abbey Library of St. Gallen',
+        description: 'One of the oldest libraries in the world and UNESCO World Heritage site with precious manuscripts and books.',
+      },
+      dreiweieren: {
+        title: 'Drei Weieren',
+        description: 'Popular recreational area with swimming lakes, restaurants and magnificent views over St. Gallen.',
+      },
+      textilmuseum: {
+        title: 'Textile Museum St. Gallen',
+        description: 'Discover the rich textile tradition of St. Gallen with exquisite embroideries and historical exhibits.',
+      },
       breakfast: {
         title: 'Exclusive Breakfast',
         description: 'Enjoy an individual à la carte breakfast.',
@@ -644,10 +658,23 @@ export const translations: Record<Language, Translations> = {
       events: 'event@hotelstocken.com',
     },
     services: {
-      title: 'Services',
+      title: 'Découvrir St-Gall',
+      subtitle: 'St-Gall offre de nombreuses attractions et activités. Voici quelques points forts près de notre hôtel:',
       parking: 'Parking gratuit',
       transport: 'La ligne de bus 1 s\'arrête directement devant l\'hôtel',
       attractions: 'Attractions à St-Gall',
+      stiftsbibliothek: {
+        title: 'Bibliothèque de l\'Abbaye de St-Gall',
+        description: 'Une des plus anciennes bibliothèques du monde et site du patrimoine mondial de l\'UNESCO avec des manuscrits et livres précieux.',
+      },
+      dreiweieren: {
+        title: 'Drei Weieren',
+        description: 'Zone de loisirs populaire avec lacs de baignade, restaurants et vues magnifiques sur St-Gall.',
+      },
+      textilmuseum: {
+        title: 'Musée du Textile St-Gall',
+        description: 'Découvrez la riche tradition textile de St-Gall avec des broderies exquises et des expositions historiques.',
+      },
       breakfast: {
         title: 'Petit-déjeuner exclusif',
         description: 'Savourez un petit-déjeuner à la carte individuel.',
