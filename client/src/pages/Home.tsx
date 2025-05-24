@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/i18n/LanguageContext';
 import heroImage from '@assets/hero_main.png';
 
 const Home: React.FC = () => {
