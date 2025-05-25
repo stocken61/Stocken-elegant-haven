@@ -52,6 +52,7 @@ const RoomDetail: React.FC = () => {
                       src={image} 
                       alt={`${room.name} Ansicht ${index + 1}`} 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 ))}

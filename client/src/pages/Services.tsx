@@ -1,8 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import stiftsBibliothekImg from '../assets/attractions/stiftsbibliothek.webp';
-import dreiWeierenImg from '../assets/attractions/dreiweieren.png';
-import textilmuseumImg from '../assets/attractions/textilmuseum.jpg';
+
 
 const Services: React.FC = () => {
   return (
@@ -33,9 +31,10 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src={stiftsBibliothekImg}
+                  src="/images/drei-weieren-st-gallen-essenz-fruehling-23.png"
                   alt="Stiftsbibliothek St. Gallen" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
@@ -54,9 +53,10 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src={dreiWeierenImg}
+                  src="/images/drei-weieren-st-gallen-essenz-fruehling-23.png"
                   alt="Drei Weiern" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
