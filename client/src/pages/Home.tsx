@@ -158,7 +158,7 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col h-full">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/images/bett3.webp" 
+                  src="/images/premium3.webp" 
                   alt="Premium Suite" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -179,7 +179,7 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col h-full">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/images/family_room.webp" 
+                  src="/images/family3.webp" 
                   alt="Premium Family Suite" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
