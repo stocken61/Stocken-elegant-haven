@@ -122,11 +122,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt oder Garten',
     images: [
-      '/images/deluxe/zimmer1.webp',
-      '/images/deluxe/zimmer1bett.webp',
-      '/images/deluxe/kategorie1und2 front.webp',
-      '/images/deluxe/kategorie 1und2kleider.webp',
-      '/images/deluxe/bad1.webp'
+      '/images/zimmer1.webp',
+      '/images/zimmer1bett.webp',
+      '/images/kategorie1und2 front.webp',
+      '/images/kategorie 1und2kleider.webp',
+      '/images/bad1.webp'
     ],
     amenities: [
       'Kostenloses WLAN',
@@ -154,11 +154,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt oder Garten',
     images: [
-      '/images/deluxe/zimmer1.webp',
-      '/images/deluxe/zimmer1bett.webp',
-      '/images/deluxe/kategorie1und2 front.webp',
-      '/images/deluxe/kategorie 1und2kleider.webp',
-      '/images/deluxe/bad1.webp'
+      '/images/zimmer1.webp',
+      '/images/zimmer1bett.webp',
+      '/images/kategorie1und2 front.webp',
+      '/images/kategorie 1und2kleider.webp',
+      '/images/bad1.webp'
     ],
     amenities: [
       'Kostenloses WLAN',
@@ -186,11 +186,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt oder Garten',
     images: [
-      '/images/deluxe/zimmer1.webp',
-      '/images/deluxe/zimmer1bett.webp',
-      '/images/deluxe/kategorie1und2 front.webp',
-      '/images/deluxe/kategorie 1und2kleider.webp',
-      '/images/deluxe/bad1.webp'
+      '/images/zimmer1.webp',
+      '/images/zimmer1bett.webp',
+      '/images/kategorie1und2 front.webp',
+      '/images/kategorie 1und2kleider.webp',
+      '/images/bad1.webp'
     ],
     amenities: [
       'Kostenloses WLAN',
@@ -220,11 +220,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett + Schlafsofa',
     view: 'Stadt & Umgebung',
     images: [
-      '/images/premium-suite/bett3.webp',
-      '/images/premium-suite/2bett3.webp',
-      '/images/premium-suite/kleiderhaken3.webp',
-      '/images/premium-suite/tisch3.webp',
-      '/images/premium-suite/bad3.webp'
+      '/images/bett3.webp',
+      '/images/2bett3.webp',
+      '/images/kleiderhaken3.webp',
+      '/images/tisch3.webp',
+      '/images/bad3.webp'
     ],
     amenities: [
       'Kostenloses Highspeed-WLAN',
@@ -256,9 +256,9 @@ export const rooms: Room[] = [
     bed: '2 Doppelbetten + Schlafsofa',
     view: 'Stadt & Umgebung',
     images: [
-      '/images/premium-family-suite/family_room.webp',
-      '/images/premium-family-suite/2bett4.webp',
-      '/images/premium-family-suite/bad4.webp'
+      '/images/family_room.webp',
+      '/images/2bett4.webp',
+      '/images/bad4.webp'
     ],
     amenities: [
       'Kostenloses Highspeed-WLAN',
