@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useLanguage } from '@/i18n/LanguageContext';
-import footerLogo from '@assets/logo_beige_transparent_highres_optimized.png';
+import footerLogo from '@assets/logo_beige_transparent_highres_optimized.webp';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();

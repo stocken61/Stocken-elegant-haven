@@ -3,7 +3,7 @@ import { Link, useLocation } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
-import logoImage from '@assets/logo_transparent_highres_green.png';
+import logoImage from '@assets/logo_transparent_highres_green.webp';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
