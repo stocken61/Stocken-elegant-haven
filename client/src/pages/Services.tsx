@@ -31,7 +31,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/images/drei-weieren-st-gallen-essenz-fruehling-23.png"
+                  src="/images/hotel_interior.webp"
                   alt="Stiftsbibliothek St. Gallen" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                   loading="lazy"
