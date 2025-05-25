@@ -3,10 +3,17 @@ import { Link } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
+import { usePageMeta } from '@/hooks/usePageMeta';
 import heroImage from '@assets/hero_main.png';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
+  
+  // Set page-specific meta tags
+  usePageMeta({
+    title: 'Boutique Hotel Stocken – Stilvoll wohnen in St. Gallen',
+    description: 'Modernes Boutique-Hotel mit Frühstück, Restaurant und stilvollen Zimmern im Herzen von St. Gallen. Jetzt online buchen.'
+  });
   
   return (
     <>
