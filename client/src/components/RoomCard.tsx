@@ -17,6 +17,10 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
           alt={room.name} 
           className="w-full h-full object-cover"
           loading="lazy"
+          onError={(e) => {
+            console.error('Failed to load image:', room.images[0]);
+            e.currentTarget.style.display = 'none';
+          }}
         />
       </div>
       <div className="p-2 sm:p-3 flex flex-col flex-grow">

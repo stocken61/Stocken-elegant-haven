@@ -30,10 +30,10 @@ export const rooms: Room[] = [
     view: 'Stadt',
     images: [
       '/images/zimmer1.webp',
-      '/images/zimmer1bett.png',
-      '/images/kategorie1und2 front.png',
-      '/images/kategorie 1und2kleider.png',
-      '/images/bad1.webp'
+      '/images/2bett3.webp',
+      '/images/2bett4.webp',
+      '/images/bad1.webp',
+      '/images/bathroom.webp'
     ],
     amenities: [
       'Kostenloses WLAN',
