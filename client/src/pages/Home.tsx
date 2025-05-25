@@ -114,7 +114,7 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2 p-6">
               <div className="aspect-square overflow-hidden shadow-lg rounded-lg max-w-sm md:max-w-sm lg:max-w-md mx-auto">
                 <img 
-                  src="/reception_desk_new.jpg" 
+                  src="/images/reception.webp" 
                   alt="Hotel Empfangsbereich - Moderne Rezeption mit Mooswand" 
                   className="w-full h-full object-cover rounded-lg"
                   style={{ objectPosition: 'center 70%', objectFit: 'cover' }}
