@@ -3,7 +3,7 @@ import { Link, useLocation } from 'wouter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
-import logoImage from '@assets/logo_transparent_highres_green.webp';
+
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-1 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center -my-4 ml-2 md:ml-[-20px]">
-          <img src={logoImage} alt="Stocken Hotel Logo" className="h-36 md:h-40 lg:h-44 object-contain" />
+          <img src="/images/logo_transparent_highres_green.webp" alt="Stocken Hotel Logo" className="h-36 md:h-40 lg:h-44 object-contain" loading="lazy" />
         </Link>
         
         {/* Desktop Navigation */}

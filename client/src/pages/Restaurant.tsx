@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import RestaurantImg from '../assets/restaurant-image.png';
+
 
 const Restaurant: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ const Restaurant: React.FC = () => {
           <div className="mb-12">
             <div className="max-w-4xl mx-auto">
               <img 
-                src={RestaurantImg} 
+                src="/images/restaurant.webp" 
                 alt="Restaurant Pontera Innenraum" 
                 className="w-full h-auto rounded-lg shadow-lg mx-auto object-cover max-h-[500px]" 
               />
