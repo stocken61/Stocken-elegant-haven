@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { usePageMeta } from '@/hooks/usePageMeta';
-import heroImage from '@assets/hero_main.png';
+import heroImage from '@assets/hero_main.webp';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
