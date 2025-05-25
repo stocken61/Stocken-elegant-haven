@@ -30,10 +30,10 @@ export const rooms: Room[] = [
     view: 'Stadt',
     images: [
       '/images/zimmer1.webp',
-      '/images/2bett3.webp',
-      '/images/2bett4.webp',
-      '/images/bad1.webp',
-      '/images/bathroom.webp'
+      '/images/zimmer1bett.webp',
+      '/images/kategorie1und2_front.webp',
+      '/images/kategorie_1und2kleider.webp',
+      '/images/bad1.webp'
     ],
     amenities: [
       'Kostenloses WLAN',
@@ -60,10 +60,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt',
     images: [
-      '/images/room_main.webp',
-      '/images/restaurant.webp',
-      '/images/hero_main.webp',
-      '/images/facade.webp'
+      '/images/zimmer1.webp',
+      '/images/zimmer1bett.webp',
+      '/images/kategorie1und2_front.webp',
+      '/images/kategorie_1und2kleider.webp',
+      '/images/bad1.webp'
     ],
     amenities: [
       'Kostenloses WLAN',
