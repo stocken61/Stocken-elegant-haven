@@ -15,7 +15,8 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
         <img 
           src={room.images[0]} 
           alt={room.name} 
-          className="w-full h-full object-cover" 
+          className="w-full h-full object-cover"
+          loading="lazy"
         />
       </div>
       <div className="p-2 sm:p-3 flex flex-col flex-grow">

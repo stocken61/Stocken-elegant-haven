@@ -63,6 +63,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
               alt={`${alt} - slide ${currentIndex + 1}`} 
               className="max-h-full max-w-full object-contain mx-auto"
               style={{ objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           
@@ -80,6 +81,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
                   src={image}
                   alt={`${alt} thumbnail ${index + 1}`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             ))}
