@@ -75,9 +75,10 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src={textilmuseumImg}
-                  alt="Textilmuseum" 
+                  src="/images/guter-stoff-was-ist-das.jpg"
+                  alt="Textilmuseum St. Gallen" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
