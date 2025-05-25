@@ -18,12 +18,12 @@ const Home: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero relative h-[65vh] min-h-[400px] max-h-[550px]">
+      <section className="hero relative h-[70vh] min-h-[500px] max-h-[700px]">
         <img 
           src="/images/hero_main.webp" 
-          alt="Boutique Hotel Stocken Eingangsbereich"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          loading="lazy"
+          alt="St. Gallen Landschaft mit Brücke und Alpenblick"
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%] sm:object-[center_25%] md:object-[center_30%] lg:object-[center_35%]"
+          loading="eager"
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
