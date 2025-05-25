@@ -91,10 +91,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett',
     view: 'Stadt',
     images: [
-      '/images/room_main.webp',
-      '/images/restaurant.webp',
-      '/images/hero_main.webp',
-      '/images/facade.webp'
+      '/images/zimmer1.webp',
+      '/images/zimmer1bett.webp',
+      '/images/kategorie1und2_front.webp',
+      '/images/kategorie_1und2kleider.webp',
+      '/images/bad1.webp'
     ],
     amenities: [
       'Kostenloses WLAN',
@@ -125,8 +126,8 @@ export const rooms: Room[] = [
     images: [
       '/images/zimmer1.webp',
       '/images/zimmer1bett.webp',
-      '/images/kategorie1und2 front.webp',
-      '/images/kategorie 1und2kleider.webp',
+      '/images/kategorie1und2_front.webp',
+      '/images/kategorie_1und2kleider.webp',
       '/images/bad1.webp'
     ],
     amenities: [
@@ -157,8 +158,8 @@ export const rooms: Room[] = [
     images: [
       '/images/zimmer1.webp',
       '/images/zimmer1bett.webp',
-      '/images/kategorie1und2 front.webp',
-      '/images/kategorie 1und2kleider.webp',
+      '/images/kategorie1und2_front.webp',
+      '/images/kategorie_1und2kleider.webp',
       '/images/bad1.webp'
     ],
     amenities: [
@@ -189,8 +190,8 @@ export const rooms: Room[] = [
     images: [
       '/images/zimmer1.webp',
       '/images/zimmer1bett.webp',
-      '/images/kategorie1und2 front.webp',
-      '/images/kategorie 1und2kleider.webp',
+      '/images/kategorie1und2_front.webp',
+      '/images/kategorie_1und2kleider.webp',
       '/images/bad1.webp'
     ],
     amenities: [
