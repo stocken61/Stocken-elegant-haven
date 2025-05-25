@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { usePageMeta } from '@/hooks/usePageMeta';
-import heroImage from '@assets/hero_main.webp';
+
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -18,14 +18,13 @@ const Home: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section 
-        className="hero relative h-[65vh] min-h-[400px] max-h-[550px]" 
-        style={{ 
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 20%'
-        }}
-      >
+      <section className="hero relative h-[65vh] min-h-[400px] max-h-[550px]">
+        <img 
+          src="/images/hero_main.webp" 
+          alt="Boutique Hotel Stocken Eingangsbereich"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          loading="lazy"
+        />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="hero-content text-center py-12 absolute inset-0 flex flex-col items-center justify-start pt-12 md:pt-24">
