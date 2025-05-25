@@ -222,11 +222,11 @@ export const rooms: Room[] = [
     bed: 'Doppelbett + Schlafsofa',
     view: 'Stadt & Umgebung',
     images: [
-      '/images/bett3.webp',
-      '/images/2bett3.webp',
-      '/images/kleiderhaken3.webp',
-      '/images/tisch3.webp',
-      '/images/bad3.webp'
+      '/images/premium1.webp',
+      '/images/premium2.webp',
+      '/images/premium3.webp',
+      '/images/premium4.webp',
+      '/images/premium5.webp'
     ],
     amenities: [
       'Kostenloses Highspeed-WLAN',
