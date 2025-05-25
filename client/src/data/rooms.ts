@@ -258,9 +258,9 @@ export const rooms: Room[] = [
     bed: '2 Doppelbetten + Schlafsofa',
     view: 'Stadt & Umgebung',
     images: [
-      '/images/family_room.webp',
-      '/images/2bett4.webp',
-      '/images/bad4.webp'
+      '/images/family3.webp',
+      '/images/family1.webp',
+      '/images/family2.webp'
     ],
     amenities: [
       'Kostenloses Highspeed-WLAN',
