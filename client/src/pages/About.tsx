@@ -25,7 +25,7 @@ const About: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-5/12 p-4 flex justify-center items-start">
               <div className="rounded-lg overflow-hidden shadow-lg w-3/4">
-                <img src={stockenFacade} alt="Stocken Hotel Historisches Gebäude" className="w-full h-auto object-cover" />
+                <img src="/images/facade.webp" alt="Stocken Hotel Historisches Gebäude" className="w-full h-auto object-cover" loading="lazy" />
               </div>
             </div>
             <div className="lg:w-7/12 p-4">
