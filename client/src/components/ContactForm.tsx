@@ -45,8 +45,11 @@ const ContactForm: React.FC = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   
   // Default form values
-  const defaultValues: Partial<ContactFormValues> = {
+  const defaultValues: ContactFormValues = {
+    name: '',
+    email: '',
     subject: 'booking',
+    message: '',
     privacy: false,
   };
   
@@ -59,7 +62,9 @@ const ContactForm: React.FC = () => {
   // Form submission handler
   const onSubmit = async (data: ContactFormValues) => {
     try {
-      await apiRequest('POST', '/api/contact', data);
+      console.log('Sende Kontaktformular-Daten:', data);
+      const response = await apiRequest('POST', '/api/contact', data);
+      console.log('Antwort vom Server:', response);
       
       toast({
         title: 'Nachricht gesendet',
@@ -68,13 +73,7 @@ const ContactForm: React.FC = () => {
       });
       
       // Formular komplett zurücksetzen (leeren)
-      form.reset({
-        name: '',
-        email: '',
-        subject: defaultValues.subject,
-        message: '',
-        privacy: false,
-      });
+      form.reset(defaultValues);
       
       // Erfolgsanzeige einblenden
       setFormSubmitted(true);
@@ -83,10 +82,11 @@ const ContactForm: React.FC = () => {
       setTimeout(() => {
         setFormSubmitted(false);
       }, 5000);
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Kontaktformular-Fehler:', error);
       toast({
         title: 'Fehler',
-        description: 'Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.',
+        description: `Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten: ${error?.message || 'Unbekannter Fehler'}. Bitte versuchen Sie es später erneut.`,
         variant: 'destructive',
       });
     }

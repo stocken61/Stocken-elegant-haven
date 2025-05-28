@@ -15,16 +15,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Store contact submission
       const submission = await storage.createContactSubmission(data);
       
-      // Versuche eine E-Mail-Benachrichtigung zu senden
+      // Versuche eine E-Mail-Benachrichtigung zu senden (aber Formular funktioniert auch ohne)
       try {
         const emailResult = await sendContactFormNotification(data);
         if (emailResult) {
           console.log("✓ E-Mail-Benachrichtigung erfolgreich gesendet");
         } else {
-          console.log("✗ E-Mail-Benachrichtigung konnte nicht gesendet werden");
+          console.log("⚠ E-Mail-Benachrichtigung nicht gesendet - Formular gespeichert");
         }
-      } catch (emailError) {
-        console.error("Fehler beim Senden der E-Mail-Benachrichtigung:", emailError);
+      } catch (emailError: any) {
+        console.log("⚠ E-Mail-Fehler (Formular trotzdem gespeichert):", emailError?.message || emailError);
       }
       
       // Ausführliche Protokollierung der Kontaktformular-Daten
