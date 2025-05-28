@@ -193,7 +193,7 @@ const ContactForm: React.FC = () => {
               <FormControl>
                 <Checkbox
                   checked={field.value}
-                  onCheckedChange={field.onChange}
+                  onCheckedChange={(checked) => field.onChange(checked === true)}
                   className="mt-1"
                 />
               </FormControl>
